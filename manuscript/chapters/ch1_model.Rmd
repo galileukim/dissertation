@@ -1,0 +1,143 @@
+---
+output: pdf_document
+---
+## Motivation
+
+In Brazil, and increasingly across the developing world, public services are under the political administration of elected officials. In this section, I present a theoretical model that integrates the calculus of these principals regarding how to manage bureaucracies that deliver public services, mapping out the consequences of these decisions to their political survival and voter welfare. It is a sequential game, in which newly-elected mayors assess the electoral benefits of improving public services while taking into account the political arena they must coopt to get the budget approved.
+
+The starting point of the game is the entry of a newly elected mayor into office.^[For clarity, I denote the mayor with a female pronoun, the legislative opposition in plural and the voter with a male pronoun.] In assuming her new role as the executive leader and manager of the local bureaucracy, the mayor knows that government is not an isolated affair. The political turnover in the executive is accompanied by renewal in the local legislature (*câmara de vereadores*). Some of these city councillors have declared themselves allies in the electoral campaign, composing what is broadly referred to as the government (*governo*) bench in the legislature. The remaining councillors are either independent or part of the opposition.
+
+As noted by @couto_governando_1995, and through my qualitative interviews in municipalities of Brazil, a key feature of local politics is the executive-legislative bargaining over public sector jobs. City councillors actively seek to place loyalists within the bureaucracy, while mayors themselves are more hesitant to do so. This is due to a differential accountability between the two actors: while city councillors cater to small constituencies
+
+## Institutional environment
+
+In Brazil, local governments are composed of two branches. One is the executive, headed by the mayor who is elected through a first past the post system. The other, the local legislature, composed of city councillors elected through an open-list proportional representation system. The existence of these two types of political actors, elected through a different set of institutional rules, introduces in itself a divergent set of interests in the political arena. In particular,
+
+## Structure of the game:
+
+In this section, I outline the action space, payoff structure and timing of the game. There are three actors: a mayor $m$, a legislative opposition $o$ and representative median voter $v$. The goal of the executive is to be reelected into office.^[This is a standard assumption in electoral accountability models, see @besley_principled_2006. For a comparative politics perspective, see @geddes_politicians_1994.] The opposition can either approve the  The voter derives utility from public goods, which is produced by the municipal bureaucracy.
+
+To make analysis tractable and concise, I introduce a set of simplifying assumptions. First, I assume that the voter is sincere, meaning that he only considers his utility when deciding whether to reelect the incumbent. This excludes pivotality concerns and strategic voting from his choice set. Mayors are one of two types: a competent politician who effectively delivers high quality public goods, and an average one, who fails to always hit the mark. Note that this is an informational heuristic. I do not claim there are infallibly competent politicians. The intuition is that voters have beliefs about how competent a politician is (and strictly prefer those), forming their opinions by observing the quality of public goods they observe.
+
+The game is played in two periods. Voter $v$ does not observe the amount of patronage handed out by mayor $m$ nor her type, but observes and derives utility from the realization of public good quality $\omega_t$. A central feature in this model is uncertainty in translating bureaucratic quality $\theta$ at time $t$ to public goods provision $\omega$, with high quality public services $\omega_{h}$ produced probabilistically as a function of $s$ and $\theta$. The parameter $\theta$ captures the inverse relation between patronage and state capacity.^[See @kohli_state-directed_2004.] The share of seats held by the opposition, $s$, also adversely affects the probability of high quality goods being provided through the exercise of veto power.
+
+The optimal strategy for the voter is to fire politicians when he believes that the incumbent is not a competent type, after observing the quality of first period public good $\omega_1$. For the mayor, her strategy is pinned down by the share of patronage which maximizes expected utility from holding onto office, conditional on her type and expected benefits from reelection. Mayor $m$ has to offer public sector jobs to coopt the opposition while ensuring that the voter is satisfied enough to reelect her. The executive's dilemma is how to reconcile the incentive for reelection and the pressure imposed by the opposition.
+
+The timing of the game is:
+
+1) Nature draws the politician's type.
+2) Politician observes her type and invests in bureaucratic quality $\theta_1$.
+4) Nature realizes public good $\omega_1(\theta_1)$.
+5) Voter observes $\omega_1$ and casts vote to retain or fire the incumbent.
+6) If incumbent is retained, she sets $\theta_2$ and nature draws $\omega_2(\theta_2)$. If incumbent is deposed, a challenger takes office, sets $\theta_2$ and the game ends.
+
+## Bureaucratic quality, veto power, and public goods provision:
+
+I model public goods quality as a random variable $\omega$ with two possible states $\omega \in \{\omega_l, \omega_h\}$, where $\omega_h>\omega_l$. The probability of a high quality public good $\omega_h$ is a function of $\theta$, a parameter denoting the bureaucratic quality, and $s$, the share of seats held by the opposition. Following @centeno_unpacking_2017, to avoid conceptual stretching I separate state capacity from its output. In this theoretical framework, state capacity is measured by analyzing personnel composition.^[See @fukuyama_what_2013, @bersch_state_2017.] Additionally, the opposition can exercise veto power, which increases monotonically with their share of seats in the legislative. Formally:
+
+$$\text{Pr}(\omega=\omega_h) = \frac{1-s\theta}{1+e^{-(10\theta-5)}}$$
+The impact of patronage depends on the share of seats controlled by the opposition. When the opposition have no veto power, i.e. $s=0$, the executive can costlessly improve the quality of the bureaucracy $\theta$, keeping patronage at a minimum and maximizing the probability of high quality public goods. When the opposition controls a larger share of the legislative chamber, it can effectively block the mayor from enacting her policy agenda, unless given a large share of public sector jobs, thus decreasing $\theta$. This is captured by the term $s\theta$ in the expression above.
+
+## The mayor:
+
+The mayor's choice set is the bureaucratic quality parameter $\theta_t$. As $\theta$ increases - the mayor allocates a smaller proportion of jobs for patronage - the legislative opposition decreases their support for the executive and threatens to exercise veto power. This reduces the likelihood of providing the necessary resources to provide public goods. Adapting @gailmard_slackers_2007, there are two types of mayors: competent and average. Competent politicians excel in delivering high quality public goods and are rewarded by voters with reelection. Politicians who fail to excel in such provision are average.
+
+The probability of a politician being competent is common knowledge: $\xi \in [0,1]$. Conversely, the probability of her being average is simply $1 - \xi$. Both types derive utility from public goods provision $\omega$, where for simplicity $u(\omega_l)=0$ and $u(\omega_h) = 1$. We do not model the decision of the competent mayor: she simply delivers high quality goods and is inevitably reelected. We focus on the interesting case of the normal politician.
+
+\begin{align*}
+Eu_m \left(\theta_t, s_1 \middle|\lambda \right) &= \textbf{E}(\omega_1) + \delta \text{Pr}(\text{reelection})\left[\psi + \textbf{E}(\omega_2)  \right] \\
+&= \frac{1-s_1\theta_1}{1+e^{-(10\theta_1-5)}} + \delta \text{Pr}(\text{reelection})\left[\psi + \frac{1-s_2\theta_2}{1+e^{-(10\theta_2-5)}} \right] \\
+\end{align*}
+
+The expression above formalizes the mayor's dilemma. The probability of reelection decreases with the share of jobs allocated to the opposition, since it lowers the quality of the bureaucracy. but if the mayor fails to appease them through patronage, it is increasingly costly to "govern". While technocrats are immune to these political pressures, pragmatists ultimately cave in. The price of compromise in a democratic setting is a reduction in state capacity, as executives are forced to allocate positions within the bureaucracy to garner support in the legislative.^[For a discussion of patronage in Brazilian politics, see @nunes_gramatica_1997. For a historical perspective, @graham_patronage_1994.]
+
+## Solving the dilemma (compromise):
+
+Mayors solve the the game through backward induction. If the mayor is a technocrat, she simply and effectively delivers, and the voter consumes $\omega_h$. The average politician myopically maximizes expected utility in the second period.
+
+\begin{align*}
+\frac{\partial Eu_{m}(\theta_1, \theta_2|\lambda = 1, s_2)}{\partial \theta_2} &= 0 \\
+\frac{\partial}{\partial \theta_2} \frac{1-s_2\theta_2}{1+e^{-(10\theta_2-5)}} &= 0 \\
+\frac{1}{e^{-(10\theta_2^*-5)}}+10\theta_2^* &= \frac{10}{s_2} - 1\\
+\theta_2^* &= \frac{1}{10s_1}\left[10-s_2-\boldsymbol{W}\left(e^{\frac{1}{s_2}-6}\right)\right]
+\end{align*}
+
+The interpretation of this result is straightforward: increases in the legislative share of the opposition reduces incentives to invest in bureaucratic quality.^[Note that for $s=0$, this expression is undefined. Also, $\boldsymbol{W}$ denotes the Lambert W function.] We can visualize how the optimal bureaucratic quality in the second period changes as a function of $s_2$ by plotting changes in the probability of high quality public goods.
+
+```{r visualization}
+library(ggplot2)
+fun_1 <- function(x){ (1-x)/(1+exp(-(10*x - 5)))}
+fun_2 <- function(x){ (1-0.5*x)/(1+exp(-(10*x - 5)))}
+fun_3 <- function(x){ (1)/(1+exp(-(10*x - 5)))}
+
+ggplot(data.frame(x = c(0, 1)), aes(x)) +
+  stat_function(
+    fun = fun_1
+  ) +
+  stat_function(
+    fun = fun_2
+  ) +
+  stat_function(
+    fun = fun_3
+  ) +
+  annotate(
+    geom = "text",
+    x = 0.6,
+    y = 0.34,
+    label = "s = 1"
+  ) +
+  annotate(
+    geom = "text",
+    x = 0.75,
+    y = 0.62,
+    label = "s = 0.5"
+  ) +
+  annotate(
+    geom = "text",
+    x = 0.70,
+    y = 0.95,
+    label = "s = 0"
+  ) +
+  xlab("Bureaucratic Quality") +
+  ylab("Probability") +
+  ggtitle(
+    "Impact of opposition legislative share on public goods provision"
+  )
+```
+
+The quality of the bureaucracy $\theta_2$ which maximizes the mayor's expected utility in the second period is strictly decreasing in $s_2$, the share of seats controlled by the opposition. As the power of the opposition increases, its ability to veto and punish the mayor for withholding from patronage increases. The greater the threat of veto power, the more concessions politicians need to make in order to deliver high quality public goods $\omega_h$. Conversely, when the mayor controls the legislative chamber, the benefits of bureaucratic quality are fully internalized and it is in turn maximized. We now turn to the electoral problem faced by the voters.
+
+<!-- ## Opposition's problem: -->
+
+<!-- The opposition decides whether or not to support the mayor's policies, where $a_o=\left\{ 0,1 \right\}$. If the opposition supports the executive, they receive an $\alpha \in [0,1]$ proportion of public sector jobs, a continuum normalized to 1. The concept of a public sector pie stems from interviews with former and current executive secretaries, who describe a "quota" of jobs allocated to the legislative.^[This echoes the concept of islands of excellence described by @geddes_politicians_1994: small pockets of bureaucratic insulation reserved by the executive for core functions such as macroeconomic management. A similar argument is made in @loureiro_burocracia_2010.] If she refuses, the mayor allocates no pork. I apply the Rubinstein bargaining model solution concept (perfect equilibrium) to solve this subgame with minor adaptations.^[@rubinstein_perfect_1982.] -->
+
+<!-- Mayor's and opposition's utilities are identical to the original setup with two players. I conceptualize the bargain over public sectors as a sequence of offers and counter-offers made by the mayor and her legislative opposition. Following @rubinstein_perfect_1982, players differ in $\delta_i$, a parameter capturing their impatience across sequences in the bargaining game. Respectively: -->
+
+<!-- $$u_m = \prod^{T}_{t=1}\delta_m^t\theta_{1|2}$$  -->
+<!-- $$u_o = \prod^{T}_{t=1}\delta_i^t\theta_{1|2}$$ -->
+
+
+<!-- Applying stationarity restrictions and solving for the unique subgame perfect equilibrium, we have: -->
+
+
+## State capacity and democratic accountability:
+
+Let $v$ denote the median voter in the municipal electorate. Voters derive utility from the quality of public goods at time $t$, with a discount factor $\delta$.
+
+$$u_v(\omega_t) = \omega_1 + \delta \omega_2$$
+
+Because voters cannot observe directly the type of the politician nor her hiring decisions, voters update beliefs about the politician's type after observing first period public goods output. If a voter observes a low public goods quality, he knows with certainty that the incumbent is incompetent, and therefore $\Pr(\text{competent}|\omega_{1l}) = 0$. Let $\mu(\omega_1)$ denote voter's belief that the politician is of a competent type after observing the first period realization of public goods.
+
+$$\mu(\omega_h) = \text{Pr}(\text{competent}| \omega_h) = \frac{\xi}{\xi + \text{Pr}(\omega_1|s)(1-\xi)}>\xi$$ 
+
+Note that for any $\omega_h$, the probability that the incumbent is competent is higher than the probability of a random challenger being so. As a result, whenever the voter observes a high quality output in the first period, the incumbent gets reelected. This simplifies our analysis. After observing the realization of public good quality $\omega_1$, he retains the incumbent if and only if $\omega_1 = \omega_h$, and fires her otherwise. The probability of re-election is simply the probability that public goods provided are of high quality. This is conditional on $\theta_1$, the amount of investment in state capacity in the first period and $s_1$, the opposition share in the first period.^[Note that the quality of the second period bureaucracy is independent of that in the first period. This is a strong restriction that I will relax in future iterations of this project.]
+
+## Initial investments in state capacity:
+
+We turn to the initial decision of the politician. The executive maximizes her expected utility with respect to first term hiring decisions, factoring in the optimal decision and payoff for the second period. To reiterate, the probability of reelection is simply the probability of high quality public goods provision in the first period. Taking the first order condition with respect to $\theta_1$:
+
+\begin{align*}
+\argmax_{\theta_1} \frac{1-s_1\theta_1}{1+e^{-(10\theta_1-5)}}\left[1+\delta\left(\psi + \frac{1-s_2\theta_2^*}{1+e^{-(10\theta_2^*-5)}}\right)\right] &= 0 \\
+\end{align*}
+
+The optimal amount of investment in state capacity in the first term is analogous to the myopic optimization in the second period, weighed by the expected payoff of reelection. The intuition behind this result is straightforward. As politicians value the future term more, they will invest more in state capacity. This is captured by the parameter $\delta$ and $\psi$, the former being the discount factor and the latter, office benefits. However, in a clear illustration of the trade-off implied between investing in state capacity and resorting to patronage to ensure legislative support, the dominant effect is imposed by $s_1$, the share of legislative seats held by the opposition in the first period. I proceed to test this model empirically in the next section, focusing on cabinet positions at the municipal level.

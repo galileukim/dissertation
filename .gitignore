@@ -1,0 +1,9 @@
+data/
+.Rhistory
+*.Rproj
+.Rproj.user
+*cache/
+fieldwork/
+graphs/
+journal/
+slides/

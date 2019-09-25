@@ -1,0 +1,907 @@
+---
+title: "The Executive Dilemma: Legislative Cooptation and Cabinet Reshuffling"
+author: "Galileu Kim"
+date: "`r gsub('^0', '', format(Sys.time(), '%d %B, %Y'))`"
+documentclass: article
+fontsize: 12pt
+geometry: margin=1.5in
+abstract: "When do politicians decide to invest in state capacity? In this paper, I focus on the executive’s choice for bureaucratic cohesion, embedding patronage in an electoral accountability framework. Mayors face an executive dilemma: there between retaining experienced bureaucrats from the previous administration and the need to coopt a legislative opposition to implement their policy agenda through a fresh allocation of jobs. I leverage a unique dataset of all municipal bureaucrats in Brazil from 2000 to 2013, testing this theory with hiring decisions across municipal bureaucracies. Mayors protect inherited bureaucratic institutions when they control the local legislative chambers, firing and hiring less new members into the cabinet, as well as recruiting a larger share of career servants. "
+header-includes:
+  - \setlength\parindent{20pt}
+  - \usepackage{setspace}
+  - \usepackage{multirow}
+  - \usepackage{caption}
+  - \usepackage{amsmath}
+  - \DeclareMathOperator*{\argmax}{arg\,max}
+  - \pretitle{\centering\Large\textbf}
+  - \preauthor{\centering\large}
+  - \predate{\centering\normalsize}
+  - \usepackage[hang,flushmargin]{footmisc}
+bibliography: "`r path.expand('~/princeton/references/dissertation.bib')`"
+output: pdf_document
+---
+```{r setup, include=FALSE}
+source(
+  here::here("scripts/thesis_setup.R")
+)
+```
+
+## Introduction:
+
+Bureaucracies in the developing world are unstable: this is by political design. Elected officials can and often do dismantle bureaucracies to accomplish political goals.^[@suleiman_dismantling_2013.] Bureaucrats are replaced with each new administration, weakening the organizational coherence of these institutions. This pattern is particularly salient in developing countries, where civil service laws protecting bureaucracies from political actors are weak or absent. As a result of this instability, state capacity is weakened, leading to scholars classifying states with unstable bureaucracies as neopatrimonial.^[@kohli_state-directed_2004, @van_de_walle_african_2001.]
+
+This is troubling. Studies link bureaucratic turnover and resulting low state capacity to reduction in the quality of public education and slower economic growth.^[@evans_bureaucracy_1999, @akhtari_political_2015.] Frustration at governments' ability to manage and deliver public services is a challenge for governments across the developing world. A rich scholarly literature in has sought to explain variation in state capacity. These theoretical accounts have primarily focused on the role of historical institutional legacies and contemporary clientelistic practices.^[For examples of the role of historical institutional legacies, @kurtz_latin_2013 or @acemoglu_colonial_2001. For clientelism, @kitschelt_patrons_2007.] I conceptualize the same problem from a different lens. What are the incentives and tradeoffs politicians face when investing in state capacity?
+
+Shifting the analysis from bureaucratic institutions to the executive does not imply a remission of political and institutional constraints. I model them explicitly to understand how and why politicians change bureaucracies the way they do. I refine and conceptually separate state capacity as an outcome to be explained through executive hiring decisions.^[See @centeno_unpacking_2017 for an excellent unpacking of the concept of state capacity vs. state performance.] To be clear, I focus on a particular dimension of state capacity: its bureaucratic coherence, or the degree to which bureaucracies are institutionalized, and stable, across time.^[@evans_embedded_1995. For @huntington_political_2006, one of the differentiating characteristics of governments more broadly was their degree of institutionalization.]
+
+<!-- Scholarly literature on bureaucracies in the developing world have traditionally focused on the presence or absence of civil service reforms.^[@grindle_jobs_2012.] This treatment of formal institutions as binding is limiting, and has been subject to extensive criticism.^[In particular, @kohli_state-directed_2004 emphasizes that attempts to professionalize and insulate bureaucracies were often reversed in subsequent administrations in 1960s Brazil. @grindle_jobs_2012 also outlines the multiple ways in which civil service reforms are reversed.] I embrace a more flexible theoretical approach, highlighting the relationship between politicians, electorate and bureaucratic institutions. I propose an agency-based theory to explain variation in bureaucratic turnover, focusing on politician's electoral incentives and the executive-legislative bargain.^[In doing so I build on @geddes_politicians_1994, who outlines the electoral tradeoffs politicians face when implementing civil service reforms.] -->
+
+To frame my theory, I build on extant literature on state capacity, political economy models of electoral accountability, as well as national-level theories of coalitional presidentialism.^[See @moe_politics_1989, @loureiro_politica_1999, @power_optimism_2010.] At the heart of my theory are mayors who interact strategically with coalition member legislators and voters. I argue that executive leaders benefit from a competent and stable bureaucracy due to their dependence on state capacity to produce public goods. To govern and implement their agenda, however, they must also coopt members of a legislative opposition. This trade-off between governance and state capacity defines the executive's dilemma.^[In doing so I build on @geddes_politicians_1994, who outlines the electoral tradeoffs politicians face when implementing civil service reforms.]
+
+I test this theoretical model empirically in Brazil, leveraging a unique dataset of all cabinet members working in its public administration. After exploring this rich dataset, I empirically verify my theoretical claim and find that the executive-legislative profoundly shape bureucratic coherence in municipal Brazil. When confronted by a fragmented legislative chamber, mayors resort to patronage to garner support from opposition. This leads to an increase in hiring, firing and a decrease in the proportion of career servants appointed to cabinet positions. These findings confirm the need for deeper theorization on the strategic incentives faced by the primary hiring principals across the developing world: elected executive officials.
+
+## Framing the debate:
+
+In this paper, I propose an agency-based model to analyze decisions to invest in state capacity, placing at the forefront politicians and their strategic behavior to alter bureaucracies. This framing departs from extant literature which analyzes state capacity in a historical-institutional framework, emphasizing structural factors such as colonial legacies and civil service reforms as the main explanatory variables to contemporary state capacity.^[@centeno_state_2013, @centeno_unpacking_2017, @grzymala-busse_beyond_2008, @kohli_state-directed_2004.] I provide a critique of this body of work, outlining how my agency-based theory complements these macro structure-based accounts.
+
+More recently, a bourgeoning literature has focused on clientelistic exchanges practiced in the developing world.^[@stokes_brokers_2013. For an excellent literature review, see @hicken_clientelism_2011.] Particularly relevant for this analysis are studies on patronage, the exchange of public sector jobs for political gain.^[@grindle_jobs_2012.] Patronage can serve a variety of purposes: it incentivizes the votes of patronage beneficiaries and enables politicized public service delivery.^[@robinson_political_2013, @oliveros_making_2016.] It also facilitates legislative support by granting legislators and their followers with public sector jobs. But patronage is no free lunch. Politicians face a trade-off between giving up technical expertise of incumbent bureaucrats and bringing in inexperienced beneficiaries into the public sector.
+
+These decisions over whether or not to modify bureaucracies through patronage are increasingly made by politicians at the subnational level. Since the 1990s, developing countries across the world have transferred both public policy implementation and resources to subnational governments.^[@oneill_decentralizing_2005, @falleti_decentralization_2010.] This subnational world of personnel politics remains to be further theorized and explored empirically.^[@finan_personnel_2015.] Combining insights from extant literature on presidential coalitionism provides the conceptual tools to do so. A new institutional context brings forth local political actors and bureaucrats, and understanding their strategic motivations is key to analyzing contemporary changes in localized state capacity.
+
+## State capacity as an institutional legacy:
+
+What explains variation in state capacity in Latin America? The answer has often been sought through a historical-institutional approach. Analyzing colonial legacies and more recent civil service reforms, scholars have emphasized the path-dependent nature of state capacity. Low initial investments in state capacity, combined with absent civil service laws, help us understand contemporary outcomes. These accounts leave us with important theoretical gaps to fill. An institutional focus limits our understanding of the motivation and strategic incentives of executive leaders to invest in bureaucratic coherence or not. It also fails to account for profound changes in contemporary institutions.
+
+One strand of the state capacity literature focuses on colonial legacies. A historical abundance of natural resources and dense local populations led to extractive industries that provided limited incentives for colonial rulers to invest in state capacity, broadly understood.^[@acemoglu_colonial_2001, @mahoney_colonialism_2010, and @engerman_factor_1997.] Political elites did not build meritocratic and professionalized bureaucratic institutions: colonial rule was based in the exchange of personal favors and patronage between regional elites and colonial authorities.^[@graham_patronage_1994, @nunes_gramatica_1997.] Underinvestment in state capacity proved path-dependent, and contemporary outcomes can be traced back to these colonial legacies.^[@kurtz_latin_2013.]
+
+Scholars analyzing more contemporary periods - in particular, the twentieth century - have focused on part of its organizational structure: the bureaucracy.^[@kohli_state-directed_2004, @evans_embedded_1995.] A central concern is the lack of institutional reforms: civil service laws protecting bureaucracies from political interventions.^[@grindle_jobs_2012.] A pattern of patrimionialism and politicized administration, inherited from colonial rule and reproduced today, remained unfettered by law.^[@nunes_gramatica_1997.] While some countries such as Argentina and Brazil sought to enact reforms to protect bureaucracies from political intervention, these attempts were incomplete and ineffective.^[These reforms occurred under technocratic, military rule. See @odonnell_modernization_1973. For an analysis of the limited reach of these modernizing civil service reforms in Brazil, @hagopian_traditional_2007.] This contrasted with successful reforms in East Asia.^[@johnson_miti_1982, @amsden_asias_1992.]
+
+These historical-institutional accounts highlight how structural conditions (mis)aligned for investing in state capacity. Colonial legacies explain how historically weak administrative structures originated in the first place. A lack of civil service reforms failed to curb patrimonial practices in the region. As in any history, there remain lacunae to be filled. First, despite historical persistence, scholars have noted how some political leaders have sought to enact policies insulating branches within the bureaucracy, only to have their successors dismantle their efforts.^[@geddes_politicians_1994, @kohli_state-directed_2004.] State capacity, in particular bureaucratic cohesion, is time varying and the cause of change are decisions made by executive leaders.
+
+Furthermore, while historically grounded, previous accounts are agnostic on how politicians adjust behavior to their institutional environment. In particular, there is limited theorization of how democratic elections and decentralization shape politicians' incentives to invest in state capacity.^[For exceptions, see @geddes_politicians_1994, and @eaton_teachers_2014.] Bureaucracies are not only monoliths inherited from the past. These organizations evolve as a result of a sequence of decisions made by executive leaders over who to hire into the public sector and build a government. To illuminate the microfoundations of bureaucratic cohesion, I turn to the literature on patronage and coalitional presidentialism.
+
+## Patronage and state capacity as an executive decision:
+
+Clientelism in the developing world is widespread. The exchange of material benefits for political benefits has been extensively documented and theorized.^[@stokes_perverse_2005, @stokes_brokers_2013.] One variant in particular has repeatedly taken its toll on state capacity in Latin America: patronage.^[@grindle_jobs_2012, @finan_personnel_2015.] In the absence of civil service laws preventing discretionary appointments into the public sector, politicians can and do place beneficiaries into the bureaucracy.^[See @bersch_state_2017 for an extensive documentation of the widespread use of political appointments into the federal bureaucracy in Brazil.] These executive appointments occur both in the developing and developed world.^[For examples in the United States, see @moe_politics_1989 and for a literature review with a formal treatment, @gailmard_formal_2012.]
+
+The political motivation for patronage is clear. Appointments to the bureaucracy are a valuable instrument for politicians: it helps secure votes and support by tying bureaucrats' fate to their political patrons, place loyalists within the public sector and enable discretionary transfers, among other benefits.^[@calvo_who_2004, @oliveros_making_2016, and @robinson_political_2013.] Recent studies on patronage in Brazil have documented how politicians reward campaign contributors, as well as their own party members.^[@colonnelli_patronage_2017, @brollo_victor_2017.] These works highlight the benefits of engaging in patronage, yet it is less clear what are the costs and implications of patronage for politicians' mandate in government. Politicians are not simply allocation algorithms: the executive governs, and to do so it has to rely on a stable and effective bureaucracy.^[@huber_bureaucratic_2004.]
+
+To make these costs and strategies clear, I embed patronage within the institutional environment in which it occurs. Executive leaders choose how many jobs to distribute through patronage, as well as how much to insulate bureaucratic structures from previous administrations.^[This is similar to the concept of islands of excellence highlighted by Geddes (1994).] For instance, during the Cardoso presidency (1994-2002), the Ministry of Finance was protected from politicized appointments, while other ministries were not as fortunate.^[@loureiro_politica_1999.] In the presence of a legislative body, patronage helps garner support from legislators for the executive's policy agenda. As noted by @raile_executive_2011, presidents rely on the distribution of public sector jobs, and particularly cabinet positions, to gain support for their policy agenda.^[@figueiredo_executivo_1999, @neto_agenda_2003.]
+
+Allocation of patronage is costly for politicians, in particular when it is designed to appease legislators. Because these are concessions to politicians and their respective constituencies, there is uncertainty over whether patronage will lead to policy drift or, also damagingly, the entry of inexperienced bureaucrats to the public sector. Foresighting these potential costs, the allocation of public sector positions will occur strategically.^[@laver_coalitions_1990, @neto_presidential_2006.] Executives factor in this increased administrative inefficiency when making the decision to allocate public sectors. Concede too much, and the ability to implement policies collapses. Concede too little, and opposition legislators will effectively block policy implementation through budgetary oversight.
+
+## The case: Brazilian municipalities and mayoral coalitionism
+
+How applicable are these analytical building-blocks to the local level? Each and every municipality in Brazil institutionalizes separation of powers. Mayors do not govern alone: with every municipal election, an executive leader and her legislative counterparts take office. Recent studies on local governments in Brazil often overlook this institutional feature, disregarding the fact that municipalities comprise both an executive and legislative branch.^[Most studies analyzing Brazilian governments focus exclusively at mayors. See @brollo_victor_2017, @brollo_tying_2012, @colonnelli_patronage_2017, @klasnja_incumbency_2017.] While mayors have exclusive prerogative over the appointment of local employees and establishing a policy agenda, appointments respond to the need to ensure legislative support.^[Interview with C.F. and F. in SP.]
+
+The municipal legislative chamber plays a central role in municipalities. It is responsible for oversight and vetoing the executive budget, as well as approving and ammending municipal laws. This grants the legislative chamber and its city councillors significant power over the mayor's ability to implement their policy agenda. In order to garner legislative support, it is common for mayors to concede key cabinet positions to city councillors.^[Interview with C.F. and F. in SP.] A set of scholars have started to analyze this tradeoff between legislative support and cabinet allocation at the federal level, but to the best of my knowledge the municipal level is yet to be explored.^[Bautista et al. 2018]
+
+While conducting fieldwork research in Brazil, I was struck by the recurrent accounts of the important role played by local city councillors (vereadores) in shaping the bureaucracy. Secretaries of education argue that deputees often demanded to nominate their own loyalists to prominent cabinet positions, with the tacit but careful approval of the mayor.^[Interview with F, chief of staff of a local government in SP.] The degree to which mayors acquiesced to these demands depends on their bargaining power: how many seats their coalition was able to secure in the local chamber. When the executive coalition held a comfortable margin, the need to appease coalition members through appointments was less pressing.^[Similar to the findings of @neto_presidential_2006.] Conversely, budgetary resources can be withheld when mayors are in a minority governemnt.
+
+```{r budget}
+cabinet_mun %>% 
+  ggplot(
+    aes(
+      coalition_share,
+      budget_total/censo_pop
+    )
+  ) +
+  geom_smooth(
+    formula = y ~ splines::bs(x, 3),
+    method = "lm",
+    col = "steelblue"
+  ) +
+  stat_summary(
+    fun.y = "mean",
+    geom = "point",
+    col = "darkorange1",
+    alpha = 0.5
+  ) +
+  theme_clean +
+  xlab("Coalition Share") +
+  ylab("Budget per Capita") +
+  ggtitle("Budget per capita vs. share of legislative seats held\n by the executive coalition")
+```
+
+While most mayors tend to hold a majority of seats over the chamber, this is far from being the rule. Note that I am adopting an expansive view of chamber control: if the deputee's party is in the executive coalition that got elected, I count that seat as being part of the mayoral coalition share. This is similar to the operationalization of presidential control over the congress known as presidential coalitionism and interviews with municipal secretaries.^[Pereira et al. 2016, Figueiredo and Limongi 2012, Raile et al. 2011.] I exploit this variation, both intermunicipal and across time, in executive coalition shares to explain choices over patronage.
+
+```{r cabinet coalition share}
+election %>%
+  ggplot() +
+  stat_density(
+    aes(
+      x = coalition_share*100
+    ),
+    geom = "line",
+    col = "steelblue3",
+    adjust = 4,
+    alpha = 0.8
+  ) +
+  geom_vline(
+    xintercept = 50, 
+    linetype = "dashed",
+    col = "darkred"
+  ) +
+  theme(
+    legend.position = "bottom",
+    legend.title = element_blank(),
+    legend.spacing.x = unit(0.05, "inch")
+  ) +
+  theme_clean +
+  xlab("Coalition Share") +
+  ylab("Density") +
+  ggtitle("Mayor coalition seat share")
+```
+
+In the next section, I outline the executive's dilemma. I model this in game theoretical terms to embed the bureaucracy in the political game to which it is subjected. Combining insights from the literature on presidential coalitionism, electoral accountability and patronage, I theorize that newly elected mayors face a straightforward sequential optimization problem: the quality of public goods provision is directly observed by the electorate and depends on keeping patronage at a minimum. At the same time, patronage is necessary to buy-off legislative support. The ambition for reelection and the need to coopt the legislative in the current period defines the terms of the politics of patronage.
+
+## The Executive Dilemma:
+
+I build a theoretical framework to explain variation in bureaucratic turnover.^[Bureaucratic turnover often stems from decisions by the executive to distribute jobs for political purposes. This is patronage, the allocation of public sector jobs due to political motivations (cooptation).] A new mayor is elected into office and has the power to reshape the local bureaucracy. To be reelected, she has to convince the electorate that she will provide high quality public goods in her second term, and to do so requires bureaucratic coherence. However, she must also coopt the legislative opposition by divving up a share of the bureaucratic pie for patronage.^[This aligns closely to previous studies on the use of ministerial positions to gain support from opposition members at the federal level. See @loureiro_politica_1999, @loureiro_radiografia_2014, @lopez_cargos_2018.] The model highlights the tradeoff executive politicians face between investing in state capacity and coopting the legislative opposition.
+
+The theoretical model builds on an extensive literature in the electoral accountability literature, modeling public goods provision as an electoral game played between the voter and the politician. Starting with @barro_control_1973 and @ferejohn_incumbent_1986, political economists have explored models incorporating electoral accountability as an incentive for shaping the behavior of elected politicians.^[See, for instance, @ferraz_electoral_2011.] The possibility of reelection motivates them to put effort into convincing voters to reelect them. @coate_form_1995 and @besley_principled_2006 incorporate voters updating Bayesian beliefs about politician types, a feature applied in my model.
+
+I extend these analyses with a key extension. Instead of assuming that politicians can set the quality of public goods provision, I model it as the probabilistic outcome of an investment in bureaucratic quality and legislative support. Producing better public goods requires an experienced and professional bureaucracy and legislative support. Reshuffling the bureaucracy is costly due to the loss of professional expertise accumulated by the inherited staff, but this underlying capacity is meaningless if the legislative does not grant its approval. The executive does not always control the legislative chamber once in office, and have to coopt them into supporting their agenda.^[Analogous to the concept of minority presidents in the literature on coalitional presidentialism. See @figueiredo_presidential_2000.]
+
+The mayor's strategy centers around a key part of her political resources: the local bureaucracy. A set of public sector jobs is available to the executive for redistribution. Jobs are a valuable resource for cooptation.^[Mayors enjoy full discretion into how to appoint workers into the public sector and often resort to distributing these jobs to appease members of the legislative.] When deciding whether or not to engage in patronage, executive leaders face a dilemma. The mayor can invest in state capacity, retaining expertise and reaping benefits from better public goods provision and retaining office. However, doing so raises the possibility of retaliation by the opposition, who can threaten to bar the provision of public services. This is the executive's dilemma.^[@geddes_politicians_1994.]
+
+## Structure of the game:
+
+In this section, I outline the action space, payoff structure and timing of the game. There are three actors: a mayor $m$, a legislative opposition $o$ and representative median voter $v$.^[For clarity, I denote the mayor with a female pronoun, the opposition in plural and the voter with a male pronoun.] The goal of the executive is to be reelected into office.^[This is a standard assumption in electoral accountability models, see @besley_principled_2006. For a comparative politics perspective, see @geddes_politicians_1994.] The opposition is a veto player, and their ability to bar the executive agenda depends on their share of legislative seats $s$. The median voter derives utility from public goods, which is produced by the municipal bureaucracy.
+
+To make analysis tractable and concise, I introduce a set of simplifying assumptions. First, I assume that the voter is sincere, meaning that he only considers his utility when deciding whether to reelect the incumbent. This excludes pivotality concerns and strategic voting from his choice set. Mayors are one of two types: a competent politician who effectively delivers high quality public goods, and an average one, who fails to always hit the mark. Note that this is an informational heuristic. I do not claim there are infallibly competent politicians. The intuition is that voters have beliefs about how competent a politician is (and strictly prefer those), forming their opinions by observing the quality of public goods they observe.
+
+The game is played in two periods. Voter $v$ does not observe the amount of patronage handed out by mayor $m$ nor her type, but observes and derives utility from the realization of public good quality $\omega_t$. A central feature in this model is uncertainty in translating bureaucratic quality $\theta$ at time $t$ to public goods provision $\omega$, with high quality public services $\omega_{h}$ produced probabilistically as a function of $s$ and $\theta$. The parameter $\theta$ captures the inverse relation between patronage and state capacity.^[See @kohli_state-directed_2004.] The share of seats held by the opposition, $s$, also adversely affects the probability of high quality goods being provided through the exercise of veto power.
+
+The optimal strategy for the voter is to fire politicians when he believes that the incumbent is not a competent type, after observing the quality of first period public good $\omega_1$. For the mayor, her strategy is pinned down by the share of patronage which maximizes expected utility from holding onto office, conditional on her type and expected benefits from reelection. Mayor $m$ has to offer public sector jobs to coopt the opposition while ensuring that the voter is satisfied enough to reelect her. The executive's dilemma is how to reconcile the incentive for reelection and the pressure imposed by the opposition.
+
+The timing of the game is:
+
+1) Nature draws the politician's type.
+2) Politician observes her type and invests in bureaucratic quality $\theta_1$.
+4) Nature realizes public good $\omega_1(\theta_1)$.
+5) Voter observes $\omega_1$ and casts vote to retain or fire the incumbent.
+6) If incumbent is retained, she sets $\theta_2$ and nature draws $\omega_2(\theta_2)$. If incumbent is deposed, a challenger takes office, sets $\theta_2$ and the game ends.
+
+## Bureaucratic quality, veto power, and public goods provision:
+
+I model public goods quality as a random variable $\omega$ with two possible states $\omega \in \{\omega_l, \omega_h\}$, where $\omega_h>\omega_l$. The probability of a high quality public good $\omega_h$ is a function of $\theta$, a parameter denoting the bureaucratic quality, and $s$, the share of seats held by the opposition. Following @centeno_unpacking_2017, to avoid conceptual stretching I separate state capacity from its output. In this theoretical framework, state capacity is measured by analyzing personnel composition.^[See @fukuyama_what_2013, @bersch_state_2017.] Additionally, the opposition can exercise veto power, which increases monotonically with their share of seats in the legislative. Formally:
+
+$$\text{Pr}(\omega=\omega_h) = \frac{1-s\theta}{1+e^{-(10\theta-5)}}$$
+The impact of patronage depends on the share of seats controlled by the opposition. When the opposition have no veto power, i.e. $s=0$, the executive can costlessly improve the quality of the bureaucracy $\theta$, keeping patronage at a minimum and maximizing the probability of high quality public goods. When the opposition controls a larger share of the legislative chamber, it can effectively block the mayor from enacting her policy agenda, unless given a large share of public sector jobs, thus decreasing $\theta$. This is captured by the term $s\theta$ in the expression above.
+
+## The mayor:
+
+The mayor's choice set is the bureaucratic quality parameter $\theta_t$. As $\theta$ increases - the mayor allocates a smaller proportion of jobs for patronage - the legislative opposition decreases their support for the executive and threatens to exercise veto power. This reduces the likelihood of providing the necessary resources to provide public goods. Adapting @gailmard_slackers_2007, there are two types of mayors: competent and average. Competent politicians excel in delivering high quality public goods and are rewarded by voters with reelection. Politicians who fail to excel in such provision are average.
+
+The probability of a politician being competent is common knowledge: $\xi \in [0,1]$. Conversely, the probability of her being average is simply $1 - \xi$. Both types derive utility from public goods provision $\omega$, where for simplicity $u(\omega_l)=0$ and $u(\omega_h) = 1$. We do not model the decision of the competent mayor: she simply delivers high quality goods and is inevitably reelected. We focus on the interesting case of the normal politician.
+
+\begin{align*}
+Eu_m \left(\theta_t, s_1 \middle|\lambda \right) &= \textbf{E}(\omega_1) + \delta \text{Pr}(\text{reelection})\left[\psi + \textbf{E}(\omega_2)  \right] \\
+&= \frac{1-s_1\theta_1}{1+e^{-(10\theta_1-5)}} + \delta \text{Pr}(\text{reelection})\left[\psi + \frac{1-s_2\theta_2}{1+e^{-(10\theta_2-5)}} \right] \\
+\end{align*}
+
+The expression above formalizes the mayor's dilemma. The probability of reelection decreases with the share of jobs allocated to the opposition, since it lowers the quality of the bureaucracy. but if the mayor fails to appease them through patronage, it is increasingly costly to "govern". While technocrats are immune to these political pressures, pragmatists ultimately cave in. The price of compromise in a democratic setting is a reduction in state capacity, as executives are forced to allocate positions within the bureaucracy to garner support in the legislative.^[For a discussion of patronage in Brazilian politics, see @nunes_gramatica_1997. For a historical perspective, @graham_patronage_1994.]
+
+## Solving the dilemma (compromise):
+
+Mayors solve the the game through backward induction. If the mayor is a technocrat, she simply and effectively delivers, and the voter consumes $\omega_h$. The average politician myopically maximizes expected utility in the second period.
+
+\begin{align*}
+\frac{\partial Eu_{m}(\theta_1, \theta_2|\lambda = 1, s_2)}{\partial \theta_2} &= 0 \\
+\frac{\partial}{\partial \theta_2} \frac{1-s_2\theta_2}{1+e^{-(10\theta_2-5)}} &= 0 \\
+\frac{1}{e^{-(10\theta_2^*-5)}}+10\theta_2^* &= \frac{10}{s_2} - 1\\
+\theta_2^* &= \frac{1}{10s_1}\left[10-s_2-\boldsymbol{W}\left(e^{\frac{1}{s_2}-6}\right)\right]
+\end{align*}
+
+The interpretation of this result is straightforward: increases in the legislative share of the opposition reduces incentives to invest in bureaucratic quality.^[Note that for $s=0$, this expression is undefined. Also, $\boldsymbol{W}$ denotes the Lambert W function.] We can visualize how the optimal bureaucratic quality in the second period changes as a function of $s_2$ by plotting changes in the probability of high quality public goods.
+
+```{r visualization}
+fun_1 <- function(x){ (1-x)/(1+exp(-(10*x - 5)))}
+fun_2 <- function(x){ (1-0.5*x)/(1+exp(-(10*x - 5)))}
+fun_3 <- function(x){ (1)/(1+exp(-(10*x - 5)))}
+
+ggplot(data.frame(x = c(0, 1)), aes(x)) +
+  stat_function(
+    fun = fun_1
+  ) +
+  stat_function(
+    fun = fun_2
+  ) +
+  stat_function(
+    fun = fun_3
+  ) +
+  annotate(
+    geom = "text",
+    x = 0.6,
+    y = 0.34,
+    label = "s = 1"
+  ) +
+  annotate(
+    geom = "text",
+    x = 0.75,
+    y = 0.62,
+    label = "s = 0.5"
+  ) +
+  annotate(
+    geom = "text",
+    x = 0.70,
+    y = 0.95,
+    label = "s = 0"
+  ) +
+  xlab("Bureaucratic Quality") +
+  ylab("Probability") +
+  theme_clean +
+  ggtitle(
+    "Impact of opposition legislative share on public goods provision"
+  )
+```
+
+The quality of the bureaucracy $\theta_2$ which maximizes the mayor's expected utility in the second period is strictly decreasing in $s_2$, the share of seats controlled by the opposition. As the power of the opposition increases, its ability to veto and punish the mayor for withholding from patronage increases. The greater the threat of veto power, the more concessions politicians need to make in order to deliver high quality public goods $\omega_h$. Conversely, when the mayor controls the legislative chamber, the benefits of bureaucratic quality are fully internalized and it is in turn maximized. We now turn to the electoral problem faced by the voters.
+
+<!-- ## Opposition's problem: -->
+
+<!-- The opposition decides whether or not to support the mayor's policies, where $a_o=\left\{ 0,1 \right\}$. If the opposition supports the executive, they receive an $\alpha \in [0,1]$ proportion of public sector jobs, a continuum normalized to 1. The concept of a public sector pie stems from interviews with former and current executive secretaries, who describe a "quota" of jobs allocated to the legislative.^[This echoes the concept of islands of excellence described by @geddes_politicians_1994: small pockets of bureaucratic insulation reserved by the executive for core functions such as macroeconomic management. A similar argument is made in @loureiro_burocracia_2010.] If she refuses, the mayor allocates no pork. I apply the Rubinstein bargaining model solution concept (perfect equilibrium) to solve this subgame with minor adaptations.^[@rubinstein_perfect_1982.] -->
+
+<!-- Mayor's and opposition's utilities are identical to the original setup with two players. I conceptualize the bargain over public sectors as a sequence of offers and counter-offers made by the mayor and her legislative opposition. Following @rubinstein_perfect_1982, players differ in $\delta_i$, a parameter capturing their impatience across sequences in the bargaining game. Respectively: -->
+
+<!-- $$u_m = \prod^{T}_{t=1}\delta_m^t\theta_{1|2}$$  -->
+<!-- $$u_o = \prod^{T}_{t=1}\delta_i^t\theta_{1|2}$$ -->
+
+
+<!-- Applying stationarity restrictions and solving for the unique subgame perfect equilibrium, we have: -->
+
+
+## State capacity and democratic accountability:
+
+Let $v$ denote the median voter in the municipal electorate. Voters derive utility from the quality of public goods at time $t$, with a discount factor $\delta$.
+
+$$u_v(\omega_t) = \omega_1 + \delta \omega_2$$
+
+Because voters cannot observe directly the type of the politician nor her hiring decisions, voters update beliefs about the politician's type after observing first period public goods output. If a voter observes a low public goods quality, he knows with certainty that the incumbent is incompetent, and therefore $\Pr(\text{competent}|\omega_{1l}) = 0$. Let $\mu(\omega_1)$ denote voter's belief that the politician is a competent after observing the first period realization of public goods.
+
+$$\mu(\omega_h) = \text{Pr}(\text{competent}| \omega_h) = \frac{\xi}{\xi + \text{Pr}(\omega_1|s)(1-\xi)}>\xi$$ 
+
+Note that for any $\omega_h$, the probability that the incumbent is competent is higher than the probability of a random challenger being so. As a result, whenever the voter observes a high quality output in the first period, the incumbent gets reelected. This simplifies our analysis. After observing the realization of public good quality $\omega_1$, he retains the incumbent if and only if $\omega_1 = \omega_h$, and fires her otherwise. The probability of re-election is simply the probability that public goods provided are of high quality. This is conditional on $\theta_1$, the amount of investment in state capacity in the first period and $s_1$, the opposition share in the first period.^[Note that the quality of the second period bureaucracy is independent of that in the first period. This is a strong restriction that I will relax in future iterations of this project.]
+
+## Initial investments in state capacity:
+
+We turn to the initial decision of the politician. The executive maximizes her expected utility with respect to first term hiring decisions, factoring in the optimal decision and payoff for the second period. To reiterate, the probability of reelection is simply the probability of high quality public goods provision in the first period. Taking the first order condition with respect to $\theta_1$:
+
+\begin{align*}
+\argmax_{\theta_1} \frac{1-s_1\theta_1}{1+e^{-(10\theta_1-5)}}\left[1+\delta\left(\psi + \frac{1-s_2\theta_2^*}{1+e^{-(10\theta_2^*-5)}}\right)\right] &= 0 \\
+\end{align*}
+
+The optimal amount of investment in state capacity in the first term is analogous to the myopic optimization in the second period, weighed by the expected payoff of reelection. The intuition behind this result is straightforward. As politicians value the future term more, they will invest more in state capacity. This is captured by the parameter $\delta$ and $\psi$, the former being the discount factor and the latter, office benefits. However, in a clear illustration of the trade-off implied between investing in state capacity and resorting to patronage to ensure legislative support, the dominant effect is imposed by $s_1$, the share of legislative seats held by the opposition in the first period. I proceed to test this model empirically in the next section, focusing on cabinet positions at the municipal level.
+
+## Cabinet share:
+
+Cabinet members are responsible for administering the local executive branches. This includes key functions such as education, health, transportation, among others. The structure of cabinets vary according to the complexity of municipal administrations, often correlated with the population size of the municipality. These are positions of trust (\textit{cargos de confiança}), and the mayor has full discretion in appointing and firing these cabinet members. Consistent with the theoretical model outlined above, I find that reshuffling in cabinet positions is often done with restraint, with a significant share of cabinet members being transferred from previous administrations.
+
+Extant literature on nomination of local cabinets is limited. Apart from anecdotal evidence on nomination practices, scholars in Brazil have not looked attentively at how municipal cabinet positions are filled.^[Interview with Glauco Peres da Silva, professor at Universidade de São Paulo.] We know little to nothing of what proportion of these bureaucrats are being hired strictly through political nomination, and how the political calculus behind their nomination takes place. In local governments with no obligation to respect civil service laws, one would expect to observe politicians appoint loyalists and eradicate those left over from the previous administration.^[Brollo et al. 2018, Lewis 2008, Lopez et al. 2015.] There are, however, costs to cabinet reshuffling: an inexperienced cabinet member will have a difficult time governing.
+
+Leveraging a unique dataset of local bureaucrats in Brazil, I find that cabinet reshuffling is circumscribed to a fraction of the available positions. Only a small subset of the cabinet is renewed with each mandate. I shed light on temporal dynamics, looking at the proportion of newly hired cabinet positions annually. The proportion of cabinet members who are appointed for their first time is small. There are spikes in cabinet hiring in the first year of mandate, yet this is limited to around a third of available seats. This means that around two thirds of the upper echelon of the local bureaucracies is retained from the previous administration. 
+
+```{r new-hires}
+# share of new hires
+cabinet %>%
+  group_by(
+    year
+  ) %>%
+  summarise_mun(
+    "rais_hired"
+  ) %>% 
+  ggplot(
+    aes(
+      year,
+      prop
+    )
+  ) +
+  geom_point(
+    col = "steelblue3"
+  ) +
+  geom_linerange(
+    aes(
+      ymax = upper,
+      ymin = lower
+    ),
+    col = "steelblue3"
+  ) +
+  scale_x_continuous(
+    breaks = seq(2005, 2013, 4)
+  ) +
+  mandate_year +
+  theme_clean +
+  ggtitle("Proportion of newly-hired cabinet members")
+
+# # share of fires
+# cabinet %>%
+#   group_by(
+#     year
+#   ) %>%
+#   summarise_mun(
+#     "rais_fired"
+#   ) %>% 
+#   ggplot(
+#     aes(
+#       year,
+#       prop
+#     )
+#   ) +
+#   geom_point(
+#     col = "steelblue3"
+#   ) +
+#   geom_linerange(
+#     aes(
+#       ymax = upper,
+#       ymin = lower
+#     ),
+#     col = "steelblue3"
+#   ) +
+#   scale_x_continuous(
+#     breaks = seq(2005, 2013, 4)
+#   ) +
+#   mandate_year +
+#   theme_clean +
+#   ggtitle("Proportion of newly-hired cabinet members")
+```
+
+Certainly, the fact that mayors are reelected affects the amount of cabinet turnover observed. Breaking down our data into first-term and reelected mayors, there are clear differences between the two. Mayors elected for the first time tend to hire far more new cabinet members than those who are reelected. Even then, on average only around 35 percent of cabinet positions are renewed with first-term mayors. I now break down hiring of cabinet members by whether or not there is a party or coalition turnover. Intuitively, if it is the same party that remains in power or if members of the coalition accede to executive power. Let's check if that is the case, first analyzing party switches. I exclude from sample mayors who are reelected, where party continuity is trivial. Individual candidates may not run for office again as a lameduck, but their party can field another candidate.
+
+```{r party turnover}
+# new hires
+cabinet %>%
+  filter(
+    !is.na(party_turnover)
+  ) %>%
+  group_by(
+    year,
+    party_turnover
+  ) %>%
+  summarise_mun(
+    "rais_hired"
+  ) %>%
+  mutate(
+    party_turnover = if_else(
+      party_turnover == 1,
+      "party turnover", "no turnover"
+    )
+  ) %>% 
+  ggplot(
+    aes(
+      year,
+      prop
+    )
+  ) +
+  geom_point(
+    aes(
+      col = as.factor(party_turnover)
+    )
+  ) +
+  geom_linerange(
+    aes(
+      ymax = upper,
+      ymin = lower,
+      col = factor(party_turnover)
+    )
+  ) +
+  scale_color_manual(
+    breaks = c("party turnover", "no turnover"),
+    values = c("steelblue3", "darkorange1")
+  ) +
+  scale_x_continuous(breaks = seq(2005, 2015, 2)) +
+  mandate_year +
+  theme_clean +
+  theme(
+    legend.position = c(0.925, 0.95),
+    legend.title = element_blank()
+  ) +
+  ggtitle("Proportion of new hires: party turnover")
+
+# career bureaucrats
+cabinet %>%
+  mutate(
+    party_turnover = if_else(
+      mayor_party != mayor_party_lag &
+      mayor_reelected != 1,
+      1, 0
+    )
+  ) %>%
+  filter(
+    !is.na(party_turnover)
+  ) %>%
+  group_by(
+    year,
+    party_turnover
+  ) %>%
+  summarise_mun(
+    "rais_permanent"
+  ) %>%
+  mutate(
+    party_turnover = if_else(
+      party_turnover == 1,
+      "party turnover", "no turnover"
+    )
+  ) %>% 
+  ggplot(
+    aes(
+      year,
+      prop
+    )
+  ) +
+  geom_point(
+    aes(
+      col = as.factor(party_turnover)
+    )
+  ) +
+  geom_linerange(
+    aes(
+      ymax = upper,
+      ymin = lower,
+      col = factor(party_turnover)
+    )
+  ) +
+  scale_color_manual(
+    breaks = c("party turnover", "no turnover"),
+    values = c("steelblue3", "darkorange1")
+  ) +
+  scale_x_continuous(breaks = seq(2005, 2015, 2)) +
+  mandate_year +
+  theme_clean +
+  theme(
+    legend.position = c(0.925, 0.95),
+    legend.title = element_blank()
+  ) +
+  ggtitle("Proportion of career bureaucrats: party turnover")
+```
+
+Remarkably, we find that even when the mayor is **not** reelected, if the same party remains in power, there is significantly less rotation at the top level. This is an interesting finding, that sheds doubt on standard accounts of the weakness of Brazilian parties in constraining executive behavior by individual members.^[@klasnja_incumbency_2017.] Additionally, the proportion of career bureaucrats in the case of party continuity increases when the same party remains in power. These factors will be taken into account when we estimate the impact of the share of seats held by the legislative opposition.
+
+<!-- ## Career bureaucrats: -->
+
+<!-- Let's look at the proportion of cabinet members who are permanent employees. These are career servants in the municipal bureaucracy, who have risen up the ranks and are appointed to cabinet positions. Contrary to what I expected, there is a large proportion of such cabinet members. The graph below illustrates the turnover (proportion of new hires) across each subgroup: temporary and career servants. Far more cabinet members are replaced when offered a temporary contract, as would be expected. -->
+
+<!-- ```{r permanent} -->
+<!-- # share of permanent cabinet positions -->
+<!-- cabinet %>% -->
+<!--   group_by( -->
+<!--     year -->
+<!--   ) %>% -->
+<!--   summarise_mun( -->
+<!--     "rais_permanent" -->
+<!--   ) %>% -->
+<!--   rename( -->
+<!--     prop_permanent = prop -->
+<!--   ) %>% -->
+<!--   ggplot( -->
+<!--     aes( -->
+<!--       year, -->
+<!--       prop_permanent -->
+<!--     ) -->
+<!--   ) + -->
+<!--   geom_point( -->
+<!--     col = "steelblue3" -->
+<!--   ) + -->
+<!--   geom_linerange( -->
+<!--     aes( -->
+<!--       ymax = upper, -->
+<!--       ymin = lower -->
+<!--     ), -->
+<!--     col = "steelblue3" -->
+<!--   ) + -->
+<!--   scale_x_continuous( -->
+<!--     breaks = seq(2005, 2015, 2) -->
+<!--   ) + -->
+<!--   mandate_year + -->
+<!--   theme_clean + -->
+<!--   ggtitle("Share of career bureaucrats in cabinet") -->
+<!-- ``` -->
+
+<!-- Growing use of career offers in contracts. Ranging from 44% in 2005 to roughly 46% in 2015. Now, I wonder why is it the case that some of these secretaries actually remain with permanent linkages to the local bureaucracy. Is it the case that mayors with stronger control of the legislative hire more career servants? This may very well be the case of the vertical up and down that the coordinators of the PAIC in Quixelô had mentioned to me. This would be fascinating, because in this case we would actually see an internal appointment of secretaries. -->
+
+## Verifying assumptions: reelection in the face of patronage
+
+A working assumption in the literature on clientelism is that patronage pays off: politicians reap electoral benefits from distributing jobs for their followers.^[@brollo_victor_2017, @calvo_who_2004.] For example, @folke_patronage_2011 find that states where civil service laws were not enacted, the party was more likely to remain in power than their professionalized counterparts. The challenge, empirically, is that previous studies rarely assess whether engaging in patronage actually helps incumbents remain in office. I provide an initial step towards this direction. In Brazilian municipalities, it is fairly common for incumbent mayors to run for office. Does engaging in patronage during the first period helps her be reelected into office? Preliminary evidence seems to suggest no.
+
+```{r reelection}
+mayor_reelection <- mayor %>% 
+  filter(
+    election_year >= 2004 & election_year < 2016
+  ) %>% 
+  left_join(
+    rais_mun %>% 
+      filter(
+        year %in% seq(2005, 2013, 4),
+        rais_category == "cabinet"
+      ) %>% 
+      transmute(
+        cod_ibge_6,
+        election_year = election_year + 4,
+        rais_hired,
+        rais_higher_edu,
+        rais_permanent,
+        rais_fired
+      ),
+    by = c("cod_ibge_6", "election_year")
+  ) %>% 
+  left_join(
+    censo,
+    by = c("cod_ibge_6")
+  )
+
+# filter incumbents
+mayor_reelection <- mayor_reelection %>% 
+  filter(
+    incumbent == 1
+  )
+
+# probability of winning
+mayor_reelection %>% 
+  group_by(
+    rais_hired
+  ) %>% 
+  summarise(
+    elected_prob = mean(elected)
+  ) %>% 
+  ggplot() +
+  geom_smooth(
+    aes(rais_hired, elected_prob),
+    method = "lm"
+  ) +
+  theme_clean +
+  xlab(
+    "Proportion of new hires"
+  ) +
+  ylab(
+    "Probability"
+  ) +
+  ggtitle(
+    "Probability of reelection vs. proportion of new hires"
+  )
+
+# logistic
+fit_reelection <- list()
+
+fit_reelection <- fit_logit(
+  repo = fit_reelection,
+  "elected",
+  predictor = c("rais_hired"),
+  control = c("rais_permanent", "rais_fired", "gender", "as.factor(party)", "edu", "censo_median_wage", "censo_log_pop"),
+  data = mayor_reelection
+)
+
+fit_reelection$logit_full %>% 
+  tidycoef + 
+  scale_y_discrete(
+    labels = rev(
+      c(
+        "Mayor education",
+        "Career servants",
+        "Municipal median wage",
+        "New hires",
+        "Population size (logged)",
+        "Firing",
+        "Gender"
+      )
+    )
+  ) +
+  ggtitle("Logit: Probability of reelection vs patronage")
+```
+
+The evidence for electoral benefits from engaging in patronage is not clear. In fact, it seems that gender - unsurprisingly - and the education level of the mayor are better predictors of whether or not an incumbent is reelected than indicators for potential patronage: the proportion of newly hired bureaucrats, dismissal rates and career servants in the bureaucracy. These seem to be counterproductive for reelection prospects: an increase in firing and hiring tend to be negatively correlated with reelection, while increases in career servants help While I leave the analysis limited at this point, there is far more to explore with regard to the decision-making process of the electorate in whether or not to retain an incumbent.
+
+## Empirical testing:
+
+The main implication of my theoretical model is that the share of seats held by the legislative opposition will have a negative effect on state capacity. In terms of observable implications, we should see that in municipalities where the mayor faces a strong legislative opposition, she will resort to greater patronage, with more hiring into and less permanent bureaucrats in cabinet positions. Descriptively, we find a 
+
+```{r visual}
+cabinet %>%
+  mutate(
+    coalition_margin = -coalition_margin + 50
+  ) %>% 
+  group_by(
+    coalition_margin
+  ) %>%
+  mutate(
+    prop_hired = mean(rais_hired, na.rm = T)
+  ) %>%
+  ggplot(
+    aes(
+      coalition_margin,
+      prop_hired
+    )
+  ) +
+  geom_count(
+    alpha = 0.4,
+    col = "darkorange1"
+  ) +
+  geom_vline(
+    xintercept = 50,
+    linetype = "dashed"
+  ) +
+  geom_smooth(
+    aes(
+      x = coalition_margin,
+      y = rais_edu
+    ),
+    method = "lm",
+    formula = y ~ splines::bs(x, 3),
+    col = "steelblue3",
+    data = . %>% filter(coalition_margin < 95)
+  ) +
+  coord_cartesian(
+    ylim = c(0, 0.35),
+    xlim = c(1, 94)
+  ) +
+  xlab("Opposition share") +
+  ylab("Proportion of new hires") +
+  theme_clean
+```
+
+I first naively estimate the relationship between share of opposition legislative seats and the use of patronage, leveraging micro-level hiring data. I regress the occurrence of cabinet new hire (for an individual $Y_i = \text{hired}$ or a municipal proportion $\bar{y}$) on the share of legislative seats held by the mayoral opposition There are two specifications: a naive baseline with only one predictor and a fully specified model with additional controls. Both are clustered at the year and municipal level. The results below are from a logistic regression. This is a simple exercise, but since the level of observation is the individual hiring and there is a clearly hierarchical structure, multi-level modelling seems to be the natural next step to take. I do so below when running the robustness checks.
+
+```{r hiring micro}
+fit_hired <- list()
+
+# fit_hired <- glmer(
+#   rais_hired ~ (1|year/cod_ibge_6) + coalition_share + 
+#     mayor_party + mayor_coalition_size + mayor_reelected +
+#     censo_log_pop + censo_median_wage,
+#   data = cabinet_fit,
+#   family = binomial
+# )s
+
+# logit model
+fit_hired <- fit_logit(
+  fit_hired,
+  "rais_hired",
+  data = cabinet_fit
+)
+
+# print plot
+fit_hired$logit_full %>%
+  tidycoef + scale_y_discrete(labels = c("Median Wage", "Mayor reelected", "Size of mayor coalition", "Population size", "Opposition share", "Campaign expenditures")) + ggtitle("Logit: New cabinet hire on\n opposition share of seats")
+```
+
+These results point to the importance of executive-legislative relations in the appointment of executive positions. Clearly, campaign contributions also matter and may indicate the occurrence of prebendism in Brazil.^[I explore these patterns in another paper.] Complementing longstanding debates on the relevance of poverty to shape politicians' distribution of patronage, these models point out that local executives behave in accordance with control of the chamber. The coefficient for the share of oppositions seats in the legislative chamber is positive and significant: the more seats the executive controls, the greater the likelihood of a new hire into the cabinet.
+
+These new hires actually can be interpreted as a form of executive "cooptation", but as it stands it is only a suggestive result. Interviews with current and former secretaries confirm that the forging of alliances at the chamber level is conditional on the concession of cabinet positions or, more often, at the directorate level. I now proceed to test a fixed effects model, with the municipality as the unit of analysis.
+
+```{r hiring municipal}
+fit_hired_mun <- list()
+
+# naive ols
+# lm(
+#   rais_hired ~ coalition_share + mayor_reelected + rais_higher_edu_lag +
+#     censo_median_wage + censo_log_pop + censo_edu_yrs +
+#     rais_mun_size + mayor_campaign + effective_parties +
+#     as.factor(year) + as.factor(mayor_party) + as.factor(state),
+#   data = cabinet_mun_fit
+# ) %>% 
+#   tidycoef()
+
+# # hierarchical
+# lmer(
+#   rais_hired ~ coalition_share + mayor_reelected + rais_cabinet_higher_edu_lag +
+#     censo_median_wage + censo_log_pop + censo_edu_yrs + effective_parties +
+#     rais_mun_size + mayor_campaign +
+#     (1|year/state) + as.factor(mayor_party),
+#   data = cabinet_fit
+#   ) %>% 
+#   tidycoef
+# 
+# felm(
+#   rais_hired ~ coalition_share + mayor_reelected + rais_higher_edu_lag +
+#     mayor_age + mayor_coalition_size + mayor_campaign +
+#     rais_mun_wage + rais_mun_size + effective_parties|
+#     year + mayor_party + state| 0 | cod_ibge_6,
+#   data = cabinet_mun_fit,
+#   exactDOF = T
+#   ) %>% 
+#   tidycoef
+
+# clustered ols
+fit_hired_mun <- fit_felm(
+  fit_hired_mun,
+  "rais_hired",
+  predictor = c("coalition_share + mayor_reelected + rais_higher_edu_lag"),
+  data = cabinet_mun_fit
+)
+
+# print plot
+fit_hired_mun$ols_full %>%
+  tidycoef +
+  scale_y_discrete(
+    labels = rev(
+      c(
+        "Campaign expenditures",
+        "Opposition share",
+        "Size of mayor coalition",
+        "Size of bureaucracy", 
+        "Mayor age", 
+        "Effective parties", 
+        "Previous cabinet edu", 
+        "Median wage (bureaucracy)", 
+        "Reelected"
+      )
+    )
+  ) +
+  ggtitle(
+    "FE: Proportion of new cabinet hire on\n opposition share of seats"
+  )
+```
+
+The results are robust to the above specifications. Error terms are clustered by year and municipality, with municipality and year fixed effects. Having tentatively documented the importance of legislative opposition in the hiring of cabinet members, I now analyze how much firing occurs in the first year of the new mandate.
+
+```{r firing}
+# micro-level
+fit_fired <- list()
+
+# logistic
+fit_fired <- fit_logit(
+  fit_fired,
+  "rais_fired",
+  data = cabinet_fit
+)
+
+# print plot
+fit_fired$logit_full %>%
+  tidycoef +
+  scale_y_discrete(
+    labels = c("Campaign expenditures", "Mayor reelected", "Size of mayor coalition", "Population size", "Median Wage", "Opposition share")
+    ) + 
+  ggtitle("Logit: Fired cabinet members on\n opposition share of seats")
+
+# mun-level
+fit_fired_mun <- list()
+
+fit_fired_mun <- fit_felm(
+  fit_fired_mun,
+  "rais_fired",
+  predictor = c("coalition_share + mayor_reelected + rais_higher_edu_lag"),
+  data = cabinet_mun_fit %>%
+    mutate(
+      rais_fired*100
+    )
+)
+
+# print plot
+fit_fired_mun$ols_full %>%
+  tidycoef +
+  scale_y_discrete(
+    labels = rev(
+      c(
+        "Opposition share",
+        "Effective parties",
+        "Previous cabinet edu",
+        "Reelected",
+        "Size of mayor coalition",
+        "Mayor age", 
+        "Size of bureaucracy", 
+        "Median wage (bureaucracy)", 
+        "Campaign expenditures"
+      )
+    )
+  ) +
+  ggtitle("FE: Proportion of cabinet fired on\n opposition share of seats")
+```
+
+There is supporting evidence that firing rates change as a result of the presence of strong legislative opposition in the chamber. Including the full set of control variables indicates that firing rates increases significantly as the opposition takes control of the legislative chamber. Finally, let's look at career servant hires. Does executive-legislative bargaining affect this as well?
+
+```{r career}
+# career servants
+fit_permanent <- list()
+
+fit_permanent <- fit_logit(
+  fit_permanent,
+  "rais_permanent",
+  data = cabinet_fit
+)
+
+# # print plot
+fit_permanent$logit_full %>%
+  tidycoef +
+  scale_y_discrete(labels = c("Population size", "Mayor reelected", "Size of mayor coalition", "Median Wage", "Opposition share", "Campaign expenditures")) + 
+  ggtitle("Logit: Career servants in cabinet on\n opposition share of seats")
+
+
+# mun-level
+fit_permanent_mun <- list()
+
+fit_permanent_mun <- fit_felm(
+  fit_fired_mun,
+  "rais_permanent",
+  predictor = c("coalition_share + mayor_reelected + rais_higher_edu_lag"),
+  data = cabinet_mun_fit %>%
+    mutate(
+      rais_fired*100
+    )
+)
+
+# print plot
+fit_permanent_mun$ols_full %>%
+  tidycoef +
+  scale_y_discrete(
+    labels = rev(
+      c(
+        "Campaign expenditures",
+        "Effective parties",
+        "Reelected",
+        "Mayor age",
+        "Size of bureaucracy",
+        "Size of mayor coalition",
+        "Previous cabinet edu",
+        "Opposition share",
+        "Median wage (bureaucracy)"
+      )
+    )
+  ) +
+  ggtitle(
+    "FE: Proportion of cabinet from career service on\n opposition share of seats"
+  )
+```
+
+There is evidence that control of the chamber translates to a greater share of career servants being appointed to cabinet positions. When run at the micro-level, there is evidence that the control of the chamber translates into a larger probability of cabinet members being career servants. When aggregated at the municipal level, these results remain. In sum, these estimations suggest that the lack of control over the legislative chamber can have an important role in shaping executive's decision to invest in state capacity. When facing a stronger opposition, mayors tend to hire and fire more, as well as contracting less career servants into the cabinet.
+
+## Robustness checks:
+
+I would like to test some additional model specifications. In particular, it is clear that there is a hierarchical structure that is not fully taken into account. I run a multi-level model to see if the results still hold in this particular specification. We see a similar effect for the hierarchical model specification. This adds confidence to the robustness of our results. Of course, there is far more to be done. In particular, the problem of endogeneity is never fully addressed. I am now working on identifying an exogenous shock to coalition structures to causally estimate the effect of changes in coalition share on patronage.
+
+```{r}
+# fit multilevel
+multilevel_fit <- list()
+
+# multilevel basic
+multilevel_fit[["coalition_basic"]] <- cabinet_fit %>%
+  mutate(
+    rais_hired*100
+  ) %>% 
+  lmer(
+    rais_hired ~ (1|year/state) + coalition_share,
+    data = .
+  )
+
+# multilevel full
+multilevel_fit[["coalition_full"]] <- cabinet_fit  %>%
+  mutate(
+    rais_hired*100
+  ) %>% 
+  lmer(
+    rais_hired ~ (1|year/state) + coalition_share + censo_log_pop + censo_median_wage + mayor_campaign + mayor_coalition_size,
+    data = .
+  )
+
+# # print summary
+# multilevel_fit %>%
+#   map(
+#     summary
+#   )
+
+# print plots
+multilevel_fit$coalition_full %>% 
+  tidycoef +
+  scale_y_discrete(
+    labels = c(
+      "Median wage",
+      "Size of mayor coalition",
+      "Population size",
+      "Campaign expenditures",
+      "Opposition share"
+    )
+  ) +
+  ggtitle("Hierarchical model: New hires on opposition share")
+```
+
+## Conclusion:
+
+This paper outlines my preliminary findings with regards to coalitional dynamics in determining cabinet positions. I have constructed a game theoretical model that outlines the mechanism behind the decision-making process of the executive. Departing from previous literature on state capacity, I explicitly model the decision-making process of the executive to invest in state capacity. The intuition behind the model is that the executive (mayor) and the opposition face different incentives. The mayor gets reelected through good performance (in a probabilistic sense), while for the opposition legislator the primary goal is to receive patronage jobs from the executive.
+
+The goal of this document is to both critique and build on existing literature on public sector employment in the developing world. The problem with extant debates on patronage is that they overemphasize the link between politician and voters, while the most important link seems to be that between politicians themselves. The lack of an explicit treatment of the institutional and political context of local governments limits our understanding of the strategic incentives faced by executive leaders when deciding whether or not to improve the quality of the administrative apparatus. Furthermore, patronage is costly, and my preliminary evidence suggests it is not clear that it unambiguously helps incumbents get reelected.
+
+Part of the contribution in this analysis is arguing that it is not simply because in the developing world civil service laws are absent that executive leaders will dismantle bureaucracies completely. They will do so strategically, and the extent to which they do so depends to a large degree on the amount of control they exert over the legislative chamber and how strongly the opposition can exercise its veto power. If executive leaders lack the power to impose their preferences over the legislative, and in particular when faced with a strong opposition, they will be forced to concede more jobs in order to be able to implement their policy agenda in the first place.
+
+It is paramount to move away from studies of bureaucracies that consider any form of interference by political leaders as detrimental to state capacity. Rather, it is necessary to understand the political game in which these actors are embedded and how reelection prospects, governance and the need for legislative cooptation shapes politicians' incentives to engage in patronage or improve the quality of local bureaucracies. This has deep implications on the quality of the public services provided to a population so desperately in need of high quality public goods.
+
+\pagebreak
+
+## References:

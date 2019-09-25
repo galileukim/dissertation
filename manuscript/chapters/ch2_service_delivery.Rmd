@@ -1,0 +1,863 @@
+---
+output: pdf_document
+---
+```{r include = F}
+source(
+  here::here("scripts/thesis_setup.R")
+)
+
+# set-up
+pacman::p_load(
+  "rgdal",
+  "RColorBrewer",
+  "viridis",
+  "scales",
+  "rmapshaper",
+  "naniar"
+)
+
+school <- fread(
+  here("data/censo_escolar/censo_school_mun.csv")
+) %>% 
+  add_election
+
+class <- fread(
+  here("data/censo_escolar/censo_class.csv.gz")
+) %>% 
+  group_by(
+    year,
+    dep,
+    grade_level
+  ) %>%
+  summarise(
+    num_enroll = sum(num_enroll)
+  ) %>% 
+  mutate(
+    freq = num_enroll/sum(num_enroll)
+  )
+
+# student test scores
+saeb_dep <- fread(
+  here("data/saeb/saeb_exam_dep.csv")
+)
+
+saeb_mun <- fread(
+  here("data/saeb/saeb_exam_mun.csv")
+)
+
+# rais
+rais_mun <- fread(
+  here("data/rais/rais_mun.csv.gz")
+)
+
+rais_edu <- fread(
+  here("data/rais/rais_edu_sample.csv.gz")
+)
+
+source(
+  here("scripts/thesis_map.R")
+)
+```
+
+## Introduction
+
+Decentralizing reforms in Brazil have taken place since the democratic transition in 1988. One of the cornerstones of decentralization was delegating responsibility for public service provision to municipal governments. Today, public educationo of infants from 6 to 14 years of age in Brazil falls primarily under municipal jurisdiction.^[@falleti_decentralization_2010, @eaton_politics_2004.] This transfer of responsibility was accompanied by the rapid expansion of a street-level bureaucracy and mid-level management, geared towards providing educational services to students.^[@lipsky_street-level_1983.] Understanding the characteristics of this bureaucratic network is the main objective of this chapter.
+
+Who are these bureaucrats responsible for delivering public education in municipalities across Brazil? What role do they play in the administration of these services? What are their characteristics, from both a professional standpoint and in terms of quality of services delivered? Leveraging micro-level data and reports generated internally by the Brazilian government, I provide descriptive statistics of over 1 million municipal teachers and school principals spread across the country. I document changes over time, focusing on a set of covariates: work experience, education level, pupil teacher-ratio, among other key indicators of the structure of this educational bureaucracy.
+
+Any story of bureaucracy is incomplete without the politics. As noted by @eaton_teachers_2014, educational staff is not impervious to political processes. While not the primary focus of this chapter, I highlight supportive evidence that the management of educational services intersects with electoral cycles. Interviews collected during fieldwork in the state of Ceará in the summers of 2018 and 2019 lend support to the hypothesis that schools and educational staff are subject to intense turnovoer as a result of political administration. I test this more rigorously in the following chapter: turnover.
+
+## Who depends on public education?
+
+One of the most concerning features of public education in Brazill is that primary education is almost exclusively dependant on municipal governments. Crucial, formative steps in the cognitive development of infants depend on the quality of formal instructioon offered in schools, such as verbal and mathematical literacy. Where that pipeline is broken, school evasion and drop-out are unfortunately common, with often irreversible damage to the educational formation of these children.
+
+As noted before, decentralization has transferred responsibility for the education of students 
+
+```{r}
+class %>% 
+  mutate(
+    stage = case_when(
+      between(grade_level, 1, 4) ~ "lower school",
+      between(grade_level, 5, 9) ~ "middle school",
+      T ~ NA_character_
+    )
+  ) %>% 
+  filter(
+    !is.na(stage), 
+    dep != "federal"
+  ) %>% 
+  group_by(
+    stage,
+    year,
+    dep
+  ) %>% 
+  summarise(
+    n = sum(num_enroll)
+  ) %>% 
+  mutate(
+    freq = n/sum(n)
+  ) %>% 
+  ggplot(
+    aes(
+      year,
+      freq,
+      col = dep
+    )
+  ) +
+  geom_line() +
+  geom_point(
+    size = 2
+  ) +
+  facet_wrap(
+    . ~ stage,
+    nrow = 1
+  ) +
+  ggtitle(
+    "Relative frequency of student enrollment by administration"
+  )
+```
+
+```{r}
+saeb_dep %>%
+  filter(
+    dep != "",
+    dep != "particular",
+    year >= 2003
+  ) %>% 
+  mutate(
+    year = as.factor(year)
+  ) %>% 
+  ggplot(
+    aes(
+      year, mean_grade_exam, 
+      group = dep, col = dep
+    )
+  ) + 
+  geom_line() +
+  geom_point() +
+  ggtitle(
+    "Prova Brasil Mean Scores by Admistration"
+  ) +
+  labs(
+    caption = "Average test scores, by administrative level. Includes math and Portuguese test scores."
+  ) + 
+  facet_wrap(
+    grade ~ subject
+  )
+```
+
+```{r, cache = T}
+map_score <- map_br %>% 
+  mutate(
+    cod_ibge_6 = as.integer(cod_ibge_6)
+  ) %>% 
+  left_join(
+    saeb_mun %>% 
+      filter(
+        year == 2015
+      ),
+    by = c("cod_ibge_6")
+  )
+
+plot_map(
+  map_score %>% 
+    nest(-cod_ibge_6) %>% 
+    sample_n(100) %>% 
+    unnest(),
+  fill = "mean_grade_exam_wgt",
+  limits = c(100, 250)
+)
+```
+
+```{r cache = T}
+breaks <- c(
+  min(saeb_mun$mean_grade_exam_wgt, na.rm = T),
+  seq(-30, 30, length.out = 6),
+  max(saeb_mun$mean_grade_exam_wgt, na.rm = T)
+)
+
+saeb_mun <- saeb_mun %>% 
+  mutate(
+    score_breaks = cut(
+      mean_grade_exam_wgt,
+      breaks = breaks,
+      include.lowest = T,
+      labels = breaks[-(length(breaks) - 1)]
+    )
+  )
+
+breaks_scale <- levels(saeb_mun$score_breaks) %>% 
+  as.integer
+
+map_score <- map_br %>% 
+  mutate(
+    cod_ibge_6 = cod_ibge_6 %>% 
+      as.character %>% 
+      as.integer
+  ) %>% 
+  left_join(
+    saeb_mun %>% 
+      filter(
+        year == 2007,
+        subject == "l"
+      ),
+    by = c("cod_ibge_6")
+  )
+
+plot_map(
+  map_score,
+  breaks = 7,
+  fill = "mean_grade_exam_wgt",
+  caption = "Source: IBGE, INEP.\nMean test scores weighted by the number of students taking exam."
+) +
+  ggtitle(
+    "SAEB municipal scores: 2007"
+  )
+```
+
+```{r}
+finbra %>% 
+  gather(
+    -cod_ibge_6, -year,
+    key = category,
+    value = value
+  ) %>% 
+  group_by(
+    year,
+    category
+  ) %>% 
+  summarise(
+    value = sum(value)/1e9
+  ) %>% 
+  filter(
+    category != "budget_total"
+  ) %>% 
+  mutate(
+    category = str_remove(category, "budget_")
+  ) %>% 
+  ggplot(
+    aes(
+      year,
+      value,
+      fill = category
+    )
+  ) +
+  geom_area()
+```
+
+```{r}
+rais_mun %>% 
+  filter(
+    str_detect(cbo_category, "education"),
+    year >= 1996
+  ) %>% 
+  group_by(
+    year,
+    cbo_category
+  ) %>% 
+  summarise(
+    hired = sum(mean_hired*total)/sum(total),
+    fired = sum(mean_fired*total)/sum(total)
+  ) %>%
+  gather(
+    "type",
+    "percent",
+    -year,
+    -cbo_category
+  ) %>% 
+  ungroup() %>% 
+  ggplot() + 
+  geom_point(
+    aes(
+      year,
+      percent,
+      col = type,
+      group = type
+    )
+  ) +
+  mandate_year(
+    seq(1997, 2013, 4)
+  ) +
+  ggtitle(
+    "Teacher turnover cycles"
+  )
+```
+
+```{r}
+# extract top 5 categories
+rais_mun %>% 
+  filter(
+    cbo_category != "",
+    !is.na(cbo_category),
+    cbo_category %in% c("administration", "education", "healthcare"),
+    year >= 1996
+  ) %>% 
+  group_by(
+    year,
+    cbo_category
+  ) %>% 
+  summarise(
+    hired = sum(mean_hired*total)/sum(total),
+    fired = sum(mean_fired*total)/sum(total)
+  ) %>%
+  gather(
+    "type",
+    "percent",
+    -year,
+    -cbo_category
+  ) %>% 
+  ungroup() %>% 
+  ggplot() + 
+  geom_point(
+    aes(
+      year,
+      percent,
+      col = cbo_category,
+      group = cbo_category
+    )
+  ) +
+  mandate_year() +
+  facet_wrap(
+    type ~ .
+  )
+  ggtitle(
+    "Bureaucratic turnover cycles"
+  )
+```
+
+```{r}
+saeb_mun %>% 
+  filter(
+    dep != "particular",
+    dep != ""
+  ) %>% 
+  group_by(
+    year,
+    grade,
+    dep
+  ) %>% 
+  summarise(
+    mean_grade_exam = weighted.mean(
+      mean_grade_exam,
+      attendees,
+      na.rm = T
+    )
+  ) %>% 
+  ggplot(
+    aes(
+      year,
+      mean_grade_exam,
+      group = dep,
+      col = dep
+    )
+  ) +
+  geom_line() +
+  geom_point(
+    size = 3
+  ) +
+  facet_wrap(
+    grade ~ .
+  ) +
+  mandate_year(
+    years = seq(2009, 2013, 4)
+  )
+```
+
+
+The empirical analysis of bureaucrats responsible public service delivery is a novel contribution to extant literature on social policy in Latin America. Previous studies have conceptualized social policy primarily from the standpoint of both legislation and clientelistic redistribution.^[@kaufman_globalization_2001, @diaz-cayeros_political_2017.] In order to understand access to public services, scholars have analyzed the implementation of progressive social policies to the rise of leftist parties or coalitions in the turn of the 21st century.^[@haggard_development_2008.] Others have criticized this focus on formal institutions, arguing that informal practices such as clientelism undermine the actual implementation of social policy, leading to perverse accountability in some cases.^[@ross_democracy_2006, @stokes_perverse_2005.]
+
+Beyond the formal and informal analysis of social policies, there is the problem of bureaucratic implementation and that is the focus of this chapter.^[@pepinsky_bureaucracy_1997.] For each social policy, the final point of contact connecting the state to citizen is the bureaucrat delivering the relevant service.^[@lipsky_street-level_1985.] To focus my analysis, I build on extant literature on bureacracies in Latin America and Brazil in particular.^[@grindle_jobs_2012, @geddes_politicians_1994.]
+
+Studies on bureaucracies in Latin American countries have primarily narrowed in on technocratic upper echelons, the commanding heights of the state such as federal-level bureaucrats responsible for determining macroeconomic policy or technological innovation.^[@bersch_state_2017, @kohli_state-directed_2004, @evans_embedded_1995.] Limited focus has been placed on the bureaucratic staff at the municipal level, and even less so at teachers or doctors responsible for delivering these services on the ground.^[@gatti_professores_2009.]
+
+Making precise the object of inquiry requires delving deeper into the structure of educational services in Brazil. This chapter provides an outline of the governmental structure of responsibility for education, as well as the degree of interaction between different levels of government. Moreover, I trace the educational system at the municipal level and myriad evolution paths across time from the standpoint of the personnel. I highlight the historical trends in the quality of educational staff, while also pinpointing the wide heterogeneities which persist. In doing so, I draw inspiration from @arretche_trajetorias_2015, which documents the recent changes in social policy, citing significant improvements in educational outcomes. My focus is on the historical evolution of the municipal education system, from primarily a spatial and temporal perspective. 
+
+The chapter is divided into four sections. The first traces an institutional and organizational history of educational services in Brazil from the municipal level, focusing particularly on the consequences of decentralization on the growth of the educational bureaucracy. The second section focuses on personnel, describing the evolution of educational staff, shedding light on the professional characteristics of teachers and school principals from a nation-wide, municipal perspective. This contrasts with more anecdotal analyses of local educational systems, such as @abrucio_gestao_2010.^[For an exception, see @gatti_professores_2009.]
+
+The third section lays out the framework for linking educational staff to the electoral cycle. I describe how cycles of brueaucratic turnover align with the electoral calendar, raising concerns as to the degree of alignment between political interests over patronage and personnel management. Estimates of the relationship between  is to be found in the executive decisions made by mayors who are elected into office since they have sole jurisdiction over educational policy. This research agenda will be the subject of the next iteration in this research project.
+
+## A changing educational landscape
+
+In Brazil, the responsibility for primary education, in the formative years from 6 to 14, were historically the responsibility of states, not municipalities. Due to demographic changes, this student body has been declining across most of the regions in Brazil, with the exception of the Northeast. Accompanying these changes is the relocation of the majority of these students under the purveyal of municipal governments, responsible for administering educational services to this growing 
+
+In this analysis, I focus on the teachers responsible for primary education, the equivalent to kindergarten through eight grade in the United States. These are formative years, where students from 6 to 14 years old learn crucial skills such as counting, reading and writing. Since democratization in 1988, the new constitution enshrined primary education as the responsibility of municipal governments. Since then, Brazil's education system has rapidly expanded, with a massive growth in the number of municipal teachers. The dashed lines denote municipal election years.
+
+There has been widespread debate on the potential for patronage by local politicians.^[See @akhtari_political_2015, @brollo_victor_2017, and @robinson_political_2013.] It is important, however, not to assume that patronage is the only mode of hiring at the local level.^[@grindle_jobs_2012, @geddes_politicians_1994, @calvo_who_2004.] To assess whether or not these new teachers are being hired meritocratically or through patronage, we must know who they are. A major contribution of our empirical analysis is leveraging the fine-grained data of the RAIS (Annual Report of Social Information), a micro-level data set collected annually by the Ministry of Labor. We go beyond raw numbers to illuminating teachers' characteristics.^[@gatti_professores_2009.]
+
+\subsection{Who becomes a teacher?}
+
+This section sheds light on who decides to become a teacher in municipalities across Brazil. Teachers tend to be relatively older professionals, with a historically weak educational background. This trend, however, has been shifting over time. While in 1985, only 15 percent had a higher education degree, in 2015 over 60 percent had at least completed university. Figure 2 illustrates this shift across different sectors.
+
+
+```{r}
+rais_edu %>% 
+  filter(
+    year >= 1995
+  ) %>% 
+  group_by(
+    year
+  ) %>% 
+  summarise(
+    higher_edu = mean(
+      rais_edu >= 9,
+      na.rm = T
+    )
+  ) %>% 
+  ggplot(
+    aes(
+      year,
+      higher_edu
+    )
+  ) + 
+  geom_line() +
+  geom_point() +
+  labs(
+    caption = "Source: RAIS, Ministry of Labor"
+  ) +
+  ggtitle(
+    "Percentage of municipal teachers with higher education (1995 - 2015)"
+  )
+```
+
+In fact, it is important to note that despite pessimistic evaluations of the quality of education in Brazil, there has been significant improvements occurring throughout the years. While the public sector lags behind the private in terms of educational background of its teaching personnel, there has been significant improvements over time. More than half of its staff hold higher education degrees.
+
+These improvements have been accompanied by better compensation for public teachers. While in the early 1990's, private teachers received higher wages than their public counterparts, this changed by the 2000's. Currently, the median wage for a public sector teacher stands at around 970 reais (270 US dollars), far more than the median private teacher wage, 575 reais (160 US dollars).
+
+```{r}
+rais_edu %>% 
+  filter(
+    year >= 1995
+  ) %>% 
+  group_by(
+    year
+  ) %>% 
+  summarise(
+    wage = median(
+      rais_wage,
+      na.rm = T
+    )
+  ) %>% 
+  ggplot(
+    aes(
+      year,
+      wage
+    )
+  ) + 
+  geom_line() +
+  geom_point() +
+  labs(
+    caption = "Source: RAIS, Ministry of Labor"
+  ) +
+  ggtitle(
+    "Median teacher wages (1995 - 2015)"
+  )
+```
+
+\begin{figure}
+    \centering
+    \textbf{\small Figure 3: Teacher Wages (1995-2015)}\par\medskip
+    \includegraphics[width=9cm, height=9cm, keepaspectratio]{./graphs/teacher_wages.pdf}
+    \caption*{\footnotesize \hfill Source: RAIS, Ministry of Labor}
+\end{figure}
+
+There has been a steady improvement in the overall professional experience of teachers. The median professional experience of the private sector has remained stable at around 2.5 years, while for the public sector it has increased to over 7 years in 2015. This confirms popular opinion of public sector teaching jobs as inherently more stable than their private counterparts.
+
+```{r}
+rais_edu %>% 
+  filter(
+    year >= 1995
+  ) %>% 
+  group_by(
+    year
+  ) %>% 
+  summarise(
+    wage = median(
+      rais_wage,
+      na.rm = T
+    )
+  ) %>% 
+  ggplot(
+    aes(
+      year,
+      wage
+    )
+  ) + 
+  geom_line() +
+  geom_point() +
+  labs(
+    caption = "Source: RAIS, Ministry of Labor"
+  ) +
+  ggtitle(
+    "Median teacher wages (1995 - 2015)"
+  )
+```
+
+```{r}
+rais_edu %>% 
+  filter(
+    year >= 1995,
+    !is.na(rais_permanent)
+  ) %>% 
+  mutate(
+    rais_permanent = if_else(
+      rais_permanent == 1,
+      "tenured", "untenured"
+    )
+  ) %>% 
+  group_by(
+    year,
+    rais_permanent
+  ) %>% 
+  summarise(
+    tenure = median(
+      rais_time,
+      na.rm = T
+    )
+  ) %>% 
+  ggplot(
+    aes(
+      year,
+      tenure
+    )
+  ) + 
+  geom_line() +
+  geom_point() +
+  labs(
+    caption = "Source: RAIS, Ministry of Labor"
+  ) +
+  facet_wrap(
+    . ~ rais_permanent 
+  ) +
+  ggtitle(
+    "Median work tenure (1995 - 2015)"
+  )
+```
+
+\begin{figure}
+    \centering
+    \textbf{\small Figure 4: Teacher's work tenure (1985-2015)}\par\medskip
+    \includegraphics[width=9cm, height=9cm, keepaspectratio]{./graphs/teacher_time.pdf}
+    \caption*{\footnotesize \hfill Source: RAIS, Ministry of Labor}
+\end{figure}
+
+Finally, the proportion of teachers who are offered a permanent contract has decreased dramatically since 2002. There is also an increase in the turnover rate, a natural development given the lower job security offered by temporary contracts. Figures 5 and 6 illustrate these changes. This development raises concerns over the level of expertise which these teachers can develop given such high attrition through different administrations.^[See @gailmard_slackers_2007, @akhtari_political_2015.] Furthermore, social ties with the community are important, a process which naturally takes time and may be more difficult to accomplish when contracts are temporary.
+
+```{r}
+rais_edu %>%
+  filter(
+    year >= 1995
+  ) %>% 
+  group_by(
+    year
+  ) %>% 
+  summarise(
+    hired = mean(rais_hired == 1, na.rm = T),
+    fired = mean(rais_fired == 1, na.rm = T)
+  ) %>% 
+  ungroup() %>% 
+  gather(
+    "key",
+    "value",
+    -year
+  ) %>%
+  ggplot(
+    aes(
+      year,
+      value,
+      color = key
+    )
+  ) +
+  geom_line() +
+  geom_point() +
+  mandate_year()
+```
+
+\begin{figure}
+    \centering
+    \textbf{\small Figure 5: Turnover Rate of Teachers (1995-2015)}\par\medskip
+    \includegraphics[width=9cm, height=9cm, keepaspectratio]{./graphs/fired_hired_teacher.pdf}
+    \caption*{\footnotesize \hfill Source: RAIS, Ministry of Labor}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \textbf{\small Figure 6: Share of Contracts by Type (1995-2015)}\par\medskip
+    \includegraphics[width=9cm, height=9cm, keepaspectratio]{./graphs/perm_temp.pdf}
+    \caption*{\footnotesize \hfill Source: RAIS, Ministry of Labor}
+\end{figure}
+
+There is extensive argument and criticism of the Brazilian bureaucracy as overstaffed, overpaid and incompetent.^[See @cardoso_jr_burocracia_2011.] Bureaucrats are either hired through clientelistic practices or, once hired, choose not to exert any effort.^[@calvo_who_2004. For a discussion of bureaucrat effort and principal-agent models, see @gailmard_formal_2012.] We often assume that public sector hiring is evidence of patronage, without inquiring who precisely is entering the cadres of our public service.
+
+The data presented in this chapter seeks to redress some of these common perceptions. Despite widespread criticism, there is evidence of significant improvements in the teaching staff, albeit with a large variation across municipalities. It is erroneous to uniformly critique Brazil for its educational failures. The truth is, there are some municipalities which have improved their educational staff while others have failed to do so.
+
+\subsection{Going Local}
+
+We provide a spatial visualization of three major changes in teaching personnel in the past two decades. The first is with regard to the educational formation of teachers. In 1996, the new Law of Basic Education Principles (*Lei de Diretrizes da Educação Básica*) stipulated that teachers from lower to middle school were legally mandated to have a higher education degree. A 10-year buffer was given.
+
+Unsurprisingly, at first very few municipalities obeyed the law. As time progressed, however, we see an increase in the number of teachers who hold a higher education degree. This development is accompanied by a decrease in the number of teachers who have at most completed middle school. This is an important change: because of the ceiling effect in terms of education, other regions such as the Northeast and the North have caught up with their more developed neighbors to the south.
+
+Figure 7 illustrates these changes. The proportion of teachers who have received a higher education degree has increased in a significant proportion of the country, spreading at first in the Southeastern region but later spreading along the North and Northeastern corridor. There still remain areas which are staffed by a large proportion of teachers who have not completed college.
+
+\begin{figure}
+    \centering
+    \textbf{Figure 7: Percentage of Municipal Teachers with Higher Education Degree}
+     \begin{subfigure}{0.4\textwidth}
+        \centering 
+        \includegraphics[height=8in]{./maps/edu/edu_high_2000.png}
+        \caption{2000}
+    \end{subfigure} %
+    \begin{subfigure}{0.4\textwidth}
+        \centering
+        \includegraphics[height=8in]{./maps/edu/edu_high_2005.png}
+        \caption{2005}
+    \end{subfigure} \\
+    \begin{subfigure}{0.4\textwidth}
+        \centering
+        \includegraphics[height=8in]{./maps/edu/edu_high_2010.png}
+        \caption{2010}
+    \end{subfigure} %
+    \begin{subfigure}{0.4\textwidth}
+        \centering
+        \includegraphics[height=8in]{./maps/edu/edu_high_2015.png}
+        \caption{2015}
+    \end{subfigure}
+    \caption*{\footnotesize \hfill Source: RAIS, Ministry of Labor}
+\end{figure}
+
+The second empirical finding relates to the attrition rate of teachers, measured as the teacher's average years working at the municipality. Figure 8 highlights these changes spatially. The northeast and the south are notable for having a more stable personnel, as compared to other regions in Brazil. In particular, coastal areas - which tend to be more densely populated - have a lower attrition rate.
+
+This may be a reflection of the rapid expansion of the educational system in less developed municipalities. Given the need to fill out positions, it may be necessary to recruit new teachers, which necessarily brings down the average years of work in the municipality. Of course, this may be accompanied by job instability, with municipalities firing teachers at a high rate, which may have negative repercussions for students' educational performance.^[@stinebrickner_empirical_1998.]
+
+\begin{figure}
+    \centering
+    \textbf{Figure 8: Average Years of Work for Municipal Teachers}
+    \begin{subfigure}{0.4\textwidth}
+        \centering 
+        \includegraphics[height=8in]{./maps/time/time_2000.png}
+        \caption{2000}
+    \end{subfigure} %
+    \begin{subfigure}{0.4\textwidth}
+        \centering
+        \includegraphics[height=8in]{./maps/time/time_2005.png}
+        \caption{2005}
+    \end{subfigure} \\
+    \begin{subfigure}{0.4\textwidth}
+        \centering
+        \includegraphics[height=8in]{./maps/time/time_2010.png}
+        \caption{2010}
+    \end{subfigure} %
+    \begin{subfigure}{0.4\textwidth}
+        \centering
+        \includegraphics[height=8in]{./maps/time/time_2015.png}
+        \caption{2015}
+    \end{subfigure}
+    \caption*{\footnotesize \hfill Source: RAIS, Ministry of Labor}
+\end{figure}
+
+In Brazil, there are primarily two ways through which teachers get hired. The first one is through a public examination (*edital*) and offering of a permanent contract after a two-year examination, the statutary (*estatutário*) regime. The second is through temporary contracts, with no job security guarantee. Although the law stipulates that all teachers must pass a public exam, it does not guarantee permanent employment, being that decision relegated to local governments.
+
+This development merits further inquiry. On the one hand, some scholars have argued that career security is an important requirement for the acquisition of expertise by bureaucrats.^[@gailmard_slackers_2007, @evans_embedded_1995, @fukuyama_what_2013.] On the other, scholars have argued that one of the reasons for bureaucracies' inefficiency was precisely that rigidity and lack of sanctioning of non-performing staff through firing.^[@grindle_jobs_2012. The New Public Management (NPM) movement was based on this reasoning, see @osborne_new_2006.]
+
+The third and final empirical finding is with regard to the evolution of wages. As noted above, the past decades have seen a significant increase in the salaries of teachers. Mapping this across municipalities show that this improvement has been widespread throughout the national territory. While in the early 2000's, most of the high-paying municipalities were concentrated in the south and southeast, there has been a wage increase in other regions as well.
+
+\begin{figure}
+    \centering
+    \textbf{Figure 9: Average Municipal Wages for Teachers}
+    \begin{subfigure}{0.4\textwidth}
+        \centering 
+        \includegraphics[height=8in]{./maps/wage/wage_2000.png}
+        \caption{2000}
+    \end{subfigure} %
+    \begin{subfigure}{0.4\textwidth}
+        \centering
+        \includegraphics[height=8in]{./maps/wage/wage_2005.png}
+        \caption{2005}
+    \end{subfigure} \\
+    \begin{subfigure}{0.4\textwidth}
+        \centering
+        \includegraphics[height=8in]{./maps/wage/wage_2010.png}
+        \caption{2010}
+    \end{subfigure} %
+    \begin{subfigure}{0.4\textwidth}
+        \centering
+        \includegraphics[height=8in]{./maps/wage/wage_2015.png}
+        \caption{2015}
+    \end{subfigure}
+    \caption*{\footnotesize \hfill Source: RAIS, Ministry of Labor}
+\end{figure}
+
+In sum, the empirical evidence presented in these sections demonstrate that there have been widespread improvements in the educational staff in Brazil. Despite criticisms of an ineffective education system, it is clear that the educational staff is better educated and paid than in any other period in history. The question is then why do we still observe such lackluster educational outcomes. Some of the answers may be found in the poor state of our education infrastructure. This is the focus of our next section.
+
+
+\section{Schools in a changing landscape}
+
+\subsection{Infrastructure gaps} 
+
+In this section, we delve into Brazil's educational infrastructure. Using data from the School Census (*Censo Escolar*), we present an overview of the changes that have occurred in school infrastructure over the last two decades, focusing primarily on municipal schools.
+
+The School Census has been conducted since 1995, on an annual basis, by the Ministry of Education (MEC) and it is the most important source of information about basic education (primary and secondary education) in Brazil. The amount of information collected by the School Census increased dramatically over the years and this can be perceived by the changes in the structure of the data collected.
+
+Between 1995 and 2006, the unit of analysis of the School Census was “schools”. After 2007, the information collected expanded and MEC disaggregated the data into four datasets: schools, classrooms, teachers and enrollment. Each contains a different unit of analysis, that reflects their content (in the case of the enrollment dataset, the student is the unit of analysis).
+
+The importance of understanding the changes in the education infrastructure is related to the impact it can have over student performance and attendance. ^[@branham_wise_2004, @murillo_school_2011.] Therefore, not only teaching personnel, as described in previous sections, but also the school’s conditions can affect the overall educational performance of students.
+
+The next sections discuss this issue on two main fronts: the gap between private and municipal schools; and the gap in the school’s infrastructure by region. We identify a catch-up effect of municipal schools with regard to the private sector. Also, despite recent developments, regional discrepancies remain striking. The Northeast and North regions – known to be the poorest administrative regions in Brazil, also have the worst conditions of school infrastructure.
+
+\subsection{Private versus Municipal schools}
+
+As previously discussed, the general perception in Brazil is that economic inequality promotes the creation of a few private elite education institutions amidst an underfunded and crowded public education system. This impression is largely correct as Figures 10 and 11 show, both in terms of the size of the public sector, but also in probabilistic terms, as it is more unlikely for a student to be in the private sector. Moreover, given that the current Brazilian Constitution delegates basic education to municipalities, we include only private primary and secondary schools.^[Even though the Constitution of 1988 delegates the task to the municipal governments, there are some primary and secondary schools run by States and by the Federal government. However, the number of municipal public schools overshadow the number of primary and secondary schools controlled by the two other entities. For example, regarding active schools focus in basic education in Brazil, in 2016 there were 115489 municipal public schools, compared to 30999 State public schools and to only 687 Federal public schools.]
+
+\begin{figure}
+    \centering
+    \textbf{Figure 10: Number of schools (Total)}
+    \includegraphics[width=.85\linewidth, keepaspectratio]{./graphs/plots_schools_active.pdf}
+    \caption*{\footnotesize \hfill Source: INEP, Ministry of Education}
+\end{figure}
+
+
+In this sense, Figure 10 compares the size of municipal and private sectors as the number of primary and secondary schools. Surprisingly, the number of municipal schools is decreasing. It is necessary to analyze more carefully the data, but we conjecture that this phenomenon is related to a population decline and, hence to a drop in enrollments, rather than a decrease in funding or poor management of the public sector.^[[ http://tiny.cc/gfbity](https://g1.globo.com/educacao/noticia/cai-numero-de-matriculas-no-ensino-fundamental-e-no-ensino-medio-das-escolas-publicas-diz-censo-escolar.ghtml).]
+
+\begin{figure}
+    \centering
+    \textbf{\small Figure 11: Proportion of students in private schools by municipalities (1995-2016)}\par\medskip
+    \includegraphics[width=9cm, height=9cm, keepaspectratio]{./graphs/censo_esc_prob_private.pdf}
+    \caption*{\footnotesize \hfill Source: INEP, Ministry of Education}
+\end{figure}
+
+
+Finally, Figure 11 also corroborates the widespread perception in Brazil that private education is the privilege of a few. Between 1995 and 2016, the median probability of a student attending a private school is 5%. This scenario did not change much even during Lula’s government (2003-2010), period in which Brazil experienced an economic boom and upward social mobility.
+
+Figures 10 and 11 confirm that most children and teenagers in Brazil continue to attend municipal schools. The problem is that most of these students attend schools that are far inferior to their private counterpart with respect to their infrastructure. Municipal schools are less likely to have access to internet, computer, running water, among other deficiencies. This is the core debate of the next section.
+
+\subsection{Bridging the gap}
+
+Using data from School Census, we find enormous gaps between private and public schools different, especially in terms of infrastructure. Nonetheless, municipal schools have improved dramatically over the last two decades. We design a two-fold comparison. The first focuses on basic services, such as clean water and restrooms, and the second on the availability of assets per student: teacher, computer and internet.
+
+Unfortunately, deficient services provision distinguish private from municipal schools. Figures 12 and 13 reveal a dismal scenario, of poor access to tap water and inexistence of restrooms in municipal schools. For example, in 2016 the median municipality had 75% of its schools with access to tap water, while for private schools the median was 100% since 1995. Still, between 1997 and 2016, tap water access in municipal schools more than tripled and this trend continues. 
+
+Regarding existence of restrooms in municipal schools, the results are more positive, though not perfect. In 1997, the median municipality had just over 75 percent schools with restrooms inside their building. The median reached the mark of 100 percent in 2005, but there are still some municipalities in Brazil without any restrooms in their schools. Meanwhile, the data from the private schools show that since 1997 just some outliers did not have restrooms. The vast majority of private schools have restrooms inside their building since the beginning of the School Census.
+
+\begin{figure}
+    \centering
+    \textbf{\small Figure 12: Proportion of Schools with water suplly by sector (1997-2016)}\par\medskip
+    \includegraphics[width=9cm, height=9cm, keepaspectratio]{./graphs/censo_esc_water.pdf}
+    \caption*{\footnotesize \hfill Source: INEP, Ministry of Education}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \textbf{\small Figure 13: Proportion of Schools with restrooms by sector (1997-2016)}\par\medskip
+    \includegraphics[width=9cm, height=9cm, keepaspectratio]{./graphs/censo_esc_toilet.pdf}
+    \caption*{\footnotesize \hfill Source: INEP, Ministry of Education}
+\end{figure}
+
+Moving on to the second set of comparison, the availability of teachers and computers per student show a continuous improvement in the municipal public schools. Indeed, during the entire period, private schools have outperformed: more teachers and more computer per student. Nonetheless, the effort to improve municipal schools can be seen in Figure 14 and Figure 15. Both Figures highlight the steady increase on the investments in human resources and in computers done by municipal schools in Brazil.
+
+\begin{figure}
+    \centering
+    \textbf{\small Figure 14: Proportion of Pupil-Teacher Ratio by sector (1995-2016)}\par\medskip
+    \includegraphics[width=9cm, height=9cm, keepaspectratio]{./graphs/censo_esc_tcher_stud.pdf}
+    \caption*{\footnotesize \hfill Source: INEP, Ministry of Education}
+\end{figure}
+
+
+\begin{figure}
+    \centering
+    \textbf{\small Figure 15: Number of computer per student by sector (1997-2016)}\par\medskip
+    \includegraphics[width=9cm, height=9cm, keepaspectratio]{./graphs/censo_esc_comp_stud.pdf}
+    \caption*{\footnotesize \hfill Source: INEP, Ministry of Education}
+\end{figure}
+
+We provide data on internet access by sector in Figure 16. The data reveal that even the private schools struggled to have a median of 100 percent. In contrast, municipal schools are close to a median of 75 percent in 2016, in spite of a boost in the probability of having internet access between 2010 and 2011.
+<!-- ^[Figure 16 show a spike in the probability of municipal schools to have internet access between 2005 and 2006. During these two years, School Census changed the question and, instead of the affirmative version, asked if the school did not have internet access. Our coding reflected the change done by the Census, but for municipal schools the data is still discrepant.]  -->
+
+\begin{figure}
+    \centering
+    \textbf{\small Figure 16: Proportion of schools with internet access by sector (1999-2016)}\par\medskip
+    \includegraphics[width=9cm, height=9cm, keepaspectratio]{./graphs/censo_esc_internet.pdf}
+    \caption*{\footnotesize \hfill Source: INEP, Ministry of Education}
+\end{figure}
+
+Usually in the developed world, internet is an elementary part of the educational system. Teachers use the web to enrich classroom material and students are encouraged to do online research. Until 2010, half of the municipalities had at most a quarter of their schools with internet access. In 2016, this improves to three quarters of schools with internet access. 
+
+However, as we are going to explore in the next section, this improvement was not uniform. Some municipalities had a faster and/or a better development over the period than others. Therefore, the focus of the next section is to unveil these differences among municipal public sectors.
+
+\subsection{A Regional Tale}
+
+Brazil is characterized by wide interregional differences. These span economic development, infrastructure, and, of course, education. In this section we provide a visualization of these regional inequalities. These maps allow us to see the extent of the gap which persist between education systems across the national territory. We focus on two variables: internet access and PTR (pupil to teacher ratio).
+
+Figure 17 and 18 reveal that between 2000 and 2015, the vast majority of Brazilian municipalities saw an improvement both in terms of internet access and PTR. Nevertheless, the disparity between regions is remarkable and persist over time.^[The findings are the same if we had pick up other characteristics, such as existence of restrooms, electricity, tap water or sewer service.] Municipal public schools in the Northeast and North are in far worse shape than in other regions.
+
+The difference between regions reflects a broader socio-economic difference between Brazilian regions. Nonetheless, what these maps highlight is that even within regions there are municipalities that have a good quality of infrastructure and investment in personnel when comparing to its neighbors. These “islands of excellence” will be the main focus of our future research agenda. The question is what explains these outcomes.
+
+\begin{figure}
+    \centering
+    \textbf{Figure 17: Proportion of Municipal Schools with Internet}
+    \label{fig:map_internet}
+     \begin{subfigure}{0.4\textwidth}
+        \centering 
+        \includegraphics[height=8in]{./maps/internet/internet_2000.png}
+        \caption{2000}
+    \end{subfigure} %
+    \begin{subfigure}{0.4\textwidth}
+        \centering
+        \includegraphics[height=8in]{./maps/internet/internet_2005.png}
+        \caption{2004}
+    \end{subfigure} \\
+    \begin{subfigure}{0.4\textwidth}
+        \centering
+        \includegraphics[height=8in]{./maps/internet/internet_2010.png}
+        \caption{2010}
+    \end{subfigure} %
+    \begin{subfigure}{0.4\textwidth}
+        \centering
+        \includegraphics[height=8in]{./maps/internet/internet_2015.png}
+        \caption{2015}
+    \end{subfigure}
+    \caption*{\footnotesize \hfill Source: INEP, Ministry of Education}
+\end{figure}
+
+
+\begin{figure}
+    \centering
+    \textbf{Figure 18: Number of teacher per student in Municipal Public Schools}
+    \label{fig:map_tcher_stud}
+     \begin{subfigure}{0.4\textwidth}
+        \centering 
+        \includegraphics[height=8in]{./maps/tcher_stud/tcher_stud_2000.png}
+        \caption{2000}
+    \end{subfigure} %
+    \begin{subfigure}{0.4\textwidth}
+        \centering
+        \includegraphics[height=8in]{./maps/tcher_stud/tcher_stud_2005.png}
+        \caption{2005}
+    \end{subfigure} \\
+    \begin{subfigure}{0.4\textwidth}
+        \centering
+        \includegraphics[height=8in]{./maps/tcher_stud/tcher_stud_2010.png}
+        \caption{2010}
+    \end{subfigure} %
+    \begin{subfigure}{0.4\textwidth}
+        \centering
+        \includegraphics[height=8in]{./maps/tcher_stud/tcher_stud_2015.png}
+        \caption{2015}
+    \end{subfigure}
+    \caption*{\footnotesize \hfill Source: INEP, Ministry of Education}
+\end{figure}
+
+\section{Conclusion and next steps}
+
+This study sheds light on Brazil's educational system, focusing on both its personnel and infrastructure. There are two major gaps that structure our analysis: private-public and public-public. Unsurprisingly, the private-public is enormous: internet adoption, PTR, education level of teachers, computers, restrooms, among others, are far superior in the private sector.
+
+Despite this, there have been improvements in the public sector, a catch-up effect that has occurred primarily in the last decade. This is a result of greater investment in education as a result of the commodity boom, and the enshrinement of education as a budgetary priority which occurred in the last governments.
+
+The other gap is the public-public. We outline regional inequalities in educational infrastructure and personnel, while being cognizant that these wide brushstrokes obscure intraregional differences. The existence of "islands of excellence" needs to be explained, systematically and theory driven. Good government in the tropics, as outlined by Tendler, should not be an exceptional case: it needs to be explained.^[@tendler_good_1997.]
+
+In Brazil's scholarly community, there have been widespread debates on the successful case of Sobral, in the state of Ceará. It is a municipality located in one of the poorest states, yet it was able to invest in its educational system and had positive results in student performance. However, the $n$ is 1: how exceptional is Sobral really? Is it possible that other municipalities have followed a similar trajectory of improvement? And why?
+
+This is what motivates the next step in our project, which is to provide a theoretical framework to explain these changes. Investments in education cannot be explained solely by path dependence: there is room for agency. With the sea of data available to us, researchers, there can be multiple Sobral's which emerge across Brazil. Treating them systematically, understanding how and why these occur will be the next iteration of our research agenda.
+
+```{r}
+clean
+```
+

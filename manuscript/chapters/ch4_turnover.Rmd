@@ -1,0 +1,511 @@
+---
+output: pdf_document
+---
+```{r}
+if(exists("knit")){
+  source(
+    here::here("scripts/thesis_setup.R")
+  )
+}
+
+source(
+  here("scripts/thesis_map.R")
+)
+
+path <- c(
+  here("data/censo_escolar"),
+  here("data/saeb"),
+  here("data/spaece/spaece.csv")
+)
+
+pattern <- c(
+  "censo_teacher_mun_sample|turnover.csv.gz|turnover.csv",
+  "hierarchical.csv.gz|student|exam_school"
+)
+
+import(
+  path,
+  pattern
+)
+
+# prova brasil
+saeb_student <- saeb_student %>% 
+  mutate(
+    grade = recode(
+      grade,
+      `4` = 5L,
+      `8` = 9L
+    ),
+    grade = as.numeric(grade_exam)
+  )
+
+saeb_aggregate <- saeb_student %>% 
+  mutate(
+    year = as.factor(year)
+  ) %>% 
+  group_by(
+    year
+  ) %>% 
+  summarise(
+    mean_exam = mean(grade_exam, na.rm = T),
+    n = n()
+  ) %>% 
+  ungroup()
+
+# space (only state of ceara)
+censo_turnover_ce <- censo_teacher_turnover %>% 
+  filter(
+    state == "23",
+    grade_level %in% c(2, 5, 9)
+  ) %>% 
+  calc_turnover(
+    c("cod_ibge_6", "school_id", "grade_level", "year")
+  )
+
+censo_turnover_score <- censo_turnover_ce %>% 
+  left_join(
+    spaece,
+    by = c("cod_ibge_6", "school_id", "year", "grade_level" = "grade")
+  ) %>% 
+  left_join(
+    saeb_exam_school,
+    by = c("cod_ibge_6", "school_id", "year", "grade_level" = "grade")
+  ) %>% 
+  join_covariate() %>% 
+  mutate(
+    mandate_year = if_else(
+      year %in% seq(2005, 2013, 4), 1, 0
+    )
+  )
+```
+
+This chapter analyzes bureaucratic turnover and its downstream consequences for public education. The appointment or dismissal procedure of educational staff is under the exclusive jurisdiction of the local executive, which includes the mayor and the department of education (\textit{secretaria da educação}). However, these decisions are shaped not only by the executive. In my own fieldwork, I have identified how public sector jobs in education are subject to political pressure, an empirical regularity that has been confirmed in other studies.
+
+This is not the first study to note the prevalence of political interests in shaping the educational bureaucracy in Brazil. In passing, a report organized by the Inep notes that a large proportion of educational administrative staff (\textit{gestores}) are actively involved in local politics. Over two thirds have declared themselves to be affiliated to a political party
+
+While ultimately I am interested in the political determinants of modifications in the bureaucratic structure and how they impinge on the quality of public education, the first step is to understand what factors explain variation in educational performance of students, a proxy for the quality of education at the local level. For each observed student test score, however, there is host of covariates associated with their performance: family background, school infrastructure, municipal sociodemographic characteristics, among others. Educational staff are only one of the factors determining the quality of education received by these students.
+
+Data on educational staff characteristics comes from two sources: the school census and the Annual Report on Social Information (RAIS), a census of all formal municipal workers in Brazil. In the dataset, I can observe information on work experience, type of contract, age, education level and wages. Similar information is available for school principals. Municipal demographic data is collected from population census in two waves, 2000 and 2010. Because I also have micro-level census data, I am considering whether or not to retrieve information on the population sending their children to public education (available for both waves).
+
+How prevalent is teacher turnover in schools? In fieldwork conducted in Ceará, as well as interviews with other scholars studying municipal education, it became apparent that teacher turnover is frequent and pervasive. School migration occurs as a result not of voluntary transfers by teachers, rather they are a product of political decisions made by city councilors to favor members of their constituency. These "spoils" have a potentially detrimental effect on student's educational outcomes. This is the subject of inquiry of this chapter.
+
+In our context, turnover is decomposed into a set of metrics. The relevant unit of analysis is the teacher $i$ at a given school $s$ at time $t$. There are four possible scenarios:
+
+1) A teacher exits the municipal workforce the following year $t+1$ (exit).
+2) A teacher stays in the municipal workforce, but is transferred to another school $s_t \neq s_{t+1}$ (transfer).
+3) A teacher leaves the school because it is closed down (extinct).
+4) A new teacher enters the school (entry) $s_{t-1} \neq s_{t}$.
+
+These different types of turnover can have potentially damaging effects to the quality of eduation received by students. The channels are multiple. The direct effect is in the loss of established socioaffective ties between instructor and students, particularly in contexts where teachers are responsible for the instruction of several years.^[]
+
+```{r}
+censo_teacher_turnover %>% 
+  calc_turnover(
+    "year"
+  ) %>% 
+  filter(
+    between(year, 2009, 2015)
+  ) %>% 
+  select(
+    year,
+    starts_with("percent"),
+    -percent_extinct
+  ) %>% 
+  gather(
+    -year,
+    key = "type",
+    value = "measure"
+  ) %>% 
+  ggplot(
+    aes(
+      year,
+      measure,
+      group = type,
+      fill = as.factor(type)
+    )
+  ) +
+  geom_area(
+    stat = "identity",
+    position = "fill"
+  )
+```
+
+## Descriptives
+
+I first present some stylized facts on the municipal educational system in Brazil. In our sample, over two million children rely on municipally provided public education in Brazil.^[The Brazilian ministry of education performs block sampling by municipality. Only schools with over 10 students are included in the sampling.]
+
+```{r}
+saeb_student %>% 
+  group_by(year) %>% 
+  summarise(
+    n = n()
+  ) %>% 
+  mutate(
+    n = n/1e3
+  ) %>% 
+  ggplot(
+    aes(
+      year,
+      n,
+      group = 1
+    )
+  ) +
+  geom_line() +
+  geom_point()
+```
+
+Student test scores are mandatory in Brazilian municipalities and are measured by administering a standardized exam across the territory. Student’s proficiency is estimated using Item-Response Theory (IRT), which is designed to estimate the latent, unobserved proficiency of students across two subjects: Portuguese and Math. Only schools with over ten students are included in the sample.
+
+```{r}
+saeb_student %>%
+  sample_n(1e5) %>% 
+  ggplot() +
+  geom_density(
+    aes(
+      grade,
+      col = year,
+      fill = year
+    )
+  ) +
+  theme(
+    legend.position = "none"
+  ) +
+  facet_wrap(
+    year ~ .,
+    nrow = 2
+  )
+```
+
+# Is it all about development?
+
+```{r}
+censo_turnover_school %>% 
+  left_join(
+    censo,
+    by = c("cod_ibge_6")
+  ) %>% 
+  sample_frac(0.25) %>% 
+  ggplot(
+    aes(
+      censo_median_wage,
+      turnover_index
+    )
+  ) +
+  geom_point(
+    alpha = 0.05
+  ) +
+  geom_smooth(
+    col = "coral3"
+  )  +
+  scale_x_log10()
+```
+
+# What about coalition share?
+
+```{r}
+censo_turnover_school %>% 
+  sample_frac(0.1) %>% 
+  ggplot(
+    aes(
+      coalition_share,
+      turnover_index
+    )
+  ) +
+  geom_point(
+    col = "grey95"
+  ) +
+  coord_cartesian(
+    ylim = c(0.2, 0.3)
+  )
+
+fit_turnover <- lm(
+  turnover_index ~ coalition_share*mandate_year + str_sub(cod_ibge_6, 1, 2),
+  data = censo_turnover_school %>% 
+    join_covariate() %>% 
+    mutate(
+      mandate_year = if_else(
+        year %in% seq(2005, 2013, 4), 1, 0
+      )
+    )
+)
+```
+
+# Time series
+
+```{r}
+censo_turnover_school %>% 
+  filter(
+    between(year, 2008, 2015)
+  ) %>% 
+  ggplot(
+    aes(
+      year,
+      turnover_index
+    )
+  ) +
+  geom_point(
+    alpha = 0.05
+  ) +
+  geom_smooth(
+    col = "coral3"
+  ) +
+  mandate_year(
+    seq(2009, 2013, 4)
+  )
+```
+
+# An itinerant troop
+
+I take a few steps to ensure consistency in my procedure. First, I subset the teacher dataset to those who have only occupied jobs at one school for any gven year. Second, I create a lag column to ensure that I know where in school they were before. Finally, I calculate the percentage of teachers who are no longer working at the same school they were in the previous year.
+
+# How many teachers per mun?
+
+```{r}
+censo_mun_turnover %>% 
+  gg_histogram(
+    aes(n)
+  ) +
+  scale_x_log10() +
+  annotation_logticks()
+```
+
+# How many teachers per school?
+
+```{r}
+censo_school_turnover %>% 
+  gg_histogram(
+    aes(n)
+  ) +
+  scale_x_log10() +
+  annotation_logticks()
+```
+
+It is curious that in Brazil the modal size of schools is actually one teacher. Which is remarkable. I have heard several times during fieldwork of the problem of multiseries schools, but clearly the problem of one teacher schools is quite prevalent.
+
+# How much rotation, per staff size?
+
+```{r}
+censo_school_turnover %>% 
+  filter(
+    n > 2
+  ) %>% 
+  mutate(
+    school_size = cut(
+      n, breaks = quantile(n),
+      include.lowest = T
+    ) %>% 
+      as.vector
+  ) %>% 
+  gg_histogram(
+    aes(turnover_index)
+  ) +
+  facet_wrap(
+    school_size ~ .
+  )
+```
+
+Interesting that turnover seems to increase slightly as the size of staff increases. Not a huge increase but it is there. The beahvior is far more erratic, of course, when we get to small size municipalities.
+
+# Visualizing teacher turnover
+
+```{r}
+map_turnover <- foreach(i = c(paste0("percent_", c("exit", "transfer", "entry"))))%do%{
+  censo_mun_turnover %>% 
+  filter(
+    year == 2015
+  ) %>% 
+  right_join(
+    map_br %>% 
+      mutate(
+        cod_ibge_6 = cod_ibge_6 %>% 
+          as.character %>% 
+          as.integer
+      ),
+    by = c("cod_ibge_6")
+  ) %>% 
+  plot_map(
+    fill = i,
+    limits = c(0, 0.5)
+  ) +
+    ggtitle(
+      i
+    )
+}
+
+grid.arrange(
+  map_turnover[[1]],
+  map_turnover[[2]],
+  map_turnover[[3]],
+  ncol = 3
+)
+```
+
+## What's causing teacher turnover?
+
+Is it a similar story to the one that I have found in the case of rais turnover?
+
+```{r}
+censo_turnover_score %>% 
+  sample_frac(0.25) %>% 
+  ggplot(
+    aes(
+      coalition_share,
+      spaece_mean
+    )
+  ) +
+  geom_point(
+    alpha = 0.1
+  ) +
+  geom_smooth(
+    method = "lm", 
+    color = "coral3"
+  )
+
+censo_turnover_score %>% 
+  lm(
+    spaece_mean ~ as.factor(grade_level),
+    data = .
+  ) %>% 
+  tidy %>% 
+  kable()
+```
+
+## State
+
+What are the states where we observe the greatest turnover?
+
+```{r}
+censo_teacher_turnover %>% 
+  calc_turnover(
+    c("state", "year")
+  ) %>% 
+  nest(-state) %>% 
+  mutate(
+    avg_turnover = map_dbl(
+      data,
+      ~mean(.$turnover_index, na.rm = T)
+    )
+  ) %>%
+  top_n(., 8, avg_turnover) %>% 
+  unnest() %>% 
+  ggplot(
+    aes(
+      year,
+      turnover_index,
+      group = state,
+      col = as.factor(state)
+    )
+  ) +
+  geom_line() +
+  geom_point() +
+  mandate_year(
+    seq(
+      2009, 2013, 4
+    )
+  )
+```
+
+## Explaining student test performance: an application to Brazil
+
+The model that I have preliminarily run is as follows, where the outcome of interest $Y_{ijskt}$
+is the student $i$ test score, taught by teacher $k$, in school $s$, in municipality $j$, at time period $t$, for either 5th or 9th grade. The main predictor of interest is teacher and principal turnover, which I measure with a categorical variable that indicates the tenure of both types of educational staff. Note that I can link students to both their teacher and their school principal. Educational staff turnover is intimately linked to political turnover and the entry of new mayors into office.2
+
+$$Y_{ijskt} = \theta Turnover_{jskt} +\psi X_{ijskt} + \gamma V_{jskt} +\chi Wjt+ \alpha_j + \delta_t+ \epsilon_{isjkt}$$
+The parameter of interest is $\theta$, whether or not the tenure of the teacher affects student’s test score. Note that t denotes an electoral cycle in this set-up. $X_{ijskt}$ is a matrix of student background covariates, $V_{jskt}$ denotes school characteristics (including school principal), and $W_{jt}$ is the set of municipal covariates. $\alpha_j$ and $\delta_t$ denote state-level (one level above municipality) and electoral cycle unobserved characteristics respectively.
+
+I present the preliminary results below. Total number of observations in-sample is 400 thousand.
+
+```{r models}
+mods <- list()
+
+mods$lm_base <- lm(
+  grade_exam ~ as.factor(year) + as.factor(uf) + mayor_age + mayor_edu_desc + coalition_share +
+    saeb_principal_female + saeb_principal_age + saeb_principal_education + saeb_principal_year_as_director +
+    saeb_principal_appointment + num_comp + internet +
+    age_teacher + education_teacher + type_contract_teacher + wage_teacher + year_as_teacher + year_working_school_teacher +
+    age_cat_student + race_student + mother_home_student + mother_edu_student + father_home_student + father_edu_student,
+  data = saeb_hierarchical
+)
+
+mods$lmer_base <- lmer(
+  grade_exam ~ (1|year) + (1|uf) + mayor_age + mayor_edu_desc + coalition_share +
+    saeb_principal_female + saeb_principal_age + saeb_principal_education + saeb_principal_year_as_director +
+    saeb_principal_appointment + num_comp + internet +
+    age_teacher + education_teacher + type_contract_teacher + wage_teacher + year_as_teacher + year_working_school_teacher +
+    age_cat_student + race_student + mother_home_student + mother_edu_student + father_home_student + father_edu_student,
+  data = saeb_hierarchical %>% 
+    sample_frac(0.2)
+)
+```
+
+```{r graphs}
+graphs <- list()
+
+graphs$lm_base <- tidycoef(
+  mods$lm_base,
+  vars = c("coalition_share|^saeb_principal")
+)
+
+graphs$lmer_base <- tidycoef(
+  mods$lmer_base,
+  vars = c("coalition_share|^saeb_principal")
+)
+
+print(graphs$lm_base)
+print(graphs$lmer_base)
+```
+
+# Cascade down effects:
+
+How does teacher turnover affect student’s educational performance? To answer that I leverage data from municipal teachers and students in a developing country: Brazil. Fortunately, Brazil is a data-rich country. For this analysis, I have collected and cleaned datasets that stem from a variety of administrative sources. For student test scores and their family background, I use data from the National System of Basic Education Evaluation (henceforth SAEB), a national level census of schools in Brazil. It includes both municipal, state-level and private schools (voluntary).
+
+Additionally, we add a separate set of tests linking turnover to performance in the SPAECE (Sistema para Avaliação do Ensino no Ceará). This exam complements the findings of the \textit{Prova Brasil}, demonstrating that there is indeed a negative correlation between teacher turnover and student learning outcomes in municipalities across Brazil.
+
+## Prova Brasil
+
+```{r}
+censo_turnover_score %>% 
+  filter(
+    n >= 5,
+    grade_level != 2
+  ) %>% 
+  gg_point_smooth(
+    aes(
+      turnover_index,
+      mean_grade_exam,
+      group = grade_level
+    )
+  ) +
+  facet_wrap(
+    . ~ grade_level
+  )
+```
+
+## SPAECE
+
+```{r}
+censo_turnover_score %>% 
+  filter(
+    n >= 5
+  ) %>% 
+  gg_point_smooth(
+    aes(
+      turnover_index,
+      spaece_mean,
+      group = grade_level
+    )
+  ) +
+  facet_wrap(
+    . ~ grade_level
+  )
+
+lm(
+  spaece_mean ~ as.factor(grade_level)*turnover_index + censo_median_wage + censo_lit_rate + censo_log_pop,
+  data = censo_turnover_score
+) %>% 
+  tidycoef
+```
+
+```{r}
+clean
+```
