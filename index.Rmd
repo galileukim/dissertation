@@ -1,0 +1,39 @@
+--- 
+title: "The Executive Dilemma: Bargaining for Education in Decentralized Brazil"
+author: "Galileu Kim"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [dissertation.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: dissertation
+fontsize: 12pt
+geometry: [top=1.5in, bottom=1.5in, right=1.5in, left=1.5in]
+header-includes:
+  - \setlength\parindent{20pt}
+  - \usepackage{setspace}
+  - \usepackage{multirow}
+  - \usepackage{caption}
+  - \usepackage{amsmath}
+  - \usepackage{setspace}\doublespacing
+  - \usepackage{graphicx}
+  - \usepackage{subcaption}
+  # - \usepackage{floatrow}
+  - \newcommand{\argmax}{arg\,max}
+  - \pretitle{\centering\Large\textbf}
+  - \preauthor{\centering\large}
+  - \predate{\centering\normalsize}
+description: "Why do politicians engage in patronage? What are its consequences for public service delivery? I find that staff turnover in educational staff results from mayors attempt to exchange public sector jobs for support from local legislators. Leveraging extensive fieldwork and administrative data, I demonstrate that mayors with a weaker hold on the local legislature resort to patronage to co-opt legislators. Educational staff turnover has negative downstream effects on student learning, but limited electoral backlash. Weak electoral accountability channels suggests that patronage is primarily a political elite game, with little involvement by local constituencies. These findings point to the dangers of elite capture of public services and its downstream consequences for social welfare."
+---
+# Preamble
+
+"We suffer, but those who lose are our students." - anonymous teacher, muncipality of Icó.
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```
