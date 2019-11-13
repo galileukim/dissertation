@@ -1,0 +1,59 @@
+---
+title: "Governing through Patronage"
+subtitle: "the Bargain for Education in Decentralized Brazil"
+author: "Galileu Kim"
+date: "`r Sys.Date()`"
+output:
+  beamer_presentation:
+    includes:
+      in_header: "../template/presentation_copy.txt"
+    incremental: true
+    toc: true
+    slide_level: 2
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Motivation
+
+## A tale of two schools
+
+- **Insert image here.**
+
+## Expansion in public education
+
+- Across the world, children rely on governments for access to education.
+- Rapid expansion in enrollment and coverage of education in the developing world.
+- Improvements in the *quality* of education remain a challenge.
+
+## Map of coverage of education
+
+- **get data from WB**
+
+## Variation in the quality of education.
+
+- **pisa scores**
+
+## The case
+
+- Over x students per year enrolled in public schools.
+- Over x% of GDP spent in education.
+- Yet, failure to translate investments in education.
+- Local politics.
+
+## Research question
+
+## Findings
+
+## Table of contents
+
+## The argument in two steps
+
+## First stage
+
+## Second stage
+
+## Debate
+

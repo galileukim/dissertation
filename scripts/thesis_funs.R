@@ -93,6 +93,21 @@ theme_set(
     theme_clean
 )
 
+# data manipulation -------------------------------------------------------s
+# sample groups
+sample_group <- function(data, n, ...){
+  grouping_vars <- enquos(...)
+  
+  data %<>%
+    nest(
+      -c(!!!grouping_vars)
+    ) %>% 
+    sample_n(n) %>% 
+    unnest
+  
+  return(data)
+}
+
 calc_turnover <- function(data, group_vars){
   years <- data %>% 
     distinct(year) %>% 

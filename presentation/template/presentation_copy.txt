@@ -1,0 +1,47 @@
+\usetheme{Madrid}
+
+% packages
+\usepackage{attachfile}
+\useoutertheme{split} % Alternatively: miniframes, infolines, split
+\useinnertheme{circles}
+\usepackage{helvet}
+
+% colors
+\definecolor{princeton}{rgb}{1.0, 0.6, 0.2} % princeton (primary)
+\definecolor{arsenic}{rgb}{0.23, 0.27, 0.29}
+
+\setbeamercolor{title}{fg=black}
+\setbeamercolor{frametitle}{fg=white,bg=arsenic}
+\setbeamercolor{section in head/foot}{fg=arsenic,bg=princeton}
+\setbeamerfont{frametitle}{size=\Large}
+%\setbeamercolor{palette primary}{bg=princeton,fg=black}
+%\setbeamercolor{palette secondary}{bg=princeton,fg=black}
+%\setbeamercolor{palette tertiary}{bg=princeton,fg=black}
+%\setbeamercolor{palette quaternary}{bg=princeton,fg=black}
+\setbeamercolor{structure}{fg=princeton} % itemize, enumerate, etc
+\setbeamercolor{section in toc}{fg=arsenic} % TOC sections
+\setbeamerfont{subtitle}{size=\small}
+
+% override palette coloring with secondary
+\setbeamercolor{subsection in head/foot}{bg=arsenic,fg=white}
+
+% defining font
+\usepackage[sfdefault,light]{FiraSans}
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{{\firaoldstyle #1}}
+\usepackage{ragged2e}
+
+\apptocmd{\frame}{}{\justifying}{} % Allow optional arguments after frame.
+
+% set margins
+\setbeamersize{text margin left=10mm,text margin right=10mm}
+
+% source command
+\newcommand{\source}{\footnotesize\textcolor{black!25}}
+
+% defining font
+\usepackage[default]{lato}
+\renewcommand\familydefault{\sfdefault} 
+\usepackage[T1]{fontenc}
+\usepackage{ragged2e}
+\renewcommand*\oldstylenums[1]{{\firaoldstyle #1}}

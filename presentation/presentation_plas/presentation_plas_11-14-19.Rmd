@@ -224,27 +224,7 @@ rais_edu %>%
 ## Downstream effects\
 
 ```{r models, eval = F}
-mods <- list()
 
-mods$lm_base <- lm(
-  grade_exam ~ as.factor(year) + as.factor(uf) + mayor_age + mayor_edu_desc + coalition_share +
-    saeb_principal_female + saeb_principal_age + saeb_principal_education + saeb_principal_year_as_director +
-    saeb_principal_appointment + num_comp + internet +
-    age_teacher + education_teacher + type_contract_teacher + wage_teacher + year_as_teacher + year_working_school_teacher +
-    age_cat_student + race_student + mother_home_student + mother_edu_student + father_home_student + father_edu_student,
-  data = saeb_hierarchical %>% 
-    sample_frac(0.2)
-)
-
-mods$lmer_base <- lmer(
-  grade_exam ~ (1|year) + (1|uf) + mayor_age + mayor_edu_desc + coalition_share +
-    saeb_principal_female + saeb_principal_age + saeb_principal_education + saeb_principal_year_as_director +
-    saeb_principal_appointment + num_comp + internet +
-    age_teacher + education_teacher + type_contract_teacher + wage_teacher + year_as_teacher + year_working_school_teacher +
-    age_cat_student + race_student + mother_home_student + mother_edu_student + father_home_student + father_edu_student,
-  data = saeb_hierarchical %>% 
-    sample_frac(0.2)
-)
 ```
 
 ```{r graphs, eval = F}
