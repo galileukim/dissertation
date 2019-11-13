@@ -1,0 +1,106 @@
+---
+title: 'Teacher Turnover: EDA'
+author: "Galileu Kim"
+date: "9/25/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache = T)
+
+source(
+  here::here("scripts/thesis_setup.R")
+)
+
+source(
+  here::here("scripts/thesis_map.R")
+)
+
+importData(
+  here("data/censo_escolar"),
+  c("school_turnover", "mun_turnover")
+) %>% 
+  assignData
+```
+
+The goal of this exploratory data analysis is to characterize the structure of teacher turnover in Brazil. Teacher turnover is a chronic issue in municipalities across Brazil, the question is where it is concentrated, if it varies over time and what are its consequences for student learning. The data employed are the Brazilian school census collected annually from 2007 to 2016. I adopt a broader definition of turnover than commonly adopted in labor economics, and calculate a turnover index adapted from Pereira Junior and Oliveira (2016):
+
+$$\text{turnover}_{sjt} = \frac{\text{exit}_{jt} + \text{entry}_{sjt}}{N_{sjt} + N_{sjt-1}}$$
+for school $s$ in municipality $j$ at year $t$, where
+
+$$\text{entry}_{sjt} := \sum_{i\in\mathcal{I}_{sjt}}^{N_{sjt}}\mathbb{1}\{i\notin\mathcal{I}_{sjt-1}\}$$
+
+and
+
+$$\text{exit}_{sjt} := \sum_{i\in\mathcal{I}_{sjt-1}}^{N_{sjt-1}}\mathbb{1}\{i\notin\mathcal{I}_{sjt}\}$$
+
+The index ranges from 0 to 1, with 0 denoting no turnover (no entry and no exits) and 1 the converse.
+
+I decompose exit and entry into three different teacher flows:
+
+1) Exit: teachers who exit the municipal labor force at $t$.
+2) Transfer: teachers who are for any given year $t$ no longer present in the same school at $t-1$, yet remain in the municipal labor force.
+3) Extinct: teachers exit the school because the school is closed down.
+4) Entry: teachers who enter the municipal labor force at $t$.
+
+The document is structured as follows. First I provide some descriptive statistics on the distribution of turnover. I then provide a map of teacher turnover in Brazil in three moments in time: 2007, 2012 and 2017. I then present some simple plots illustrating the broad correlations between demographic/political variables and turnover. I finalize with a set of regressions that provide additional leverage.
+
+## Descriptive statistics
+
+Teacher turnover in Brazil is pervasive. Note that the higher the value of the index, the greater the turnover observed. 
+
+```{r}
+censo_school_turnover %>% 
+  filter(
+    n >= 5
+  ) %>% 
+  gg_histogram(
+    aes(turnover_index)
+  ) +
+  labs(
+    title = "Distribution of turnover index (pooled)",
+    caption = "Note: sample excludes schools with less than five teachers."
+  )
+```
+
+The majority of schools experience high levels of turnover. In particular, around `r censo_school_turnover %>% filter(between(turnover_index, 0.5, 0.75)) %>% nrow() %>% round(-3)/1e3` thousand schools have turnovers indices between 0.5 and 0.75, out of a total of `r censo_school_turnover %>% nrow() %>% round(-4)/1e6` million.
+
+We can aggregate school-level turnover to municipal indices. Summing in and out flows for each school, I calculate municipal transfers, exits, extinction and entries. The empirical distribution of municipal turnover indices is presented below.
+
+## Mapping turnover
+
+Teacher turnover follows regional patterns. 
+
+```{r}
+map_turnover <- map(
+  seq(2007, 2015, 4),
+  ~censo_mun_turnover %>% 
+    filter(
+      year == .x
+    ) %>% 
+    right_join(
+      map_br %>% 
+        mutate(
+          cod_ibge_6 = cod_ibge_6 %>% 
+            as.character %>% 
+            as.integer
+        ),
+      by = c("cod_ibge_6")
+    ) %>% 
+    plot_map(
+      fill = "turnover_index",
+      limits = c(0, 0.5)
+    ) +
+    ggtitle(
+      paste("map", .x)
+    )
+)
+
+# grid.arrange(
+#   map_turnover[[1]],
+#   map_turnover[[2]],
+#   map_turnover[[3]],
+#   ncol = 3
+# )
+```
+

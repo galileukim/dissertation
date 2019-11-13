@@ -1,0 +1,10 @@
+book_filename: "dissertation"
+delete_merged_file: true
+before_chapter_script: ["scripts/thesis_cleanup.R", "scripts/thesis_setup.R"]
+language:
+  ui:
+    chapter_name: "Chapter "
+rmd_subdir: 'chapters/'
+output_dir: 'docs/'
+output:
+  bookdown::gitbook: default

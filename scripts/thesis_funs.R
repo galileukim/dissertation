@@ -1,9 +1,8 @@
-
 # functions ---------------------------------------------------------------
 # import data
 fread <- partial(
   data.table::fread,
-  nThread = detectCores(),
+  nThread = parallel::detectCores(),
   integer64 = c("character")
 )
 
@@ -12,22 +11,22 @@ list.files <- partial(
   full.names = T
 )
 
-assign_file <- function(x, y){
-    data <- fread(x)
-    assign(
-      y,
-      data,
-      envir = globalenv()
-    )
-}
-
-import <- function(path, pattern, names = F){
+list_files <- function(path, pattern){
   files <- map2(
     path,
     pattern,
     list.files
   ) %>% 
     flatten_chr
+  
+  return(files)
+}
+
+import_data <- function(path, pattern, names = F){
+  files <- list_files(
+    path,
+    pattern
+  )
   
   if(names == F){
     names <- basename(files) %>% 
@@ -36,28 +35,56 @@ import <- function(path, pattern, names = F){
       )
   }
   
-  walk2(
+  data <- map(
     files,
-    names,
-    assign_file
+    fread
+  )
+  
+  names(data) <- names
+  
+  return(data)
+}
+
+assign_data <- function(data, rm = T){
+  walk2(
+    names(data),
+    data,
+    assign,
+    envir = globalenv()
   )
 }
 
-# clean theme
+append_db <- function(path, pattern, conn, names = F){
+  data <- import(
+    files,
+    names
+  )
+  
+  pwalk(
+    list(
+      name = names,
+      value = data
+    ),
+    RSQLite::dbWriteTable,
+    conn = con,
+    overwrite = T
+  )
+}
+
 theme_clean <- theme(
   panel.background = element_blank(),
   panel.border = element_blank(),
   panel.grid.major = element_blank(),
   panel.grid.minor = element_blank(),
-  axis.line = element_line(colour = "grey60"),
+  axis.line = element_line(colour = "grey75"),
+  legend.position = "bottom",
   text = element_text(
     # family = "Roboto",
     color = "grey60",
-    size = 12
+    size = 9
   ),
-  plot.title = element_text(size = 14),
-  axis.text = element_text(color = "grey60"),
-  axis.ticks = element_blank(),
+  axis.text = element_text(color = "grey60", size = 7),
+  axis.title = element_text(size = 8),
   plot.margin = unit(rep(0.25, 4), "cm")
 )
 
@@ -66,13 +93,12 @@ theme_set(
     theme_clean
 )
 
-# calc turnover
 calc_turnover <- function(data, group_vars){
   years <- data %>% 
     distinct(year) %>% 
     pull
   
-  data %>% 
+  data %<>%
     group_by_at(
       vars(
         group_vars
@@ -83,6 +109,9 @@ calc_turnover <- function(data, group_vars){
       sum,
       na.rm = T
     ) %>% 
+    ungroup()
+  
+  data %<>% 
     mutate(
       implicit = 0
     ) %>% 
@@ -111,6 +140,8 @@ calc_turnover <- function(data, group_vars){
     select(
       -implicit
     )
+  
+  return(data)
 }
 
 # tidy and ggcoef
@@ -145,7 +176,7 @@ mandate_year <- function(years = seq(2005, 2013, 4)){
 }
 
 # summarize props with c.i.
-summarise_mun <- function(data, var){
+summarise_prop <- function(data, var){
   summarise(
     .data = data,
     prop = mean(get(var), na.rm = T),
@@ -156,10 +187,30 @@ summarise_mun <- function(data, var){
   )
 }
 
+# tailored summarise
+summarise_stats <- function(data, ...){
+  vars <- enquos(...)
+  
+  data %<>% 
+    summarise_at(
+      .vars = vars(!!!vars),
+      .funs = list(
+        ~sum(., na.rm = T),
+        ~mean(., na.rm = T),
+        ~median(., na.rm = T),
+        ~sd(., na.rm = T),
+        ~n()
+      )
+    ) %>% 
+    ungroup()
+  
+  return(data)
+}
+
 # plot municipal map
 plot_map <- function(
-  data, fill, breaks = 6, title = "", label = "", palette = "RdYlBu",
-  caption = "Sources: IBGE, RAIS.", limits = NULL
+  data, fill, breaks = 6, title = "", label = "", palette = "RdYlBu", legend_position = "bottom",
+  limits = NULL
 ) {
   plot <- ggplot() +
     geom_polygon(
@@ -175,29 +226,30 @@ plot_map <- function(
     {if(is.factor(data[[fill]])) 
       scale_fill_manual(
         values = rev(
-          brewer.pal(n = breaks, name = palette)
+          brewer.pal(n = length(levels(data[[fill]])), name = palette)
         ),
-        breaks = levels(data[fill]),
-        na.value = "gray30"
+        breaks = levels(data[[fill]]),
+        na.value = "gray50"
       )else
         scale_fill_distiller(
           palette = palette,
           breaks = pretty_breaks(breaks),
           direction = -1,
-          na.value = "gray30",
+          na.value = "gray50",
           limits = limits
         )
     } +
     guides(fill = guide_legend(reverse = T)) +
-    labs(fill = label, caption = caption) +
+    labs(fill = label) +
     theme_void(base_size = 17) +
     xlim(range(data$long)) + ylim(range(data$lat)) +
     coord_quickmap() +
     theme(
-      legend.position = "right",
+      legend.position = legend_position,
       legend.text = element_text(size = 18),
       text = element_text(size = 18),
-      legend.title = element_blank()
+      legend.title = element_blank(),
+      plot.caption = element_text(size = 8)
     ) +
     ggtitle(title)
   
@@ -205,7 +257,7 @@ plot_map <- function(
 }
 
 # summarize by mun
-summarize_mun <- function(data, var){
+summarise_fun <- function(data, var){
   data %>%
     group_by(
       region,
@@ -361,13 +413,41 @@ gg_miss_var <- partial(
   show_pct = T
 )
 
+# hex
+gg_hex <- function(data, mapping = aes(), n_bin = 30, ...){
+  ggplot(
+    data = data,
+    mapping
+  ) +
+    geom_hex(
+      bins = n_bin,
+      ...
+    ) +
+    scale_fill_distiller(
+      palette = "RdYlBu",
+      direction = -1
+    )
+}
+  
 # histogram
 gg_histogram <- function(data, mapping = aes(), ...){
   ggplot(
     data = data,
     mapping
   ) +
-    geom_histogram()
+    geom_histogram(
+      col = "#1C52A2",
+      fill = "steelblue3",
+      ...
+    )
+}
+
+gg_point <- function(data, mapping = aes(), ...){
+  ggplot(
+    data = data,
+    mapping
+  ) +
+    geom_point(...)
 }
 
 # change default ggplot settings
@@ -376,7 +456,7 @@ scale_fill_discrete <- function(...) scale_fill_brewer(palette="Set2")
 
 update_geom_defaults(
   "point",
-  list(color = "#1C52A2", size = 2.5)
+  list(color = "#375b7c", size = 1.5)
 )
 
 update_geom_defaults(

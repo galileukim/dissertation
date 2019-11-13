@@ -78,8 +78,7 @@ gzip(
 # censo -------------------------------------------------------------------
 censo_files <- list.files(
   "~/princeton/R/data/censo_br/data/wrangle/ibge",
-  pattern = "^censo_mun_20[0|1]0",
-  full.names = T
+  pattern = "^censo_mun_20[0|1]0"
 )
 
 for(i in seq_along(censo_files)){
@@ -94,6 +93,7 @@ for(i in seq_along(censo_files)){
       garbage,
       light,
       pop,
+      student_age,
       log_pop = log(pop)
     ) %>%
     setNames(
@@ -362,6 +362,17 @@ file.copy(
   overwrite = T
 )
 
+# prova brasil data
+list.files(
+  "~/princeton/R/data/saeb/data/wrangle/student/",
+  "^saeb_"
+  ) %>% 
+  walk(
+    file.copy,
+    to = here("data/saeb/"),
+    overwrite = T
+  )
+
 # ceara data
 file.copy(
   "~/princeton/R/data/spaece/data/wrangle/spaece.csv",
@@ -506,38 +517,43 @@ teacher_agg <- teacher %>%
 
 # student
 censo_class <- fread(
-  here("data/censo_escolar/censo_class.csv.gz"),
-  nThread = parallel::detectCores()
-) %>% 
-  filter(
-    dep == "municipal",
-    cod_tching_stage %in% c(8, 18, 11, 41)
-  ) %>% 
-  mutate(
-    grade = if_else(cod_tching_stage %in% c(8, 18), 5, 9)
-  )
+  here("data/censo_escolar/censo_class.csv.gz")
+)
 
 censo_class_mun <- censo_class %>% 
   group_by(
     cod_ibge_6,
     year,
-    grade
+    dep
   ) %>% 
-  summarise(
-    num_enroll = sum(num_enroll, na.rm = T)
-  ) %>% 
-  ungroup()
+  summarise_stats(
+    num_enroll
+  )
 
 censo_class_mun %>% 
   fwrite(
     here("data/censo_escolar/censo_class_mun.csv")
   )
   
+censo_class_dep <- censo_class %>% 
+  group_by(
+    dep,
+    year,
+    grade
+  ) %>% 
+  summarise_stats(
+    num_enroll
+  )
+
+censo_class_dep %>% 
+  fwrite(
+    here("data/censo_escolar/censo_class_dep.csv")
+  )
+  
 # teacher turnover
 files <- list.files(
   "~/princeton/R/data/censo_escolar/data/wrangle/harmonized/docentes",
-  pattern = "turnover",
-  full.names = T
+  pattern = "turnover"
 )
 
 names = files %>% 
@@ -560,8 +576,8 @@ censo_turnover <- fread(
 
 censo_turnover_school <- censo_turnover %>% 
   calc_turnover(
-    c("cod_ibge_6", "state", "school_id", "year")
-  )
+    c("state", "cod_ibge_6", "year", "school_id", "grade_level")
+  ) 
 
 censo_turnover_school %>% 
   fwrite(
@@ -575,7 +591,7 @@ gzip(
 
 censo_turnover_mun <- censo_turnover %>% 
   calc_turnover(
-    c("cod_ibge_6", "state", "year")
+    c("state", "cod_ibge_6", "year", "grade_level")
   )
 
 censo_turnover_mun %>% 
@@ -583,71 +599,17 @@ censo_turnover_mun %>%
     here("data/censo_escolar/censo_mun_turnover.csv")
   )
 
+gzip(
+  here("data/censo_escolar/censo_mun_turnover.csv"),
+  overwrite = T
+)
+
 # saeb --------------------------------------------------------------------
-# wrangle
-saeb_student <- fread(
-  here("data/saeb/saeb_student.csv.gz"),
-  nThread = parallel::detectCores(),
-  integer64 = "character"
-) %>% 
-  mutate(
-    grade = case_when(
-      grade == 4 ~ as.integer(5),
-      grade == 8 ~ as.integer(9),
-      T ~ grade
-    )
-  )
-
-# by dependency
-saeb_student_dep <- saeb_student %>% 
-  group_by(
-    year,
-    dep,
-    grade,
-    subject
-  ) %>% 
-  summarise(
-    mean_grade_exam = mean(grade_exam, na.rm = T),
-    attendees = n()
-  ) %>% 
-  add_election %>% 
-  ungroup()
-
-saeb_student_dep %>% 
-  fwrite(
-    here("data/saeb/saeb_exam_dep.csv")
-  )
-
 # by municipality-school
-saeb_student_mun <- saeb_student %>%
-  filter(
-    dep == "municipal"
-  ) %>% 
-  group_by(
-    year,
-    dep,
-    grade,
-    subject
-  ) %>% 
-  mutate(
-    mean_score_year = mean(grade_exam, na.rm = T),
-    election_year = case_when(
-      between(year, 2001, 2004) ~ 2000,
-      between(year, 2005, 2008) ~ 2004,
-      between(year, 2009, 2012) ~ 2008,
-      between(year, 2013, 2016) ~ 2012
-    )
-  ) %>% 
-  group_by(
-    cod_ibge_6,
-    add = T
-  ) %>% 
-  summarise(
-    mean_grade_exam = mean(grade_exam, na.rm = T),
-    mean_grade_exam_dm = (mean(grade_exam, na.rm = T) - mean(mean_score_year))/mean(mean_score_year)*100,
-    attendees = n()
-  ) %>%
-  ungroup()
+saeb_student_mun <- fread(
+  here("data/saeb/saeb_exam_mun.csv")
+) %>% 
+  add_election()
 
 # weight by percentage of students participatings (based on school census data)
 censo_class <- fread(
@@ -669,3 +631,18 @@ saeb_student_mun %>%
   fwrite(
     here("data/saeb/saeb_exam_mun.csv")
   )
+
+# saeb_sample
+saeb_student <- fread(
+  here("data/saeb/saeb_student.csv.gz")
+)
+
+saeb_student %>% 
+  sample_frac(0.25) %>% 
+  fwrite(
+    here("data/saeb/saeb_student_sample.csv")
+  )
+
+gzip(
+  here("data/saeb/saeb_student_sample.csv")
+)

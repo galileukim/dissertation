@@ -1,0 +1,59 @@
+* What I will need to address it he lack of societal actors:
+	I need to either debunk this or incorporate this in a more complex model.
+
+* Local officials' education:
+	Why is officials' education important?
+	Motivate by low levels and rising shares of bureaucrats.
+		Create a comparison group.
+		Compare it to other countries. (Show international variation) - Show the frontier, OECD.
+		Beyond Fukuyama: Look at other scholars that address the question of educational levels of bureaucrats.
+
+* Look at other measures of state capacity.
+	Present the data...
+	Show the correlation between education and income per capita.
+		Study the cases that are outliers.
+		I can look at the PNAD.
+
+* Consider the role of geography in public goods provision.
+	Be careful about the design for the treatment, and whether it is that the treatment is plausibly exogenous.
+		It will be conditionally exogenous, but I have to think about the vector of controls.
+
+* Tell me more about why this is interesting.
+	Collect local data about the time trends? Maybe just show the change.
+	Are we just talking about a cathching up story?
+
+* The story about compression of inequality:
+	Is there just a ceiling effect.
+	There are some strategic decisions made by mayors? Need to move away from the mechanistic story.
+		Maybe focus more closely on the municipalities that had low levels of education.
+		And emphasize the variation despite a common baseline.
+
+* What the distinction between programmatic and clientelistic parties?
+	Selection of bureaucrats, based on merit.
+	Types of policies that are pursued.
+		Think about the technical requirements of these policies.
+
+* Why limit the comparison between PT and PMDB?
+	Expand the set.
+	Condition on the amount of transfers.
+
+* Encourage to specify the tasks implemented by these bureaucrats. 
+	State capacity where there is generic public service delivery.
+		Theorize the tasks which are pursued.
+		Demand side theory.
+		Is there variation in the average pool of talent for the bureaucrats.
+		Variation in the average wages.
+
+* The big issue is the theory.
+	Municipal change in the average level of education. (IMPORTANT)
+	Are more educated bureaucrats more professional?
+
+* Do a better job at motivating this research.
+	I show that there is variation:
+		But why is there variation important?
+		Maybe I should include the set of correlations about social welfare.
+
+* I need to explore further the relation between educational levels of bureaucrats and the actual implementation
+of policies.
+	Why does educational level matter?
+		I need to include the correlation between education and HDMI. (IMPORTANT)
