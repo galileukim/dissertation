@@ -53,11 +53,11 @@
 \contentsline {section}{\numberline {3.1}Introduction}{114}{section.3.1}% 
 \contentsline {section}{\numberline {3.2}Context and Data}{116}{section.3.2}% 
 \contentsline {subsection}{\numberline {3.2.1}Brazilian municipal government}{116}{subsection.3.2.1}% 
-\contentsline {subsection}{\numberline {3.2.2}Municipal employment and patronage in Brazil}{116}{subsection.3.2.2}% 
-\contentsline {subsection}{\numberline {3.2.3}Partisan affiliation in Brazil}{117}{subsection.3.2.3}% 
-\contentsline {section}{\numberline {3.3}Data}{118}{section.3.3}% 
-\contentsline {subsection}{\numberline {3.3.1}Municipal and Private Sector Employment}{118}{subsection.3.3.1}% 
-\contentsline {subsection}{\numberline {3.3.2}Partisan affiliation}{119}{subsection.3.3.2}% 
+\contentsline {subsection}{\numberline {3.2.2}Municipal employment and patronage in Brazil}{117}{subsection.3.2.2}% 
+\contentsline {subsection}{\numberline {3.2.3}Partisan affiliation in Brazil}{118}{subsection.3.2.3}% 
+\contentsline {section}{\numberline {3.3}Data}{119}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}Municipal and Private Sector Employment}{119}{subsection.3.3.1}% 
+\contentsline {subsection}{\numberline {3.3.2}Partisan affiliation}{120}{subsection.3.3.2}% 
 \contentsline {subsection}{\numberline {3.3.3}Joining Public Sector Employment to Partisanship Data}{122}{subsection.3.3.3}% 
 \contentsline {subsection}{\numberline {3.3.4}Who benefits from patronage?}{123}{subsection.3.3.4}% 
 \contentsline {subsection}{\numberline {3.3.5}Islands of Patronage}{127}{subsection.3.3.5}% 
