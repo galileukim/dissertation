@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  31 MAR 2021 11:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  31 MAR 2021 13:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -396,20 +396,20 @@ LaTeX Warning: Label `sec:conclusion' multiply defined.
 ))
 \openout1 = `dissertation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -475,7 +475,7 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box35
-Package hyperref Info: Link coloring ON on input line 72.
+Package hyperref Info: Link coloring ON on input line 66.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -483,14 +483,16 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count145
 )
-LaTeX Info: Redefining \ref on input line 72.
-LaTeX Info: Redefining \pageref on input line 72.
-LaTeX Info: Redefining \nameref on input line 72.
+LaTeX Info: Redefining \ref on input line 66.
+LaTeX Info: Redefining \pageref on input line 66.
+LaTeX Info: Redefining \nameref on input line 66.
  (/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.out) (/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.out)
 \@outlinefile=\write3
 \openout3 = `dissertation.out'.
 
- (/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.toc
+ [1
+
+{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 2.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -498,10 +500,13 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Try loading font information for U+msb on input line 2.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.27 ...cing a wage penalty}{57}{subsection.2.4.3}
+                                                  % [1
 
-
-{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2])
+] [2])
 \tf@toc=\write4
 \openout4 = `dissertation.toc'.
 
@@ -515,90 +520,86 @@ Chapter 1.
  (/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/chapter_education.texpdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.3 
-     [1
+l.3 \end{abstract}
+                   [1
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.6 \end{abstract}
-                   [1]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.20 
+l.17 
       [1]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.26 
+l.23 
       [2]pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.39 
+l.36 
       [3]pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.48 I
+l.45 I
       n municipalities, mayors have to garner legislative support from city ... [4] [5]
 <chapters/chapter_1/plots/descriptive_enrollment.pdf, id=524, 361.35pt x 216.81pt>
 File: chapters/chapter_1/plots/descriptive_enrollment.pdf Graphic file (type pdf)
 <use chapters/chapter_1/plots/descriptive_enrollment.pdf>
-Package pdftex.def Info: chapters/chapter_1/plots/descriptive_enrollment.pdf  used on input line 69.
+Package pdftex.def Info: chapters/chapter_1/plots/descriptive_enrollment.pdf  used on input line 66.
 (pdftex.def)             Requested size: 260.17465pt x 156.10638pt.
  [6 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/descriptive_enrollment.pdf>]
 <chapters/chapter_1/plots/descriptive_staff_breakdown.pdf, id=550, 361.35pt x 216.81pt>
 File: chapters/chapter_1/plots/descriptive_staff_breakdown.pdf Graphic file (type pdf)
 <use chapters/chapter_1/plots/descriptive_staff_breakdown.pdf>
-Package pdftex.def Info: chapters/chapter_1/plots/descriptive_staff_breakdown.pdf  used on input line 80.
+Package pdftex.def Info: chapters/chapter_1/plots/descriptive_staff_breakdown.pdf  used on input line 77.
 (pdftex.def)             Requested size: 260.17465pt x 156.10638pt.
  [7 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/descriptive_staff_breakdown.pdf>] [8]
 <chapters/chapter_1/plots/saeb_map.pdf, id=586, 361.35pt x 361.35pt>
 File: chapters/chapter_1/plots/saeb_map.pdf Graphic file (type pdf)
 <use chapters/chapter_1/plots/saeb_map.pdf>
-Package pdftex.def Info: chapters/chapter_1/plots/saeb_map.pdf  used on input line 107.
+Package pdftex.def Info: chapters/chapter_1/plots/saeb_map.pdf  used on input line 104.
 (pdftex.def)             Requested size: 260.17465pt x 260.1773pt.
  [9 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/saeb_map.pdf>]
 
-Package caption Warning: \label without proper reference on input line 121.
+Package caption Warning: \label without proper reference on input line 118.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:staff_turnover' on page 10 undefined on input line 116.
+LaTeX Warning: Reference `fig:staff_turnover' on page 10 undefined on input line 113.
 
 <chapters/chapter_1/plots/descriptive_staff_turnover.pdf, id=601, 361.35pt x 216.81pt>
 File: chapters/chapter_1/plots/descriptive_staff_turnover.pdf Graphic file (type pdf)
 <use chapters/chapter_1/plots/descriptive_staff_turnover.pdf>
-Package pdftex.def Info: chapters/chapter_1/plots/descriptive_staff_turnover.pdf  used on input line 120.
+Package pdftex.def Info: chapters/chapter_1/plots/descriptive_staff_turnover.pdf  used on input line 117.
 (pdftex.def)             Requested size: 0.0pt x 0.0pt.
 [10 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/descriptive_staff_turnover.pdf>]
 <chapters/chapter_1/plots/hist_coalition.pdf, id=624, 361.35pt x 216.81pt>
 File: chapters/chapter_1/plots/hist_coalition.pdf Graphic file (type pdf)
 <use chapters/chapter_1/plots/hist_coalition.pdf>
-Package pdftex.def Info: chapters/chapter_1/plots/hist_coalition.pdf  used on input line 135.
+Package pdftex.def Info: chapters/chapter_1/plots/hist_coalition.pdf  used on input line 132.
 (pdftex.def)             Requested size: 260.17465pt x 156.10638pt.
  [11 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/hist_coalition.pdf>] [12] [13]
-Overfull \hbox (3.63707pt too wide) in paragraph at lines 188--189
+Overfull \hbox (3.63707pt too wide) in paragraph at lines 185--186
 []\OT1/cmr/m/n/12 Note that the choice of $\OML/cmm/m/it/12 k\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 a\OT1/cmr/m/n/12 )$ and $\OML/cmm/m/it/12 t\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 a\OT1/cmr/m/n/12 )$ fully char-ac-ter-ize any sched-ule $\OML/cmm/m/it/12 a \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 U[]\OT1/cmr/m/n/12 (\OT1/cmr/bx/n/12 v\OML/cmm/m/it/12 ; W[]\OT1/cmr/m/n/12 )$.
  []
 
 [14] [15] [16] [17] [18] [19] [20] (/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/results/turnover_result.tex)
-Overfull \hbox (1.92503pt too wide) in paragraph at lines 6--321
+Overfull \hbox (1.92503pt too wide) in paragraph at lines 6--318
  [][] 
  []
 
 [21]
-Overfull \hbox (8.37123pt too wide) in paragraph at lines 326--327
+Overfull \hbox (8.37123pt too wide) in paragraph at lines 323--324
 \OT1/cmr/m/n/12 trols -- mod-els 2, 4, and 6 -- in con-text with other co-ef-fi-cients for de-mo-graphic/contextual
  []
 
 <chapters/chapter_1/plots/plot_coalition_coef_mun.pdf, id=746, 361.35pt x 216.81pt>
 File: chapters/chapter_1/plots/plot_coalition_coef_mun.pdf Graphic file (type pdf)
 <use chapters/chapter_1/plots/plot_coalition_coef_mun.pdf>
-Package pdftex.def Info: chapters/chapter_1/plots/plot_coalition_coef_mun.pdf  used on input line 330.
+Package pdftex.def Info: chapters/chapter_1/plots/plot_coalition_coef_mun.pdf  used on input line 327.
 (pdftex.def)             Requested size: 260.17465pt x 156.10638pt.
 <chapters/chapter_1/plots/plot_interactions_logit.pdf, id=749, 361.35pt x 216.81pt>
 File: chapters/chapter_1/plots/plot_interactions_logit.pdf Graphic file (type pdf)
 <use chapters/chapter_1/plots/plot_interactions_logit.pdf>
-Package pdftex.def Info: chapters/chapter_1/plots/plot_interactions_logit.pdf  used on input line 339.
+Package pdftex.def Info: chapters/chapter_1/plots/plot_interactions_logit.pdf  used on input line 336.
 (pdftex.def)             Requested size: 260.17465pt x 156.10638pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -606,7 +607,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <chapters/chapter_1/plots/plot_coalition_coef_mun_second.pdf, id=750, 361.35pt x 216.81pt>
 File: chapters/chapter_1/plots/plot_coalition_coef_mun_second.pdf Graphic file (type pdf)
 <use chapters/chapter_1/plots/plot_coalition_coef_mun_second.pdf>
-Package pdftex.def Info: chapters/chapter_1/plots/plot_coalition_coef_mun_second.pdf  used on input line 348.
+Package pdftex.def Info: chapters/chapter_1/plots/plot_coalition_coef_mun_second.pdf  used on input line 345.
 (pdftex.def)             Requested size: 260.17465pt x 156.10638pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -615,7 +616,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
  </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/plot_coalition_coef_mun.pdf>] [23 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/plot_interactions_logit.pdf>] [24 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/plot_coalition_coef_mun_second.pdf>] (/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/results/student_learning.tex)
-Overfull \hbox (15.17233pt too wide) in paragraph at lines 6--359
+Overfull \hbox (15.17233pt too wide) in paragraph at lines 6--356
  [][] 
  []
 
@@ -623,12 +624,12 @@ Overfull \hbox (15.17233pt too wide) in paragraph at lines 6--359
 <chapters/chapter_1/plots/model_turnover_learning.pdf, id=794, 361.35pt x 216.81pt>
 File: chapters/chapter_1/plots/model_turnover_learning.pdf Graphic file (type pdf)
 <use chapters/chapter_1/plots/model_turnover_learning.pdf>
-Package pdftex.def Info: chapters/chapter_1/plots/model_turnover_learning.pdf  used on input line 368.
+Package pdftex.def Info: chapters/chapter_1/plots/model_turnover_learning.pdf  used on input line 365.
 (pdftex.def)             Requested size: 260.17465pt x 156.10638pt.
 <chapters/chapter_1/plots/reelection_marginal_effect_plots.pdf, id=797, 361.35pt x 216.81pt>
 File: chapters/chapter_1/plots/reelection_marginal_effect_plots.pdf Graphic file (type pdf)
 <use chapters/chapter_1/plots/reelection_marginal_effect_plots.pdf>
-Package pdftex.def Info: chapters/chapter_1/plots/reelection_marginal_effect_plots.pdf  used on input line 377.
+Package pdftex.def Info: chapters/chapter_1/plots/reelection_marginal_effect_plots.pdf  used on input line 374.
 (pdftex.def)             Requested size: 260.17465pt x 156.10638pt.
 
 
@@ -641,19 +642,19 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <chapters/chapter_1/plots/covariate_balance.pdf, id=826, 361.35pt x 216.81pt>
 File: chapters/chapter_1/plots/covariate_balance.pdf Graphic file (type pdf)
 <use chapters/chapter_1/plots/covariate_balance.pdf>
-Package pdftex.def Info: chapters/chapter_1/plots/covariate_balance.pdf  used on input line 406.
+Package pdftex.def Info: chapters/chapter_1/plots/covariate_balance.pdf  used on input line 403.
 (pdftex.def)             Requested size: 361.34912pt x 216.80946pt.
  [29 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/covariate_balance.pdf>]
 <chapters/chapter_1/plots/accountability_fit.pdf, id=839, 361.35pt x 216.81pt>
 File: chapters/chapter_1/plots/accountability_fit.pdf Graphic file (type pdf)
 <use chapters/chapter_1/plots/accountability_fit.pdf>
-Package pdftex.def Info: chapters/chapter_1/plots/accountability_fit.pdf  used on input line 416.
+Package pdftex.def Info: chapters/chapter_1/plots/accountability_fit.pdf  used on input line 413.
 (pdftex.def)             Requested size: 361.34912pt x 216.80946pt.
  [30 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/accountability_fit.pdf>]
 <chapters/chapter_1/plots/visual_rdd_legislative_seat_flip.pdf, id=851, 504.88625pt x 504.88625pt>
 File: chapters/chapter_1/plots/visual_rdd_legislative_seat_flip.pdf Graphic file (type pdf)
 <use chapters/chapter_1/plots/visual_rdd_legislative_seat_flip.pdf>
-Package pdftex.def Info: chapters/chapter_1/plots/visual_rdd_legislative_seat_flip.pdf  used on input line 425.
+Package pdftex.def Info: chapters/chapter_1/plots/visual_rdd_legislative_seat_flip.pdf  used on input line 422.
 (pdftex.def)             Requested size: 303.53267pt x 303.53497pt.
 ) [31 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/visual_rdd_legislative_seat_flip.pdf>]
 Chapter 2.
@@ -1221,12 +1222,12 @@ Package pdftex.def Info: chapters/chapter_3/figures/partisanship/plot_contributi
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 89.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 119.
 [138]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 89.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 119.
  (/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.aux (/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/chapter_education.aux) (/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/chapter_corruption.aux) (/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/chapter_patronage.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 89.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 89.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 119.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 119.
 Package rerunfilecheck Info: File `dissertation.out' has not changed.
 (rerunfilecheck)             Checksum: EB2C7313945E244A8C15D45BF76DED04;4735.
 
@@ -1236,18 +1237,18 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 89.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 119.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 211 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 10603 strings out of 492616
- 176990 string characters out of 6129482
- 288849 words of memory out of 5000000
- 13818 multiletter control sequences out of 15000+600000
- 18265 words of font info for 69 fonts, out of 8000000 for 9000
+ 10598 strings out of 492616
+ 176911 string characters out of 6129482
+ 288598 words of memory out of 5000000
+ 13813 multiletter control sequences out of 15000+600000
+ 17018 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,17n,48p,1795b,637s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{https://www.seduc.ce.gov.br/spaece/} has been referenced but does not exist, replaced by a fixed one
@@ -1265,7 +1266,7 @@ pdfTeX warning (dest): name{http://portal.inep.gov.br/web/guest/dados} has been 
 pdfTeX warning (dest): name{https://www.fnde.gov.br/index.php/financiamento/fundeb/sobre-o-plano-ou-programa/sobre-o-fundeb} has been referenced but does not exist, replaced by a fixed one
 
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.pdf" (144 pages, 3458291 bytes).
+Output written on "/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.pdf" (144 pages, 3460780 bytes).
 PDF statistics:
  2219 PDF objects out of 2487 (max. 8388607)
  1883 compressed objects within 19 object streams
