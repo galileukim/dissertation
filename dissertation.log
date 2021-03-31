@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  31 MAR 2021 00:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  31 MAR 2021 10:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -357,55 +357,55 @@ Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
 )
 \Hy@SectionHShift=\skip62
+) (/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/kbordermatrix.sty
+Package: kbordermatrix 2011/09/21 Bordered matrix with brackets
+\kbcolsep=\skip63
+\kbrowsep=\skip64
+\br@kwd=\skip65
+\k@bordht=\skip66
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 38.
- (/usr/local/texlive/2019/texmf-dist/tex/latex/footmisc/footmisc.sty
-Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
-\FN@temptoken=\toks34
-\footnotemargin=\dimen151
-\c@pp@next@reset=\count134
-Package footmisc Info: Declaring symbol style bringhurst on input line 855.
-Package footmisc Info: Declaring symbol style chicago on input line 863.
-Package footmisc Info: Declaring symbol style wiley on input line 872.
-Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
-Package footmisc Info: Declaring symbol style lamport* on input line 903.
-Package footmisc Info: Declaring symbol style lamport*-robust on input line 924.
-)
-\c@theorem=\count135
-\c@proposition=\count136
-\c@corollary=\count137
- (/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.aux (/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/chapter_education.aux))
+Package hyperref Info: Option `colorlinks' set `true' on input line 36.
+\c@theorem=\count134
+\c@proposition=\count135
+\c@corollary=\count136
+\c@hypothesis=\count137
+\c@definition=\count138
+ (/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.aux (/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/chapter_education.aux) (/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.aux
+
+LaTeX Warning: Label `sec:theory' multiply defined.
+
+))
 \openout1 = `dissertation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
-* paper: a4paper
+* paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(108.405pt, 380.69788pt, 108.405pt)
-* v-part:(T,H,B)=(108.405pt, 628.23685pt, 108.405pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=380.69788pt
-* \textheight=628.23685pt
+* h-part:(L,W,R)=(108.405pt, 397.485pt, 108.405pt)
+* v-part:(T,H,B)=(108.405pt, 578.15999pt, 108.405pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=397.485pt
+* \textheight=578.15999pt
 * \oddsidemargin=36.13501pt
 * \evensidemargin=36.13501pt
 * \topmargin=-0.86499pt
@@ -413,7 +413,7 @@ LaTeX Font Info:    ... okay on input line 63.
 * \headsep=25.0pt
 * \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=35.0pt
+* \marginparwidth=44.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
 * \skip\footins=10.8pt plus 4.0pt minus 2.0pt
@@ -428,17 +428,17 @@ LaTeX Font Info:    ... okay on input line 63.
 
 (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count138
-\scratchdimen=\dimen152
+\scratchcounter=\count139
+\scratchdimen=\dimen151
 \scratchbox=\box34
-\nofMPsegments=\count139
-\nofMParguments=\count140
-\everyMPshowfont=\toks35
-\MPscratchCnt=\count141
-\MPscratchDim=\dimen153
-\MPnumerator=\count142
-\makeMPintoPDFobject=\count143
-\everyMPtoPDFconversion=\toks36
+\nofMPsegments=\count140
+\nofMParguments=\count141
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count142
+\MPscratchDim=\dimen152
+\MPnumerator=\count143
+\makeMPintoPDFobject=\count144
+\everyMPtoPDFconversion=\toks35
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
  (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -456,17 +456,17 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box35
-Package hyperref Info: Link coloring ON on input line 63.
+Package hyperref Info: Link coloring ON on input line 72.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count144
+\c@section@level=\count145
 )
-LaTeX Info: Redefining \ref on input line 63.
-LaTeX Info: Redefining \pageref on input line 63.
-LaTeX Info: Redefining \nameref on input line 63.
+LaTeX Info: Redefining \ref on input line 72.
+LaTeX Info: Redefining \pageref on input line 72.
+LaTeX Info: Redefining \nameref on input line 72.
  (/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.out) (/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.out)
 \@outlinefile=\write3
 \openout3 = `dissertation.out'.
@@ -479,16 +479,16 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Try loading font information for U+msb on input line 2.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+) [1
+
+
+{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
 \tf@toc=\write4
 \openout4 = `dissertation.toc'.
 
- [1
-
-
-{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+ [2]
 Chapter 1.
-[2
+[3
 
 ]
 \openout2 = `chapters/chapter_1/chapter_education.aux'.
@@ -556,8 +556,8 @@ l.20
       [1]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.25 T
-      his study contributes to an emerging literature on the politics of per... [2]
+l.24 
+      [2]
 
 Package natbib Warning: Citation `pepinsky_bureaucracy_2017' on page 3 undefined on input line 25.
 
@@ -597,7 +597,11 @@ Package natbib Warning: Citation `kohli_state-directed_2004' on page 3 undefined
 
 Package natbib Warning: Citation `evans_bureaucracy_1999' on page 3 undefined on input line 36.
 
-[3]
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.37 
+      [3]
 
 Package natbib Warning: Citation `gulzar_politicians_2017' on page 4 undefined on input line 38.
 
@@ -651,11 +655,14 @@ Package natbib Warning: Citation `colonnelli_patronage_2017' on page 5 undefined
 
 Package natbib Warning: Citation `paschoal_historia_2009' on page 6 undefined on input line 65.
 
-<chapters/chapter_1/plots/descriptive_enrollment.pdf, id=133, 361.35pt x 216.81pt>
+<chapters/chapter_1/plots/descriptive_enrollment.pdf, id=222, 361.35pt x 216.81pt>
 File: chapters/chapter_1/plots/descriptive_enrollment.pdf Graphic file (type pdf)
 <use chapters/chapter_1/plots/descriptive_enrollment.pdf>
 Package pdftex.def Info: chapters/chapter_1/plots/descriptive_enrollment.pdf  used on input line 69.
-(pdftex.def)             Requested size: 228.42104pt x 137.05417pt.
+(pdftex.def)             Requested size: 238.49342pt x 143.09503pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 Package natbib Warning: Citation `brollo_victor_2017' on page 6 undefined on input line 74.
 
@@ -668,236 +675,692 @@ Package natbib Warning: Citation `militao_educacao_2014' on page 6 undefined on 
 
 Package natbib Warning: Citation `oliveros_making_2016' on page 6 undefined on input line 76.
 
-[6 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/descriptive_enrollment.pdf>]
-<chapters/chapter_1/plots/descriptive_staff_breakdown.pdf, id=146, 361.35pt x 216.81pt>
+[6]
+<chapters/chapter_1/plots/descriptive_staff_breakdown.pdf, id=228, 361.35pt x 216.81pt>
 File: chapters/chapter_1/plots/descriptive_staff_breakdown.pdf Graphic file (type pdf)
 <use chapters/chapter_1/plots/descriptive_staff_breakdown.pdf>
 Package pdftex.def Info: chapters/chapter_1/plots/descriptive_staff_breakdown.pdf  used on input line 80.
-(pdftex.def)             Requested size: 228.42104pt x 137.05417pt.
+(pdftex.def)             Requested size: 238.49342pt x 143.09503pt.
 
 
 Package natbib Warning: Citation `ferraz_corrupting_2012' on page 7 undefined on input line 83.
 
+[7 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/descriptive_enrollment.pdf> </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/descriptive_staff_breakdown.pdf>]
 
-Package natbib Warning: Citation `souza_reforma_2004' on page 7 undefined on input line 87.
+Package natbib Warning: Citation `souza_reforma_2004' on page 8 undefined on input line 87.
 
-[7 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/descriptive_staff_breakdown.pdf>]
 
 Package natbib Warning: Citation `dantas_eleicoes_2013' on page 8 undefined on input line 89.
 
-
-Overfull \hbox (25.80008pt too wide) in paragraph at lines 91--92
-\OT1/cmr/m/n/12 executive-legislative con-sul-ta-tions ul-ti-mately de-ter-mine the al-lo-ca-tion (\OT1/cmr/m/it/12 alota^^Xc~ao\OT1/cmr/m/n/12 )
- []
-
 [8]
-<chapters/chapter_1/plots/saeb_map.pdf, id=174, 361.35pt x 361.35pt>
+<chapters/chapter_1/plots/saeb_map.pdf, id=262, 361.35pt x 361.35pt>
 File: chapters/chapter_1/plots/saeb_map.pdf Graphic file (type pdf)
 <use chapters/chapter_1/plots/saeb_map.pdf>
 Package pdftex.def Info: chapters/chapter_1/plots/saeb_map.pdf  used on input line 107.
-(pdftex.def)             Requested size: 228.42104pt x 228.42363pt.
+(pdftex.def)             Requested size: 238.49342pt x 238.49173pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[9]
+[9] [10 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/saeb_map.pdf>]
 
 Package caption Warning: \label without proper reference on input line 121.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:staff_turnover' on page 10 undefined on input line 116.
+LaTeX Warning: Reference `fig:staff_turnover' on page 11 undefined on input line 116.
 
-<chapters/chapter_1/plots/descriptive_staff_turnover.pdf, id=189, 361.35pt x 216.81pt>
+
+Overfull \hbox (0.7874pt too wide) in paragraph at lines 116--117
+[]\OT1/cmr/m/n/12 Figure [][][][][] pro-vides de-scrip-tive statis-tics on bu-reau-cratic per-son-nel in Brazil,
+ []
+
+<chapters/chapter_1/plots/descriptive_staff_turnover.pdf, id=284, 361.35pt x 216.81pt>
 File: chapters/chapter_1/plots/descriptive_staff_turnover.pdf Graphic file (type pdf)
 <use chapters/chapter_1/plots/descriptive_staff_turnover.pdf>
 Package pdftex.def Info: chapters/chapter_1/plots/descriptive_staff_turnover.pdf  used on input line 120.
 (pdftex.def)             Requested size: 0.0pt x 0.0pt.
 
-Package natbib Warning: Citation `pereira_junior_indicadores_2016' on page 10 undefined on input line 125.
+Package natbib Warning: Citation `pereira_junior_indicadores_2016' on page 11 undefined on input line 125.
 
-
-Overfull \hbox (17.18579pt too wide) in paragraph at lines 125--126
-[]\OT1/cmr/m/n/12 I pro-pose three dif-fer-ent spec-i-fi-ca-tions for mea-sur-ing bu-reau-cratic turnover.
- []
-
-[10 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/saeb_map.pdf> </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/descriptive_staff_turnover.pdf>]
-<chapters/chapter_1/plots/hist_coalition.pdf, id=207, 361.35pt x 216.81pt>
+[11 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/descriptive_staff_turnover.pdf>]
+<chapters/chapter_1/plots/hist_coalition.pdf, id=305, 361.35pt x 216.81pt>
 File: chapters/chapter_1/plots/hist_coalition.pdf Graphic file (type pdf)
 <use chapters/chapter_1/plots/hist_coalition.pdf>
 Package pdftex.def Info: chapters/chapter_1/plots/hist_coalition.pdf  used on input line 135.
-(pdftex.def)             Requested size: 228.42104pt x 137.05417pt.
- [11 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/hist_coalition.pdf>] [12] [13] [14] [15] [16]
-Overfull \hbox (7.45738pt too wide) detected at line 274
-[]
+(pdftex.def)             Requested size: 238.49342pt x 143.09503pt.
+ [12 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/hist_coalition.pdf>] [13] [14] [15] [16] [17]
+
+Package natbib Warning: Citation `groseclose_1996_buying' on page 18 undefined on input line 276.
+
+[18] [19]
+
+Package natbib Warning: Citation `diprete_multilevel_1994' on page 20 undefined on input line 299.
+
+
+Package natbib Warning: Citation `lee_using_2000' on page 20 undefined on input line 299.
+
+[20] [21] (/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/results/turnover_result.tex)
+Overfull \hbox (38.06004pt too wide) in paragraph at lines 6--321
+ [][] 
  []
 
-
-Package natbib Warning: Citation `groseclose_1996_buying' on page 17 undefined on input line 276.
-
-
-Overfull \hbox (10.16428pt too wide) in paragraph at lines 280--281
-\OT1/cmr/m/n/12 Enacting pol-icy re-quires the ex-change of po-lit-i-cal cur-rency for votes. Whether
- []
-
-[17] [18]
-
-Package natbib Warning: Citation `diprete_multilevel_1994' on page 19 undefined on input line 299.
-
-
-Package natbib Warning: Citation `lee_using_2000' on page 19 undefined on input line 299.
-
-[19] [20] (/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/results/turnover_result.tex) [21]
-<chapters/chapter_1/plots/plot_coalition_coef_mun.pdf, id=321, 361.35pt x 216.81pt>
+[22]
+<chapters/chapter_1/plots/plot_coalition_coef_mun.pdf, id=413, 361.35pt x 216.81pt>
 File: chapters/chapter_1/plots/plot_coalition_coef_mun.pdf Graphic file (type pdf)
 <use chapters/chapter_1/plots/plot_coalition_coef_mun.pdf>
 Package pdftex.def Info: chapters/chapter_1/plots/plot_coalition_coef_mun.pdf  used on input line 330.
-(pdftex.def)             Requested size: 228.42104pt x 137.05417pt.
-<chapters/chapter_1/plots/plot_interactions_logit.pdf, id=324, 361.35pt x 216.81pt>
+(pdftex.def)             Requested size: 238.49342pt x 143.09503pt.
+<chapters/chapter_1/plots/plot_interactions_logit.pdf, id=416, 361.35pt x 216.81pt>
 File: chapters/chapter_1/plots/plot_interactions_logit.pdf Graphic file (type pdf)
 <use chapters/chapter_1/plots/plot_interactions_logit.pdf>
 Package pdftex.def Info: chapters/chapter_1/plots/plot_interactions_logit.pdf  used on input line 339.
-(pdftex.def)             Requested size: 228.42104pt x 137.05417pt.
+(pdftex.def)             Requested size: 238.49342pt x 143.09503pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<chapters/chapter_1/plots/plot_coalition_coef_mun_second.pdf, id=325, 361.35pt x 216.81pt>
+[23
+
+
+ </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/plot_coalition_coef_mun.pdf>]
+<chapters/chapter_1/plots/plot_coalition_coef_mun_second.pdf, id=428, 361.35pt x 216.81pt>
 File: chapters/chapter_1/plots/plot_coalition_coef_mun_second.pdf Graphic file (type pdf)
 <use chapters/chapter_1/plots/plot_coalition_coef_mun_second.pdf>
 Package pdftex.def Info: chapters/chapter_1/plots/plot_coalition_coef_mun_second.pdf  used on input line 348.
-(pdftex.def)             Requested size: 228.42104pt x 137.05417pt.
-[22
-
-
- </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/plot_coalition_coef_mun.pdf>] [23 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/plot_interactions_logit.pdf> </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/plot_coalition_coef_mun_second.pdf>] (/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/results/student_learning.tex)
-Overfull \hbox (1.23048pt too wide) in paragraph at lines 6--359
+(pdftex.def)             Requested size: 238.49342pt x 143.09503pt.
+ [24 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/plot_interactions_logit.pdf> </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/plot_coalition_coef_mun_second.pdf>] [25] (/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/results/student_learning.tex)
+Overfull \hbox (51.30734pt too wide) in paragraph at lines 6--359
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 51.78438pt on input line 361.
+LaTeX Warning: Float too large for page by 34.99725pt on input line 361.
 
-[24]
-<chapters/chapter_1/plots/model_turnover_learning.pdf, id=364, 361.35pt x 216.81pt>
+[26]
+<chapters/chapter_1/plots/model_turnover_learning.pdf, id=462, 361.35pt x 216.81pt>
 File: chapters/chapter_1/plots/model_turnover_learning.pdf Graphic file (type pdf)
 <use chapters/chapter_1/plots/model_turnover_learning.pdf>
 Package pdftex.def Info: chapters/chapter_1/plots/model_turnover_learning.pdf  used on input line 368.
-(pdftex.def)             Requested size: 228.42104pt x 137.05417pt.
-<chapters/chapter_1/plots/reelection_marginal_effect_plots.pdf, id=367, 361.35pt x 216.81pt>
+(pdftex.def)             Requested size: 238.49342pt x 143.09503pt.
+<chapters/chapter_1/plots/reelection_marginal_effect_plots.pdf, id=465, 361.35pt x 216.81pt>
 File: chapters/chapter_1/plots/reelection_marginal_effect_plots.pdf Graphic file (type pdf)
 <use chapters/chapter_1/plots/reelection_marginal_effect_plots.pdf>
 Package pdftex.def Info: chapters/chapter_1/plots/reelection_marginal_effect_plots.pdf  used on input line 377.
-(pdftex.def)             Requested size: 228.42104pt x 137.05417pt.
+(pdftex.def)             Requested size: 238.49342pt x 143.09503pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[25
+[27
 
 
- </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/model_turnover_learning.pdf>]
+ </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/model_turnover_learning.pdf>] [28 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/reelection_marginal_effect_plots.pdf>]
 
-Package natbib Warning: Citation `gottlieb_countervailing_2019' on page 26 undefined on input line 394.
+Package natbib Warning: Citation `gottlieb_countervailing_2019' on page 29 undefined on input line 394.
 
-[26 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/reelection_marginal_effect_plots.pdf>] [27]
+[29]
 No file dissertation.bbl.
-<chapters/chapter_1/plots/covariate_balance.pdf, id=395, 361.35pt x 216.81pt>
+<chapters/chapter_1/plots/covariate_balance.pdf, id=492, 361.35pt x 216.81pt>
 File: chapters/chapter_1/plots/covariate_balance.pdf Graphic file (type pdf)
 <use chapters/chapter_1/plots/covariate_balance.pdf>
 Package pdftex.def Info: chapters/chapter_1/plots/covariate_balance.pdf  used on input line 410.
 (pdftex.def)             Requested size: 361.34912pt x 216.80946pt.
-[28 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/covariate_balance.pdf>]
-<chapters/chapter_1/plots/accountability_fit.pdf, id=408, 361.35pt x 216.81pt>
+[30 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/covariate_balance.pdf>]
+<chapters/chapter_1/plots/accountability_fit.pdf, id=505, 361.35pt x 216.81pt>
 File: chapters/chapter_1/plots/accountability_fit.pdf Graphic file (type pdf)
 <use chapters/chapter_1/plots/accountability_fit.pdf>
 Package pdftex.def Info: chapters/chapter_1/plots/accountability_fit.pdf  used on input line 420.
 (pdftex.def)             Requested size: 361.34912pt x 216.80946pt.
- [29 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/accountability_fit.pdf>]
-<chapters/chapter_1/plots/visual_rdd_legislative_seat_flip.pdf, id=420, 504.88625pt x 504.88625pt>
+ [31 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/accountability_fit.pdf>]
+<chapters/chapter_1/plots/visual_rdd_legislative_seat_flip.pdf, id=517, 504.88625pt x 504.88625pt>
 File: chapters/chapter_1/plots/visual_rdd_legislative_seat_flip.pdf Graphic file (type pdf)
 <use chapters/chapter_1/plots/visual_rdd_legislative_seat_flip.pdf>
 Package pdftex.def Info: chapters/chapter_1/plots/visual_rdd_legislative_seat_flip.pdf  used on input line 429.
-(pdftex.def)             Requested size: 266.48735pt x 266.48676pt.
-) [30 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/visual_rdd_legislative_seat_flip.pdf>]
+(pdftex.def)             Requested size: 278.23828pt x 278.24297pt.
+) [32 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/visual_rdd_legislative_seat_flip.pdf>]
 Chapter 2.
-
-Package natbib Warning: There were undefined citations.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
-[31
+[33
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
- (/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.aux (/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/chapter_education.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 73.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 73.
+\openout2 = `chapters/chapter_2/paper.aux'.
+
+ (/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex [34
+
+]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.27 
+      [1]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.30 \end{abstract}
+                    [1]
+
+Package natbib Warning: Citation `RoseAckerman2016' on page 1 undefined on input line 37.
+
+
+Package natbib Warning: Citation `Rothstein2011' on page 1 undefined on input line 37.
+
+
+Package natbib Warning: Citation `fisman_are_2007' on page 1 undefined on input line 37.
+
+
+Package natbib Warning: Citation `chen2018busting' on page 1 undefined on input line 37.
+
+
+Package natbib Warning: Citation `nyblade2008cheats' on page 1 undefined on input line 37.
+
+
+Package natbib Warning: Citation `ferraz_electoral_2011' on page 1 undefined on input line 37.
+
+
+Package natbib Warning: Citation `bobonis2016' on page 1 undefined on input line 37.
+
+
+Package natbib Warning: Citation `besley_principled_2006' on page 1 undefined on input line 39.
+
+
+Package natbib Warning: Citation `ferraz_electoral_2007' on page 1 undefined on input line 39.
+
+
+Package natbib Warning: Citation `ferraz_exposing_2008' on page 1 undefined on input line 42.
+
+
+Package natbib Warning: Citation `brollo2013political' on page 1 undefined on input line 42.
+
+
+Package natbib Warning: Citation `zamboni_audit_2018' on page 1 undefined on input line 42.
+
+
+Package natbib Warning: Citation `avis_government_2018' on page 1 undefined on input line 42.
+
+
+Package natbib Warning: Citation `ferraz_exposing_2008' on page 1 undefined on input line 42.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.43 
+      [1]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.48 
+      [2]
+
+Package natbib Warning: Citation `dal2013strengthening' on page 3 undefined on input line 49.
+
+
+Package natbib Warning: Citation `olken_monitoring_2007' on page 3 undefined on input line 51.
+
+
+Package natbib Warning: Citation `bobonis2016' on page 3 undefined on input line 51.
+
+
+Package natbib Warning: Citation `zamboni_audit_2018' on page 3 undefined on input line 51.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.52 
+      [3]
+
+Package natbib Warning: Citation `treisman2007have' on page 4 undefined on input line 53.
+
+
+Package natbib Warning: Citation `olken_corruption_2012' on page 4 undefined on input line 53.
+
+
+Package natbib Warning: Citation `nyblade2008cheats' on page 4 undefined on input line 53.
+
+
+Package natbib Warning: Citation `ferraz_electoral_2011' on page 4 undefined on input line 53.
+
+
+Package natbib Warning: Citation `bobonis2016' on page 4 undefined on input line 53.
+
+
+Package natbib Warning: Citation `ferraz_electoral_2011' on page 4 undefined on input line 53.
+
+
+Package natbib Warning: Citation `evans_embedded_1995' on page 4 undefined on input line 57.
+
+
+Package natbib Warning: Citation `grindle_jobs_2012' on page 4 undefined on input line 57.
+
+
+Package natbib Warning: Citation `centeno_unpacking_2017' on page 4 undefined on input line 57.
+
+
+Package natbib Warning: Citation `duflo_incentives_2012' on page 4 undefined on input line 57.
+
+
+Package natbib Warning: Citation `dal2013strengthening' on page 4 undefined on input line 57.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.60 
+      [4]
+
+Package natbib Warning: Citation `abrucio_redefinicao_1996' on page 5 undefined on input line 74.
+
+
+Package natbib Warning: Citation `cardoso_jr_burocracia_2011' on page 5 undefined on input line 74.
+
+
+Package natbib Warning: Citation `arretche_trajetorias_2015' on page 5 undefined on input line 74.
+
+
+Package natbib Warning: Citation `brollo_victor_2017' on page 5 undefined on input line 76.
+
+
+Package natbib Warning: Citation `colonnelli_patronage_2017' on page 5 undefined on input line 76.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.77 
+      [5]
+
+Package natbib Warning: Citation `colonnelli_patronage_2017' on page 6 undefined on input line 80.
+
+
+Package natbib Warning: Citation `brollo_victor_2017' on page 6 undefined on input line 80.
+
+(/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/tables/desc.tex)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `app:mgmt' on page 6 undefined on input line 92.
+
+
+Package natbib Warning: Citation `grindle_good_2004' on page 6 undefined on input line 92.
+
+
+Package natbib Warning: Citation `Bloom2007' on page 6 undefined on input line 92.
+
+
+LaTeX Warning: Reference `app:mgmt' on page 6 undefined on input line 92.
+
+
+LaTeX Warning: Reference `app:managementRobustness' on page 6 undefined on input line 92.
+
+
+Overfull \hbox (1.15448pt too wide) in paragraph at lines 92--93
+[]\OT1/cmr/m/n/12 Our man-age-ment in-dex uses data from the \OT1/cmr/m/it/12 Pesquisa de In-forma^^Xc~oes B^^Sasicas
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.93 
+      [6]pdfTeX warning (ext4): destination with the same identifier (name{page.7}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.93 
+      [7]
+
+LaTeX Warning: Reference `app:additional_descriptives' on page 8 undefined on input line 94.
+
+
+Package natbib Warning: Citation `blinder1973wage' on page 8 undefined on input line 94.
+
+<chapters/chapter_2/figures/sampleDistribwwb.pdf, id=594, 216.81pt x 216.81pt>
+File: chapters/chapter_2/figures/sampleDistribwwb.pdf Graphic file (type pdf)
+<use chapters/chapter_2/figures/sampleDistribwwb.pdf>
+Package pdftex.def Info: chapters/chapter_2/figures/sampleDistribwwb.pdf  used on input line 98.
+(pdftex.def)             Requested size: 216.80946pt x 216.80946pt.
+
+Package natbib Warning: Citation `arretche_politicas_1999' on page 8 undefined on input line 110.
+
+
+Package natbib Warning: Citation `prado_transferencias_2001' on page 8 undefined on input line 110.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.111 
+       [8 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/sampleDistribwwb.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 112--112
+[][][]\OT1/cmr/m/n/10 See [][]$\OT1/cmtt/m/n/10 http : / / www . cgu . gov . br / assuntos / auditoria -[] e -[] fiscalizacao / acoes -[]
+ []
+
+
+Underfull \hbox (badness 7613) in paragraph at lines 112--112
+\OT1/cmtt/m/n/10 investigativas / operacoes -[] especiais$[][]\OT1/cmr/m/n/10 , for a jour-nal-is-tic cov-er-age, see [][]$\OT1/cmtt/m/n/10 https :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--112
+\OT1/cmtt/m/n/10 / / g1 . globo . com / pb / paraiba / noticia / 2020 / 09 / 02 / pf -[] deflagra -[] 4a -[] fase -[] da -[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--112
+[][][]\OT1/cmr/m/n/10 See [][]$\OT1/cmtt/m/n/10 https : / / g1 . globo . com / sp / sao -[] paulo / noticia / 2018 / 12 / 13 / prefeito -[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--112
+\OT1/cmtt/m/n/10 continuou -[] chefiando -[] esquema -[] de -[] propina -[] em -[] maua -[] mesmo -[] apos -[] prisao -[] em -[] maio -[]
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.9}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.114 \subsubsection
+                    *{Data} [9]
+
+Package natbib Warning: Citation `avis_government_2018' on page 10 undefined on input line 118.
+
+
+LaTeX Warning: Reference `app:fault' on page 10 undefined on input line 118.
+
+
+Package natbib Warning: Citation `avis_government_2018' on page 10 undefined on input line 120.
+
+
+LaTeX Warning: Reference `fig:corruptionCorrelation' on page 10 undefined on input line 120.
+
+
+LaTeX Warning: Reference `app:fault' on page 10 undefined on input line 120.
+
+
+LaTeX Warning: Reference `app:fault' on page 10 undefined on input line 120.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.10}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.121 
+       [10]
+
+Package natbib Warning: Citation `ferraz_exposing_2008' on page 11 undefined on input line 132.
+
+
+Package natbib Warning: Citation `ferraz_electoral_2011' on page 11 undefined on input line 132.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.11}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.133 
+       [11]pdfTeX warning (ext4): destination with the same identifier (name{page.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.144 
+       [12]
+Overfull \hbox (7.95107pt too wide) in paragraph at lines 152--153
+[]\OT1/cmr/m/n/12 The model in equa-tion [][]2.1[][] iden-ti-fies the ef-fect of an au-dit on the municipality-
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.13}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.155 
+       [13]
+
+LaTeX Warning: Reference `app:robustness' on page 14 undefined on input line 160.
+
+
+LaTeX Warning: Reference `app:otherBureaucratsRobustness' on page 14 undefined on input line 160.
+
+
+LaTeX Warning: Reference `app:tenuredRobustness' on page 14 undefined on input line 160.
+
+
+LaTeX Warning: Reference `app:secretariesRobustness' on page 14 undefined on input line 160.
+
+
+LaTeX Warning: Reference `app:hiring' on page 14 undefined on input line 160.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.14}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.161 
+       [14]
+
+LaTeX Warning: Reference `app:balanceRobustness' on page 15 undefined on input line 162.
+
+
+LaTeX Warning: Reference `app:percentageRobustness' on page 15 undefined on input line 162.
+
+
+LaTeX Warning: Reference `app:managementRobustness' on page 15 undefined on input line 162.
+
+
+LaTeX Warning: Reference `app:neverAuditedRobustness' on page 15 undefined on input line 162.
+
+
+LaTeX Warning: Reference `app:multinomial' on page 15 undefined on input line 162.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.15}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.170 \begin{landscape}
+                        [15] (/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/tables/mainModsW.tex)
+
+LaTeX Warning: Float too large for page by 0.11105pt on input line 177.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.16}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.178 \end{landscape}
+                      [16]
+<chapters/chapter_2/figures/mainPl.pdf, id=662, 433.62pt x 433.62pt>
+File: chapters/chapter_2/figures/mainPl.pdf Graphic file (type pdf)
+<use chapters/chapter_2/figures/mainPl.pdf>
+Package pdftex.def Info: chapters/chapter_2/figures/mainPl.pdf  used on input line 182.
+(pdftex.def)             Requested size: 433.61894pt x 433.61894pt.
+
+Overfull \hbox (36.13394pt too wide) in paragraph at lines 182--183
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<chapters/chapter_2/figures/AMEoverTime.pdf, id=666, 433.62pt x 578.16pt>
+File: chapters/chapter_2/figures/AMEoverTime.pdf Graphic file (type pdf)
+<use chapters/chapter_2/figures/AMEoverTime.pdf>
+Package pdftex.def Info: chapters/chapter_2/figures/AMEoverTime.pdf  used on input line 191.
+(pdftex.def)             Requested size: 433.61894pt x 578.15858pt.
+
+Overfull \hbox (36.13394pt too wide) in paragraph at lines 191--192
+ [][] 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.17}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.195 
+       [17
+
+
+]
+Overfull \vbox (118.79863pt too high) has occurred while \output is active []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.18}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.195 
+       [18 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEoverTime.pdf>]
+<chapters/chapter_2/figures/AMEpolitical_term1Client.pdf, id=682, 433.62pt x 361.35pt>
+File: chapters/chapter_2/figures/AMEpolitical_term1Client.pdf Graphic file (type pdf)
+<use chapters/chapter_2/figures/AMEpolitical_term1Client.pdf>
+Package pdftex.def Info: chapters/chapter_2/figures/AMEpolitical_term1Client.pdf  used on input line 198.
+(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
+
+Overfull \hbox (36.13394pt too wide) in paragraph at lines 198--199
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `app:political' on page 19 undefined on input line 203.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.19}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.209 Y
+       et, our current empirical strategy makes it difficult to assess these... [19]
+
+Package natbib Warning: Citation `poulsen2019corruption' on page 20 undefined on input line 209.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.20}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.218 I
+       n the model, a bureaucrat is employed in a bureaucracy at $t = 0$ and... [20]
+
+LaTeX Warning: Reference `app:proofs' on page 21 undefined on input line 224.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.21}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.225 
+       [21]pdfTeX warning (ext4): destination with the same identifier (name{page.22}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.233 
+       [22]pdfTeX warning (ext4): destination with the same identifier (name{page.23}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.248 $$
+         [23]pdfTeX warning (ext4): destination with the same identifier (name{page.24}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.268 
+       [24]
+<chapters/chapter_2/figures_theory/eq_baseline.pdf, id=725, 249.9203pt x 61.0706pt>
+File: chapters/chapter_2/figures_theory/eq_baseline.pdf Graphic file (type pdf)
+<use chapters/chapter_2/figures_theory/eq_baseline.pdf>
+Package pdftex.def Info: chapters/chapter_2/figures_theory/eq_baseline.pdf  used on input line 276.
+(pdftex.def)             Requested size: 249.91968pt x 61.07043pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.25}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.289     \label
+                {prop:eqK} [25 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures_theory/eq_baseline.pdf>]
+<chapters/chapter_2/figures_theory/eq_with_k.pdf, id=739, 247.21077pt x 249.46327pt>
+File: chapters/chapter_2/figures_theory/eq_with_k.pdf Graphic file (type pdf)
+<use chapters/chapter_2/figures_theory/eq_with_k.pdf>
+Package pdftex.def Info: chapters/chapter_2/figures_theory/eq_with_k.pdf  used on input line 296.
+(pdftex.def)             Requested size: 247.21016pt x 249.46265pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.26}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.304 
+       [26 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures_theory/eq_with_k.pdf>]
+<chapters/chapter_2/figures_theory/eq_with_c.pdf, id=751, 421.56882pt x 228.49185pt>
+File: chapters/chapter_2/figures_theory/eq_with_c.pdf Graphic file (type pdf)
+<use chapters/chapter_2/figures_theory/eq_with_c.pdf>
+Package pdftex.def Info: chapters/chapter_2/figures_theory/eq_with_c.pdf  used on input line 309.
+(pdftex.def)             Requested size: 421.56778pt x 228.49129pt.
+
+Overfull \hbox (24.08278pt too wide) in paragraph at lines 309--310
+ [][] 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.27}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.315 
+       [27 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures_theory/eq_with_c.pdf>]pdfTeX warning (ext4): destination with the same identifier (name{page.28}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.328 
+       [28]
+
+Package natbib Warning: Citation `dal2013strengthening' on page 29 undefined on input line 331.
+
+
+Package natbib Warning: Citation `roseackerman1975' on page 29 undefined on input line 331.
+
+
+Package natbib Warning: Citation `shleifervishny1993corruption' on page 29 undefined on input line 333.
+
+
+Package natbib Warning: Citation `ferraz_electoral_2011' on page 29 undefined on input line 333.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.29}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.334 
+       [29]pdfTeX warning (ext4): destination with the same identifier (name{page.30}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.341 
+       [30]pdfTeX warning (ext4): destination with the same identifier (name{page.31}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.353 \end{align*}
+                   [31])pdfTeX warning (ext4): destination with the same identifier (name{page.32}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.79 \include{chapters/chapter_2/paper}
+                                        [32]pdfTeX warning (ext4): destination with the same identifier (name{page.33}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.79 \include{chapters/chapter_2/paper}
+                                        [33 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/mainPl.pdf>]pdfTeX warning (ext4): destination with the same identifier (name{page.34}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.79 \include{chapters/chapter_2/paper}
+                                        [34 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEpolitical_term1Client.pdf>]
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 80.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
+(/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.aux (/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/chapter_education.aux) (/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 80.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 80.
 Package rerunfilecheck Info: File `dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: A86B275BFC35C73AF44E1CDF12F9AC49;941.
+(rerunfilecheck)             Checksum: 5FB0E92AF6190FD61BE2846599FC2F0F;2120.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
- ) 
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 80.
+ )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 228 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 9668 strings out of 492616
- 147140 string characters out of 6129482
- 261459 words of memory out of 5000000
- 13303 multiletter control sequences out of 15000+600000
+ 9779 strings out of 492616
+ 150916 string characters out of 6129482
+ 265605 words of memory out of 5000000
+ 13333 multiletter control sequences out of 15000+600000
  18265 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,17n,41p,1177b,406s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.15} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.14} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.13} has been referenced but does not exist, replaced by a fixed one
-
+ 36i,17n,41p,1782b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{https://www.seduc.ce.gov.br/spaece/} has been referenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{https://siconfi.tesouro.gov.br/siconfi/pages/public/consulta_finbra/finbra_list.jsf} has been referenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{https://ces.ibge.gov.br/base-de-dados/links-base-de-dados.html} has been referenced but does not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{Hfootnote.12} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.11} has been referenced but does not exist, replaced by a fixed one
-
 pdfTeX warning (dest): name{http://www.tse.jus.br/eleicoes/estatisticas/repositorio-de-dados-eleitorais-1} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.10} has been referenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{http://trabalho.gov.br/dados-abertos} has been referenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{http://portal.inep.gov.br/web/guest/dados} has been referenced but does not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist, replaced by a fixed one
-
 pdfTeX warning (dest): name{https://www.fnde.gov.br/index.php/financiamento/fundeb/sobre-o-plano-ou-programa/sobre-o-fundeb} has been referenced but does not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
-
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.pdf" (35 pages, 2515986 bytes).
+Output written on "/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.pdf" (75 pages, 2718769 bytes).
 PDF statistics:
- 522 PDF objects out of 1000 (max. 8388607)
- 434 compressed objects within 5 object streams
- 108 named destinations out of 1000 (max. 500000)
- 178 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 898 PDF objects out of 1000 (max. 8388607)
+ 749 compressed objects within 8 object streams
+ 164 named destinations out of 1000 (max. 500000)
+ 349 words of extra memory for PDF output out of 10000 (max. 10000000)
 

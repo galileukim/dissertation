@@ -1,0 +1,898 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  31 MAR 2021 10:11
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex"
+(/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex
+LaTeX2e <2018-12-01>
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2018/04/16 v5.8 Page Geometry
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+) (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+) (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+) (/usr/local/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count88
+\Gm@cntv=\count89
+\c@Gm@tempcnt=\count90
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+)
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:6: Undefined control sequence.
+<argument> \undefinedpagestyle 
+                               
+l.6 \pagestyle{fancy}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:7: Undefined control sequence.
+l.7 \fancyhf
+            {}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:8: Undefined control sequence.
+l.8 \lhead
+          {How to reduce bureaucratic corruption?}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:8: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 \lhead{H
+            ow to reduce bureaucratic corruption?}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:9: Undefined control sequence.
+l.9 \rhead
+          {Romain Ferrali and Galileu Kim}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:10: Undefined control sequence.
+l.10 \cfoot
+           {\thepage}`'
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\c@proposition=\count91
+\c@lemma=\count92
+\c@corollary=\count93
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:22: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 \author[1
+              ]{Romain Ferrali}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:24: Undefined control sequence.
+l.24 \affil
+           [1]{NYU Abu Dhabi}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:25: Undefined control sequence.
+l.25 \affil
+           [2]{Princeton University}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[1
+
+{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:26: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 \maketitle
+               
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 26.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 26.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 26.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 26.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 26.
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <7> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 26.
+
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:28: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \begin{abstract}
+                     
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (9.2543pt too wide) in paragraph at lines 29--30
+\OT1/cmr/m/n/10.95 duce bu-reau-cratic cor-rup-tion? Pre-vi-ous stud-ies find that anti-corruption
+ []
+
+[2]
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:37: Undefined control sequence.
+l.37 ...ing legitimacy and economic growth. \citep
+                                                  [e.g.][]{RoseAckerman2016,...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:37: Missing $ inserted.
+<inserted text> 
+                $
+l.37 ...[]{RoseAckerman2016, Rothstein2011,fisman_
+                                                  are_2007}. In response, st...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 37.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 37.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 37.
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:37: Extra }, or forgotten $.
+l.37 ...kerman2016, Rothstein2011,fisman_are_2007}
+                                                  . In response, states have...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:37: Undefined control sequence.
+l.37 ...ish corruption by public officials. \citep
+                                                  {chen2018busting}. Audits ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:37: Undefined control sequence.
+l.37 ...ruption and sanctioning politicians \citep
+                                                  {nyblade2008cheats, ferraz...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:38: Missing $ inserted.
+<inserted text> 
+                $
+l.38 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (1864.66742pt too wide) in paragraph at lines 37--38
+\OT1/cmr/m/n/12 Rothstein2011,fisman$[]\OML/cmm/m/it/12 re[]\OT1/cmr/m/n/12 007\OML/cmm/m/it/12 :Inresponse; stateshaveadoptedpoliciesdesignedtodetectandpunishcorruptionbypublicofficials:[]:Auditshavegrownincreasinglypopular; withpreviousstudiesdocumentingtheireffectivenessinreducingcorruptionandsanctioningpoliticians[]:Butpoliticalcorruptioncapturesonlypartofthestory:Ourunderstandingof[][]responsetoanti \OMS/cmsy/m/n/12 ^^@
+ []
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:39: Undefined control sequence.
+l.39 ...serving as a disciplining mechanism \citep
+                                                  {besley_principled_2006, f...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:39: Missing $ inserted.
+<inserted text> 
+                $
+l.39 ...as a disciplining mechanism \citep{besley_
+                                                  principled_2006, ferraz_el...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:39: Extra }, or forgotten $.
+l.39 ...ey_principled_2006, ferraz_electoral_2007}
+                                                  . Bureaucrats, on the othe...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:40: Missing $ inserted.
+<inserted text> 
+                $
+l.40 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (446.46944pt too wide) in paragraph at lines 39--40
+\OT1/cmr/m/n/12 re-elec-tion serv-ing as a dis-ci-plin-ing mech-a-nism besley$[]\OML/cmm/m/it/12 rincipled[]\OT1/cmr/m/n/12 006\OML/cmm/m/it/12 ; ferraz[]lectoral[]\OT1/cmr/m/n/12 007\OML/cmm/m/it/12 :Bureaucrats; ontheotherhand; donotfaceelectoralsanctions; andhavelong \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (69.91591pt too wide) in paragraph at lines 39--40
+\OML/cmm/m/it/12 termcareersthatareopentotransitionstotheprivatesector:Assuch; apolicythatmaybewell \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (153.87172pt too wide) in paragraph at lines 39--40
+\OML/cmm/m/it/12 suitedforreducingcorruptionbypoliticiansmaybeineffectiveforabureaucrat:Designinganeffectiveanti \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (357.99132pt too wide) in paragraph at lines 39--40
+\OML/cmm/m/it/12 corruptionpolicyrequirestakingintoaccountthisheterogeneityinincentives; identifyinghowitaffectsabureaucrat[]sdecisiontoengageincorruption:$ 
+ []
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:42: Undefined control sequence.
+l.42 ...ell-known municipal audits program  \citep
+                                                  [studied by e.g.][]{ferraz...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:42: Missing $ inserted.
+<inserted text> 
+                $
+l.42 ...program  \citep[studied by e.g.][]{ferraz_
+                                                  exposing_2008, brollo2013p...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:42: Extra }, or forgotten $.
+l.42 ..., brollo2013political, zamboni_audit_2018}
+                                                   that is fully randomized ...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:42: Undefined control sequence.
+<argument> ... auditors manipulate reports \citep 
+                                                  {avis_government_2018, fer...
+l.42 ...is_government_2018, ferraz_exposing_2008}}
+                                                   Second, a panel capturing...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:42: Missing $ inserted.
+<inserted text> 
+                $
+l.42 ...is_government_2018, ferraz_exposing_2008}}
+                                                   Second, a panel capturing...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:42: Extra }, or forgotten $.
+<argument> ...vernment_2018, ferraz_exposing_2008}
+                                                  \@finalstrut \strutbox 
+l.42 ...is_government_2018, ferraz_exposing_2008}}
+                                                   Second, a panel capturing...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:42: Extra }, or forgotten $.
+\@footnotetext ...rut \strutbox }\color@endgroup }
+                                                  
+l.42 ...is_government_2018, ferraz_exposing_2008}}
+                                                   Second, a panel capturing...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:43: Missing $ inserted.
+<inserted text> 
+                $
+l.43 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 4441) in paragraph at lines 42--43
+[][]\OT1/cmr/m/n/10 Auditors are widely con-sid-ered as pro-fes-sional and not sub-ject to po-lit-
+ []
+
+
+Underfull \hbox (badness 3333) in paragraph at lines 42--43
+\OT1/cmr/m/n/10 i-cal pres-sures by ei-ther may-ors or the fed-eral gov-ern-ment. They are mer-
+ []
+
+
+Underfull \hbox (badness 4726) in paragraph at lines 42--43
+\OT1/cmr/m/n/10 i-to-crat-i-cally re-cruited and are sent for two weeks to en-sure a short time-
+ []
+
+
+Underfull \hbox (badness 5022) in paragraph at lines 42--43
+\OT1/cmr/m/n/10 horizon to com-plete the au-dit, as well as re-duc-ing the po-ten-tial for cap-
+ []
+
+
+Overfull \hbox (5.90681pt too wide) in paragraph at lines 42--43
+\OT1/cmr/m/n/10 avis$[]\OML/cmm/m/it/10 overnment[]\OT1/cmr/m/n/10 018\OML/cmm/m/it/10 ; ferraz[]xposing[]\OT1/cmr/m/n/10 008|\OML/cmm/m/it/10 Second; apanelcapturingtheuniverseofformal \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (651.06548pt too wide) in paragraph at lines 42--43
+\OML/cmm/m/it/10 sectorworkers; outofwhichwefocuson\OT1/cmr/m/n/10 275\OML/cmm/m/it/10 thousandmunicipalbureaucrats:Thisdataallowsustotracktheeffectivenessofauditsandtheirimpactsonthecareersofbureaucrats; allowingforpotentialheterogeneouseffectsacrossmunicipalities:$ 
+ []
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:49: Undefined control sequence.
+l.49 ... a form of public sector motivation \citep
+                                                  {dal2013strengthening} or ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:51: Undefined control sequence.
+l.51 ...n, consistent with earlier findings \citep
+                                                  {olken_monitoring_2007,bob...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:51: Missing $ inserted.
+<inserted text> 
+                $
+l.51 ...istent with earlier findings \citep{olken_
+                                                  monitoring_2007,bobonis201...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:51: Extra }, or forgotten $.
+l.51 ...oring_2007,bobonis2016,zamboni_audit_2018}
+                                                  . However, pulling all the...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:52: Missing $ inserted.
+<inserted text> 
+                $
+l.52 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 1983) in paragraph at lines 51--52
+[]\OT1/cmr/m/n/10 We fi-nally use our es-ti-mates from the DDC model to cal-i-brate a com-pu-ta-
+ []
+
+
+Underfull \hbox (badness 1062) in paragraph at lines 51--52
+\OT1/cmr/m/n/10 ness, as-sum-ing that the pro-gram was not ef-fec-tive. We ma-nip-u-late each chan-
+ []
+
+
+Underfull \hbox (badness 1412) in paragraph at lines 51--52
+\OT1/cmr/m/n/10 nel and com-pare them to a base-line coun-ter-fac-tual in which au-dits never took
+ []
+
+
+Overfull \hbox (167.04222pt too wide) in paragraph at lines 51--52
+\OT1/cmr/m/n/10 olken$[]\OML/cmm/m/it/10 onitoring[]\OT1/cmr/m/n/10 007\OML/cmm/m/it/10 ; bobonis\OT1/cmr/m/n/10 2016\OML/cmm/m/it/10 ; zamboni[]udit[]\OT1/cmr/m/n/10 018\OML/cmm/m/it/10 :However; pullingalltheleverssimultaneouslyprovidesthegreatesteffect \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (418.35228pt too wide) in paragraph at lines 51--52
+\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 25%\OML/cmm/m/it/10 increaseinallchannelsreducescorruptionmorethanmeetingcorruptionwithcertaindismissal:Overall; thesefindingssuggestahighcomplementaritybetweenthepolicy[]scomponents \OT1/cmr/m/n/10 :
+ []
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:53: Undefined control sequence.
+l.53 ...c officials in the developing world \citep
+                                                  {treisman2007have, olken_c...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:53: Missing $ inserted.
+<inserted text> 
+                $
+l.53 ...ping world \citep{treisman2007have, olken_
+                                                  corruption_2012}. While pr...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:53: Extra }, or forgotten $.
+l.53 ...p{treisman2007have, olken_corruption_2012}
+                                                  . While previous studies h...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:53: Undefined control sequence.
+l.53 ...ow politicians engage in corruption \citep
+                                                  {nyblade2008cheats, ferraz...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:53: Undefined control sequence.
+l.53 ... politicians and bureaucrats. While \citet
+                                                  {ferraz_electoral_2011} sh...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:54: Missing $ inserted.
+<inserted text> 
+                $
+l.54 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
+[]\OT1/cmr/m/n/10 Our pa-per con-tributes to schol-arly re-search on cor-rup-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
+\OT1/cmr/m/n/10 by pub-lic of-fi-cials in the de-vel-op-ing world treis-man2007have,
+ []
+
+
+Overfull \hbox (1734.27689pt too wide) in paragraph at lines 53--54
+\OT1/cmr/m/n/10 olken$[]\OML/cmm/m/it/10 orruption[]\OT1/cmr/m/n/10 012\OML/cmm/m/it/10 :Whilepreviousstudieshavefocusedonhowpoliticiansengageincorruption[]; wefocusonbureaucrats[]decision; showingthatthesamepolicymayhavedifferentoutcomesonpoliticiansandbureaucrats:While[]showthatpoliticians[]timeinofficeisstronglyconditionedbywhetherauditsrevealcorruptiontovoters; timeinoffice; wefindmuchmorelimitedeffectsonbureaucrats[]careersandcorruptbehavior \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (493.19595pt too wide) in paragraph at lines 53--54
+\OML/cmm/m/it/10 auditshaveminusculeex \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 posteffects; andtheirconsequencesvarylittleaccordingtotheresultsoftheaudit:Assuch; bureaucrats[]propensitytostayinofficeaboveandbeyondwhatcanbeexplainedbythepublic \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
+\OML/cmm/m/it/10 privatewagedifferentialoweseithertopublicsectormotivationortotime \OMS/cmsy/m/n/10 ^^@
+ []
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:57: Undefined control sequence.
+l.57 ... reforms may improve state capacity \citep
+                                                  {evans_embedded_1995, grin...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:57: Missing $ inserted.
+<inserted text> 
+                $
+l.57 ...s may improve state capacity \citep{evans_
+                                                  embedded_1995, grindle_job...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:57: Extra }, or forgotten $.
+l.57 ...ep{evans_embedded_1995, grindle_jobs_2012}
+                                                  , but often failed to brea...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:57: Undefined control sequence.
+l.57 ... into their constitutive components \citep
+                                                  {centeno_unpacking_2017}. ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:57: Undefined control sequence.
+l.57 ...ns can improve bureaucratic quality \citep
+                                                  [e.g.][]{duflo_incentives_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:58: Missing $ inserted.
+<inserted text> 
+                $
+l.58 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 3646) in paragraph at lines 57--58
+[]\OT1/cmr/m/n/10 Our study also con-tributes to a grow-ing body of lit-er-a-ture on how pub-
+ []
+
+
+Underfull \hbox (badness 7291) in paragraph at lines 57--58
+\OT1/cmr/m/n/10 lic poli-cies can im-prove bu-reau-cratic qual-ity. At the macro-level, schol-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+\OT1/cmr/m/n/10 ars have an-a-lyzed how national-level re-forms may im-prove state ca-pac-ity
+ []
+
+
+Overfull \hbox (324.19151pt too wide) in paragraph at lines 57--58
+\OT1/cmr/m/n/10 evans$[]\OML/cmm/m/it/10 mbedded[]\OT1/cmr/m/n/10 995\OML/cmm/m/it/10 ; grindle[]obs[]\OT1/cmr/m/n/10 012\OML/cmm/m/it/10 ; butoftenfailedtobreakdownthesecomplexpolicybundlesintotheirconstitutivecomponents[]:Atthemicro \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+\OML/cmm/m/it/10 level; previousstudieshaveshown; usingexperimentalorquasi \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (793.37834pt too wide) in paragraph at lines 57--58
+\OML/cmm/m/it/10 experimentalsettings; thatfocalizedpolicyinterventionscanimprovebureaucraticquality\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 e:g:\OT1/cmr/m/n/10 ][][]\OML/cmm/m/it/10 butfocusedonimprovingasinglecomponentofacomplexreform:Ourstudyhighlightsthedifficultiesofevaluatingcomplex; national \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+\OML/cmm/m/it/10 levelpoliciesthroughexperimentalmethodswhenthosefeaturelong \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (483.7119pt too wide) in paragraph at lines 57--58
+\OML/cmm/m/it/10 termeffects:Italsobreaksdownonesuchpoliciesintoasetofsimplercomponentsusingcomputationalapproaches; highlightinghowwecanexploittheircomplementaritytoenhancethepolicy[]seffectiveness:$ 
+ []
+
+
+LaTeX Warning: Reference `sec:data' on page 3 undefined on input line 59.
+
+
+LaTeX Warning: Reference `sec:causal' on page 3 undefined on input line 59.
+
+
+LaTeX Warning: Reference `sec:theory' on page 3 undefined on input line 59.
+
+
+LaTeX Warning: Reference `sec:structural' on page 3 undefined on input line 59.
+
+
+LaTeX Warning: Reference `sec:conclusion' on page 3 undefined on input line 59.
+
+
+LaTeX Warning: Reference `tbl:desc' on page 3 undefined on input line 67.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:74: Undefined control sequence.
+l.74 ...s were delegated to  municipalities \citep
+                                                  {abrucio_redefinicao_1996}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:74: Missing $ inserted.
+<inserted text> 
+                $
+l.74 ...legated to  municipalities \citep{abrucio_
+                                                  redefinicao_1996}. As a re...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:74: Extra }, or forgotten $.
+l.74 ...ipalities \citep{abrucio_redefinicao_1996}
+                                                  . As a result, the 1990s a...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:74: Undefined control sequence.
+l.74 ... public goods and services services \citep
+                                                  {cardoso_jr_burocracia_201...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:74: Undefined control sequence.
+l.74 ...ources allocated to the local level \citep
+                                                  {arretche_trajetorias_2015...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:75: Missing $ inserted.
+<inserted text> 
+                $
+l.75 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (1292.33661pt too wide) in paragraph at lines 74--75
+\OT1/cmr/m/n/10 abrucio$[]\OML/cmm/m/it/10 edefinicao[]\OT1/cmr/m/n/10 996\OML/cmm/m/it/10 :Asaresult; the\OT1/cmr/m/n/10 1990\OML/cmm/m/it/10 sand\OT1/cmr/m/n/10 2000\OML/cmm/m/it/10 ssawarapidexpansionoflocalbureaucraciestomanageanddeliverthesepublicgoodsandservicesservices[]:Alongwiththeseresponsibilities; therewasanincreaseintheamountofpublicresourcesallocatedtothelocallevel[]; generatingnewopportunitiesforpublicofficialstoengageincorruption:$ 
+ []
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:76: Undefined control sequence.
+l.76 ...ppointments and spoils distribution \citep
+                                                  {brollo_victor_2017, colon...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:76: Missing $ inserted.
+<inserted text> 
+                $
+l.76 ...nts and spoils distribution \citep{brollo_
+                                                  victor_2017, colonnelli_pa...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:76: Extra }, or forgotten $.
+l.76 ...lo_victor_2017, colonnelli_patronage_2017}
+                                                  . Due to the absence of a ...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:77: Missing $ inserted.
+<inserted text> 
+                $
+l.77 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (420.2115pt too wide) in paragraph at lines 76--77
+\OT1/cmr/m/n/10 brollo$[]\OML/cmm/m/it/10 ictor[]\OT1/cmr/m/n/10 017\OML/cmm/m/it/10 ; colonnelli[]atronage[]\OT1/cmr/m/n/10 017\OML/cmm/m/it/10 :Duetotheabsenceofacareerservicesystem; theboundariesbetweentheprivateandpublicsectorsareporousandeveryyeararound\OT1/cmr/m/n/10 20\OML/cmm/m/it/10 percentofhigh \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (539.1087pt too wide) in paragraph at lines 76--77
+\OML/cmm/m/it/10 levelbureaucratsleavefortheprivatesector:[]Inasimilarfashion; managerialpracticesareundermunicipaljurisdiction; leadingtoawidevariationintheextentandtypesofadministrativepracticesimplementedlocally:$ 
+ []
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:80: Undefined control sequence.
+<argument> ...widely used in other studies \citep 
+                                                  [e.g.][]{colonnelli_patron...
+l.80 ...elli_patronage_2017, brollo_victor_2017}.}
+                                                   for all the employees on ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:80: Missing $ inserted.
+<inserted text> 
+                $
+l.80 ...elli_patronage_2017, brollo_victor_2017}.}
+                                                   for all the employees on ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:80: Extra }, or forgotten $.
+<argument> ..._patronage_2017, brollo_victor_2017}
+                                                  .\@finalstrut \strutbox 
+l.80 ...elli_patronage_2017, brollo_victor_2017}.}
+                                                   for all the employees on ...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:80: Extra }, or forgotten $.
+\@footnotetext ...rut \strutbox }\color@endgroup }
+                                                  
+l.80 ...elli_patronage_2017, brollo_victor_2017}.}
+                                                   for all the employees on ...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:81: Missing $ inserted.
+<inserted text> 
+                $
+l.81 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+[][]\OT1/cmr/m/n/10 This dataset has been widely used in other stud-ies
+ []
+
+
+Overfull \hbox (526.91333pt too wide) in paragraph at lines 80--81
+\OT1/cmr/m/n/10 [e.g.][]colonnelli$[]\OML/cmm/m/it/10 atronage[]\OT1/cmr/m/n/10 017\OML/cmm/m/it/10 ; brollo[]ictor[]\OT1/cmr/m/n/10 017\OML/cmm/m/it/10 :|foralltheemployeesonpayroll:Irregularitiesaresanctionedbylaw; withfinesbeingimposedonorganizationsfoundmisreporting:Ourdatasetspansfrom\OT1/cmr/m/n/10 2006\OML/cmm/m/it/10 to\OT1/cmr/m/n/10 2015\OML/cmm/m/it/10 :$ 
+ []
+
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:82: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.82 \begin{table}[h]
+                     
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:82: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.82 \begin{table}[h]
+                     
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:82: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.82 \begin{table}[h]
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:82: Missing number, treated as zero.
+<to be read again> 
+                   \color@vbox 
+l.82 \begin{table}[h]
+                     
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+\@input{chapters/chapter_2/tables/desc.aux}
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:85: I can't write on file `chapters/chapter_2/tables/desc.aux'.
+\@include ...\immediate \openout \@partaux #1.aux 
+                                                  \immediate \write \@partau...
+l.85 	\include{chapters/chapter_2/tables/desc}
+                                              
+(Press Enter to retry, or Control-D to exit; default file extension is `.tex')
+Please type another output file name
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:85: Emergency stop.
+\@include ...\immediate \openout \@partaux #1.aux 
+                                                  \immediate \write \@partau...
+l.85 	\include{chapters/chapter_2/tables/desc}
+                                              
+*** (job aborted, file error in nonstop mode)
+
+ 
+Here is how much of TeX's memory you used:
+ 849 strings out of 492616
+ 12220 string characters out of 6129482
+ 102371 words of memory out of 5000000
+ 4816 multiletter control sequences out of 15000+600000
+ 10417 words of font info for 36 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 27i,12n,20p,1737b,355s stack positions out of 5000i,500n,10000p,200000b,80000s
+/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/paper.tex:85:  ==> Fatal error occurred, no output PDF file produced!

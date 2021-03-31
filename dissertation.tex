@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper]{report}
+\documentclass[12pt]{report}
 \usepackage{setspace}
 \usepackage[top = 1.5in, bottom = 1.5in, left = 1.5in, right = 1.5in]{geometry}
 \usepackage[utf8]{inputenc}
@@ -21,13 +21,11 @@
 \usepackage{authblk}
 \usepackage{appendix}
 \usepackage{titletoc}
-\setlength\parindent{20pt}
-\usepackage{setspace}
 \usepackage{multirow}
-\usepackage{caption}
 \usepackage{titling}
-\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
 \usepackage{hyperref}
+\usepackage{kbordermatrix}
 
 \hypersetup{
     colorlinks=true,
@@ -40,19 +38,30 @@
 
 \DeclareMathOperator*{\argmax}{arg\,max}
 \onehalfspacing
-\usepackage[hang,flushmargin]{footmisc}
 
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{proposition}{Proposition}
 \newtheorem{corollary}{Corollary}
+\theoremstyle{definition}
+\newtheorem{hypothesis}{Hypothesis}
+\newtheorem{definition}{Definition}
+
+\newcommand{\wb}{\overline{w}}
+\newcommand{\pb}{\overline{p}}
+\newcommand{\bb}{\overline{b}}
+\newcommand{\de}{\delta}
+\newcommand{\St}{\mathcal{S}}
+\newcommand{\Sb}{\overline{\mathcal{S}}}
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\note}{\textcolor{blue}}
 \renewcommand{\theproposition}{\arabic{proposition}}
 \newcommand{\real}{\mathbb{R}_+^n}
 \newcommand{\bfv}{\mathbf{v}}
 \newcommand{\blue}{\textcolor{blue}}
 % \renewcommand{\includegraphics}{\includegraphics[width=0.6\linewidth]}
 
-\bibliographystyle{unsrtnat}
+\bibliographystyle{apsr}
 
 \title{Governing through patronage: the bargain for education in decentralized Brazil}
 \date{\today}
@@ -63,11 +72,9 @@
 \begin{document}
 \tableofcontents
 
-
-
 \chapter{Education Patronage}
 \include{chapters/chapter_1/chapter_education}
 
 \chapter{Corruption Audit}
-Hello,
+\include{chapters/chapter_2/paper}
 \end{document}
