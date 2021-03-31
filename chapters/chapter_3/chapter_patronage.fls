@@ -1,0 +1,7 @@
+PWD /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3
+INPUT /usr/local/texlive/2019/texmf.cnf
+INPUT /usr/local/texlive/2019/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/chapter_patronage.tex
+OUTPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/chapter_patronage.log
+OUTPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/chapter_patronage.pdf
