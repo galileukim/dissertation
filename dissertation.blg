@@ -1,0 +1,87 @@
+This is BibTeX, Version 0.99d (TeX Live 2019)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: dissertation.aux
+The style file: apsr.bst
+A level-1 auxiliary file: chapters/chapter_1/chapter_education.aux
+A level-1 auxiliary file: chapters/chapter_2/chapter_corruption.aux
+A level-1 auxiliary file: chapters/chapter_3/chapter_patronage.aux
+Database file #1: dissertation.bib
+Warning--I didn't find a database entry for "robinson2013political"
+Warning--I didn't find a database entry for "grindle2012jobs"
+Warning--I didn't find a database entry for "evans1999bureaucracy"
+Warning--I didn't find a database entry for "kohli2004state"
+Warning--I didn't find a database entry for "remmer2007political"
+Warning--I didn't find a database entry for "finan2017personnel"
+Warning--I didn't find a database entry for "lewis2010politics"
+Warning--I didn't find a database entry for "hollibaugh2014presidents"
+Warning--I didn't find a database entry for "pracca2011political"
+Warning--I didn't find a database entry for "colonnelli2018patronage"
+Warning--I didn't find a database entry for "brollo2017victor"
+Warning--I didn't find a database entry for "krause2016experiential"
+Warning--I didn't find a database entry for "toral2019benefits"
+Warning--I didn't find a database entry for "finan2015personnel"
+Warning--I didn't find a database entry for "stokes2013brokers"
+Warning--I didn't find a database entry for "diaz2016political"
+Warning--I didn't find a database entry for "souza2017modernizaccao"
+Warning--I didn't find a database entry for "arretche2015trajetorias"
+Warning--I didn't find a database entry for "brelaz2013processo"
+Warning--I didn't find a database entry for "leal2012coronelismo"
+Warning--I didn't find a database entry for "souza2004governos"
+Warning--I didn't find a database entry for "akhtari2017political"
+Warning--I didn't find a database entry for "speck2015estudo"
+Warning--I didn't find a database entry for "biezen2014decline"
+Warning--I didn't find a database entry for "desposato2006parties"
+Warning--I didn't find a database entry for "ames2002deadlock"
+Warning--I didn't find a database entry for "samuels2014power"
+Warning--I didn't find a database entry for "samuels2006sources"
+Warning--I didn't find a database entry for "palmeira1995comicios"
+Warning--I didn't find a database entry for "ansell2010auctioning"
+Warning--I didn't find a database entry for "dixit1996determinants"
+Warning--I didn't find a database entry for "van2007meet"
+Warning--I didn't find a database entry for "stokes2005perverse"
+Warning--I didn't find a database entry for "nichter2008vote"
+Warning--I didn't find a database entry for "claessens2008political"
+Warning--I didn't find a database entry for "carpenter2020forging"
+Warning--there's a number but no volume in militao_educacao_2014
+You've used 71 entries,
+            2874 wiz_defined-function locations,
+            1077 strings with 17613 characters,
+and the built_in function-call counts, 293542 in all, are:
+= -- 48187
+> -- 3311
+< -- 0
++ -- 22556
+- -- 1182
+* -- 24966
+:= -- 58968
+add.period$ -- 285
+call.type$ -- 71
+change.case$ -- 925
+chr.to.int$ -- 71
+cite$ -- 72
+duplicate$ -- 1086
+empty$ -- 2370
+format.name$ -- 1247
+if$ -- 52714
+int.to.chr$ -- 5
+int.to.str$ -- 0
+missing$ -- 81
+newline$ -- 303
+num.names$ -- 821
+pop$ -- 292
+preamble$ -- 1
+purify$ -- 1065
+quote$ -- 0
+skip$ -- 922
+stack$ -- 0
+substring$ -- 67982
+swap$ -- 148
+text.length$ -- 994
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 260
+warning$ -- 1
+while$ -- 1680
+width$ -- 0
+write$ -- 976
+(There were 37 warnings)

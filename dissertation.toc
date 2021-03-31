@@ -3,64 +3,64 @@
 \contentsline {section}{\numberline {1.2}Related literature}{3}{section.1.2}% 
 \contentsline {section}{\numberline {1.3}Institutional context and data}{6}{section.1.3}% 
 \contentsline {subsection}{\numberline {1.3.1}Municipal education in Brazil}{6}{subsection.1.3.1}% 
-\contentsline {subsection}{\numberline {1.3.2}Local governance and mayoral coalitions}{8}{subsection.1.3.2}% 
+\contentsline {subsection}{\numberline {1.3.2}Local governance and mayoral coalitions}{7}{subsection.1.3.2}% 
 \contentsline {subsection}{\numberline {1.3.3}Data}{9}{subsection.1.3.3}% 
 \contentsline {section}{\numberline {1.4}Theory}{12}{section.1.4}% 
-\contentsline {section}{\numberline {1.5}Empirical results}{19}{section.1.5}% 
-\contentsline {section}{\numberline {1.6}Conclusion}{28}{section.1.6}% 
-\contentsline {subsection}{\numberline {1.6.1}Covariate balance}{30}{subsection.1.6.1}% 
-\contentsline {subsection}{\numberline {1.6.2}Accountability of mayors}{31}{subsection.1.6.2}% 
-\contentsline {subsection}{\numberline {1.6.3}Regression Discontinuity Design}{32}{subsection.1.6.3}% 
-\contentsline {chapter}{\numberline {2}Corruption Audit}{33}{chapter.2}% 
-\contentsline {section}{\numberline {2.1}Introduction}{35}{section.2.1}% 
-\contentsline {section}{\numberline {2.2}Context and Data}{39}{section.2.2}% 
-\contentsline {subsection}{\numberline {2.2.1}Municipal bureaucracies and management}{39}{subsection.2.2.1}% 
-\contentsline {subsection}{\numberline {2.2.2}Federal transfers and anti-corruption audits}{43}{subsection.2.2.2}% 
-\contentsline {subsection}{\numberline {2.2.3}Additional data}{45}{subsection.2.2.3}% 
-\contentsline {section}{\numberline {2.3}Reduced-form estimation}{45}{section.2.3}% 
-\contentsline {subsection}{\numberline {2.3.1}Approach}{46}{subsection.2.3.1}% 
-\contentsline {subsection}{\numberline {2.3.2}Results}{49}{subsection.2.3.2}% 
-\contentsline {subsection}{\numberline {2.3.3}Discussion}{53}{subsection.2.3.3}% 
-\contentsline {section}{\numberline {2.4}Theory}{54}{section.2.4}% 
-\contentsline {subsection}{\numberline {2.4.1}Setting}{56}{subsection.2.4.1}% 
-\contentsline {subsection}{\numberline {2.4.2}A baseline model}{58}{subsection.2.4.2}% 
-\contentsline {subsection}{\numberline {2.4.3}Introducing a wage penalty}{59}{subsection.2.4.3}% 
-\contentsline {subsection}{\numberline {2.4.4}Introducing a clean-up effect}{61}{subsection.2.4.4}% 
-\contentsline {subsection}{\numberline {2.4.5}Discussion}{62}{subsection.2.4.5}% 
-\contentsline {section}{\numberline {2.5}Structural estimation}{64}{section.2.5}% 
-\contentsline {subsection}{\numberline {2.5.1}Approach}{65}{subsection.2.5.1}% 
-\contentsline {subsection}{\numberline {2.5.2}Estimates, validation and counterfactual experiments}{67}{subsection.2.5.2}% 
-\contentsline {section}{\numberline {2.6}Conclusion}{73}{section.2.6}% 
-\contentsline {section}{\numberline {2.7}Appendix}{76}{section.2.7}% 
-\contentsline {subsection}{\numberline {2.7.1}Proofs}{83}{subsection.2.7.1}% 
-\contentsline {subsection}{\numberline {2.7.2}Additional descriptive statistics}{86}{subsection.2.7.2}% 
-\contentsline {subsection}{\numberline {2.7.3}Measuring corruption}{86}{subsection.2.7.3}% 
-\contentsline {subsection}{\numberline {2.7.4}Management index}{91}{subsection.2.7.4}% 
-\contentsline {subsection}{\numberline {2.7.5}Additional descriptive statistics}{94}{subsection.2.7.5}% 
-\contentsline {section}{\numberline {2.8}Robustness checks}{95}{section.2.8}% 
-\contentsline {subsection}{\numberline {2.8.1}Other categories of bureaucrats}{95}{subsection.2.8.1}% 
-\contentsline {subsection}{\numberline {2.8.2}Subset of municipal secretaries}{98}{subsection.2.8.2}% 
-\contentsline {subsection}{\numberline {2.8.3}Subset by Tenure}{99}{subsection.2.8.3}% 
-\contentsline {subsection}{\numberline {2.8.4}Hiring Practices}{101}{subsection.2.8.4}% 
-\contentsline {subsection}{\numberline {2.8.5}Balance tests}{103}{subsection.2.8.5}% 
-\contentsline {subsection}{\numberline {2.8.6}Dependent variable as percentages}{103}{subsection.2.8.6}% 
-\contentsline {subsection}{\numberline {2.8.7}Findings on management}{105}{subsection.2.8.7}% 
-\contentsline {subsection}{\numberline {2.8.8}Subset of never audited municipalities}{107}{subsection.2.8.8}% 
-\contentsline {subsection}{\numberline {2.8.9}Individual-level analysis}{108}{subsection.2.8.9}% 
-\contentsline {subsection}{\numberline {2.8.10}Political models with other corruption metrics}{112}{subsection.2.8.10}% 
-\contentsline {section}{\numberline {2.9}Estimation and validation of the DDC model}{119}{section.2.9}% 
-\contentsline {chapter}{\numberline {3}Patronage}{122}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Introduction}{124}{section.3.1}% 
-\contentsline {section}{\numberline {3.2}Context and Data}{126}{section.3.2}% 
-\contentsline {subsection}{\numberline {3.2.1}Brazilian municipal government}{126}{subsection.3.2.1}% 
-\contentsline {subsection}{\numberline {3.2.2}Municipal employment and patronage in Brazil}{127}{subsection.3.2.2}% 
-\contentsline {subsection}{\numberline {3.2.3}Partisan affiliation in Brazil}{128}{subsection.3.2.3}% 
-\contentsline {section}{\numberline {3.3}Data}{129}{section.3.3}% 
-\contentsline {subsection}{\numberline {3.3.1}Municipal and Private Sector Employment}{129}{subsection.3.3.1}% 
-\contentsline {subsection}{\numberline {3.3.2}Partisan affiliation}{130}{subsection.3.3.2}% 
-\contentsline {subsection}{\numberline {3.3.3}Joining Public Sector Employment to Partisanship Data}{133}{subsection.3.3.3}% 
-\contentsline {subsection}{\numberline {3.3.4}Who benefits from patronage?}{135}{subsection.3.3.4}% 
-\contentsline {subsection}{\numberline {3.3.5}Islands of Patronage}{140}{subsection.3.3.5}% 
-\contentsline {section}{\numberline {3.4}Campaign Finance and Wealthy Patrons}{145}{section.3.4}% 
-\contentsline {section}{\numberline {3.5}Conclusion}{145}{section.3.5}% 
+\contentsline {section}{\numberline {1.5}Empirical results}{18}{section.1.5}% 
+\contentsline {section}{\numberline {1.6}Conclusion}{27}{section.1.6}% 
+\contentsline {subsection}{\numberline {1.6.1}Covariate balance}{29}{subsection.1.6.1}% 
+\contentsline {subsection}{\numberline {1.6.2}Accountability of mayors}{30}{subsection.1.6.2}% 
+\contentsline {subsection}{\numberline {1.6.3}Regression Discontinuity Design}{31}{subsection.1.6.3}% 
+\contentsline {chapter}{\numberline {2}Corruption Audit}{32}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Introduction}{34}{section.2.1}% 
+\contentsline {section}{\numberline {2.2}Context and Data}{37}{section.2.2}% 
+\contentsline {subsection}{\numberline {2.2.1}Municipal bureaucracies and management}{38}{subsection.2.2.1}% 
+\contentsline {subsection}{\numberline {2.2.2}Federal transfers and anti-corruption audits}{41}{subsection.2.2.2}% 
+\contentsline {subsection}{\numberline {2.2.3}Additional data}{43}{subsection.2.2.3}% 
+\contentsline {section}{\numberline {2.3}Reduced-form estimation}{43}{section.2.3}% 
+\contentsline {subsection}{\numberline {2.3.1}Approach}{44}{subsection.2.3.1}% 
+\contentsline {subsection}{\numberline {2.3.2}Results}{47}{subsection.2.3.2}% 
+\contentsline {subsection}{\numberline {2.3.3}Discussion}{51}{subsection.2.3.3}% 
+\contentsline {section}{\numberline {2.4}Theory}{52}{section.2.4}% 
+\contentsline {subsection}{\numberline {2.4.1}Setting}{53}{subsection.2.4.1}% 
+\contentsline {subsection}{\numberline {2.4.2}A baseline model}{56}{subsection.2.4.2}% 
+\contentsline {subsection}{\numberline {2.4.3}Introducing a wage penalty}{57}{subsection.2.4.3}% 
+\contentsline {subsection}{\numberline {2.4.4}Introducing a clean-up effect}{58}{subsection.2.4.4}% 
+\contentsline {subsection}{\numberline {2.4.5}Discussion}{60}{subsection.2.4.5}% 
+\contentsline {section}{\numberline {2.5}Structural estimation}{61}{section.2.5}% 
+\contentsline {subsection}{\numberline {2.5.1}Approach}{62}{subsection.2.5.1}% 
+\contentsline {subsection}{\numberline {2.5.2}Estimates, validation and counterfactual experiments}{64}{subsection.2.5.2}% 
+\contentsline {section}{\numberline {2.6}Conclusion}{69}{section.2.6}% 
+\contentsline {section}{\numberline {2.7}Appendix}{71}{section.2.7}% 
+\contentsline {subsection}{\numberline {2.7.1}Proofs}{77}{subsection.2.7.1}% 
+\contentsline {subsection}{\numberline {2.7.2}Additional descriptive statistics}{80}{subsection.2.7.2}% 
+\contentsline {subsection}{\numberline {2.7.3}Measuring corruption}{80}{subsection.2.7.3}% 
+\contentsline {subsection}{\numberline {2.7.4}Management index}{84}{subsection.2.7.4}% 
+\contentsline {subsection}{\numberline {2.7.5}Additional descriptive statistics}{87}{subsection.2.7.5}% 
+\contentsline {section}{\numberline {2.8}Robustness checks}{88}{section.2.8}% 
+\contentsline {subsection}{\numberline {2.8.1}Other categories of bureaucrats}{88}{subsection.2.8.1}% 
+\contentsline {subsection}{\numberline {2.8.2}Subset of municipal secretaries}{91}{subsection.2.8.2}% 
+\contentsline {subsection}{\numberline {2.8.3}Subset by Tenure}{91}{subsection.2.8.3}% 
+\contentsline {subsection}{\numberline {2.8.4}Hiring Practices}{94}{subsection.2.8.4}% 
+\contentsline {subsection}{\numberline {2.8.5}Balance tests}{96}{subsection.2.8.5}% 
+\contentsline {subsection}{\numberline {2.8.6}Dependent variable as percentages}{96}{subsection.2.8.6}% 
+\contentsline {subsection}{\numberline {2.8.7}Findings on management}{97}{subsection.2.8.7}% 
+\contentsline {subsection}{\numberline {2.8.8}Subset of never audited municipalities}{98}{subsection.2.8.8}% 
+\contentsline {subsection}{\numberline {2.8.9}Individual-level analysis}{99}{subsection.2.8.9}% 
+\contentsline {subsection}{\numberline {2.8.10}Political models with other corruption metrics}{102}{subsection.2.8.10}% 
+\contentsline {section}{\numberline {2.9}Estimation and validation of the DDC model}{109}{section.2.9}% 
+\contentsline {chapter}{\numberline {3}Patronage}{112}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Introduction}{114}{section.3.1}% 
+\contentsline {section}{\numberline {3.2}Context and Data}{116}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}Brazilian municipal government}{116}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.2}Municipal employment and patronage in Brazil}{116}{subsection.3.2.2}% 
+\contentsline {subsection}{\numberline {3.2.3}Partisan affiliation in Brazil}{117}{subsection.3.2.3}% 
+\contentsline {section}{\numberline {3.3}Data}{118}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}Municipal and Private Sector Employment}{118}{subsection.3.3.1}% 
+\contentsline {subsection}{\numberline {3.3.2}Partisan affiliation}{119}{subsection.3.3.2}% 
+\contentsline {subsection}{\numberline {3.3.3}Joining Public Sector Employment to Partisanship Data}{122}{subsection.3.3.3}% 
+\contentsline {subsection}{\numberline {3.3.4}Who benefits from patronage?}{123}{subsection.3.3.4}% 
+\contentsline {subsection}{\numberline {3.3.5}Islands of Patronage}{127}{subsection.3.3.5}% 
+\contentsline {section}{\numberline {3.4}Campaign Finance and Wealthy Patrons}{131}{section.3.4}% 
+\contentsline {section}{\numberline {3.5}Conclusion}{131}{section.3.5}% 
 \contentsfinish 
