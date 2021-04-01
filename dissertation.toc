@@ -1,4 +1,4 @@
-\contentsline {chapter}{\numberline {1}Education Patronage}{4}{chapter.1}% 
+\contentsline {chapter}{\numberline {1}Government through patronage: the bargain for education in decentralized Brazil \footnotemark }{4}{chapter.1}% 
 \contentsline {section}{\numberline {1.1}Introduction}{5}{section.1.1}% 
 \contentsline {section}{\numberline {1.2}Related literature}{8}{section.1.2}% 
 \contentsline {section}{\numberline {1.3}Institutional context and data}{11}{section.1.3}% 
@@ -6,13 +6,13 @@
 \contentsline {subsection}{\numberline {1.3.2}Bureaucratic turnover}{12}{subsection.1.3.2}% 
 \contentsline {subsection}{\numberline {1.3.3}Local governance and mayoral coalitions}{13}{subsection.1.3.3}% 
 \contentsline {subsection}{\numberline {1.3.4}Data}{14}{subsection.1.3.4}% 
-\contentsline {section}{\numberline {1.4}Theory}{17}{section.1.4}% 
+\contentsline {section}{\numberline {1.4}Theory}{18}{section.1.4}% 
 \contentsline {section}{\numberline {1.5}Empirical results}{24}{section.1.5}% 
 \contentsline {section}{\numberline {1.6}Conclusion}{33}{section.1.6}% 
 \contentsline {subsection}{\numberline {1.6.1}Covariate balance}{35}{subsection.1.6.1}% 
 \contentsline {subsection}{\numberline {1.6.2}Accountability of mayors}{36}{subsection.1.6.2}% 
 \contentsline {subsection}{\numberline {1.6.3}Regression Discontinuity Design}{37}{subsection.1.6.3}% 
-\contentsline {chapter}{\numberline {2}Corruption Audit}{38}{chapter.2}% 
+\contentsline {chapter}{\numberline {2}How to reduce bureaucratic corruption? Unpacking Brazilian anti-corruption auditsCorruption Audit}{38}{chapter.2}% 
 \contentsline {section}{\numberline {2.1}Introduction}{40}{section.2.1}% 
 \contentsline {section}{\numberline {2.2}Context and Data}{43}{section.2.2}% 
 \contentsline {subsection}{\numberline {2.2.1}Municipal bureaucracies and management}{44}{subsection.2.2.1}% 

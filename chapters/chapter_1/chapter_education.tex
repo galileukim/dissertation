@@ -1,6 +1,6 @@
 \section*{Abstract:}
 
-How do institutions shape political decisions over bureaucratic personnel? And what are the implications of these management decisions on public service delivery? I argue that local politicians govern through patronage, lowering the quality of educational services. Qualitative evidence gathered in fieldwork in Brazil, as well as large-scale administrative data suggest that public education is captured by local political elites. Mayors buy off local legislators to enact policy agendas by offering positions in the department of education. The degree to which patronage occurs varies: when mayors have a stronger ally base in the city council, they face less pressure to bargain. Patronage induces turnover in educational staff, with negative downstream effects on student learning. Weak electoral backlash suggest that patronage is primarily a political elite game, with limited accountability to the electorate. These findings point to the dangers of elite capture of public services and its downstream consequences for social welfare.
+\emph{How do institutions shape political decisions over bureaucratic personnel? And what are the implications of these management decisions on public service delivery? I argue that local politicians govern through patronage, lowering the quality of educational services. Qualitative evidence gathered in fieldwork in Brazil, as well as large-scale administrative data suggest that public education is captured by local political elites. Mayors buy off local legislators to enact policy agendas by offering positions in the department of education. The degree to which patronage occurs varies: when mayors have a stronger ally base in the city council, they face less pressure to bargain. Patronage induces turnover in educational staff, with negative downstream effects on student learning. Weak electoral backlash suggest that patronage is primarily a political elite game, with limited accountability to the electorate. These findings point to the dangers of elite capture of public services and its downstream consequences for social welfare.}
 
 \section{Introduction}
 
@@ -126,18 +126,27 @@ Figure \ref{fig:staff_turnover} provides descriptive statistics on bureaucratic 
     \caption{Proportion of public sector jobs by department. Note that I only keep the top 5 categorie}
 \end{figure}
 
-I propose three different specifications for measuring bureaucratic turnover. From the RAIS I obtain the percentage of teachers and principals who are dismissed and hired at any given year. Using school census data, it is possible to track individual teachers across time and schools. With that data I calculate a turnover index for school $s$, in municipality $j$ at year $t$, based on an index proposed by \citet{pereira_junior_indicadores_2016}. The number of teachers leaving and entering the school at a given year are summed and divided by the total number of teachers in the current and previous period.
+I propose three different specifications for measuring bureaucratic turnover. From the RAIS I obtain the percentage of teachers and principals who are dismissed and hired at any given year. Using school census data, it is possible to track individual teachers across time and schools. With that data I calculate a turnover index for school $s$, grade $g$, in municipality $j$ at year $t$, based on an index proposed by \citet{pereira_junior_indicadores_2016}. The number of teachers leaving and entering the school at a given year are summed and divided by the total number of teachers in the current and previous period.
 
-$$\text{turnover}_{sjt} = \frac{\text{exit}_{sjt} + \text{entry}_{sjt}}{N_{sjt} + N_{sjt-1}}$$
+$$\text{turnover}_{sgjt} = \frac{\text{exit}_{sgjt} + \text{entry}_{sgjt}}{N_{sgjt} + N_{sgjt-1}}$$
 
-\blue{Insert more information and descriptive paragraph on turnover index here}
+The following example illustrates how the index operates. Suppose that in school $s$ for the year 2010, there are three teachers working. In the following year, one new teacher arrives and two leave. Our index would reflect these changes: $\text{turnover} = \frac{1 + 2}{3 + 2} = 0.6$. If, in contrast, no teachers left or entered the school, we would instead have a turnover index of 0 for the school. The added advantage of this measure is that it simultaneously captures a broader definition of bureaucratic turnover, that includes both exits and entries into the local school. Figure \ref{fig:hist_turnover} presents the distribution of turnover index over time.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\linewidth]{chapters/chapter_1/plots/hist_turnover_index.pdf}
+    \caption{Distribution of turnover index by year, pooled across schools. Note that for robustness, only schools with more than 5 teachers are included.}
+    \label{fig:hist_turnover}
+\end{figure}
+
+Note that there is not significant variation over time of the turnover index, indicating that there are no significant time trends or reduction in teacher turnover. This indicates that turnover is a perennial challenge for schools in Brazil and has not reduced significantly over time, despite efforts by the Ministry of Education to increase professionalization of eduactional staff through more strict public exam requirements. It is important to highlight that entry or exit in this context does not indicate that a teacher is necessarily leaving or entering the educational system, but rather being relocated to another school within the same system.
 
 Information on mayor, city councilors and mayoral coalitions are made available by the Supreme Electoral Court (TSE), the national authority responsible for overseeing elections.\footnote{Available \hyperlink{http://www.tse.jus.br/eleicoes/estatisticas/repositorio-de-dados-eleitorais-1}{here}.} In order to calculate the share of legislative seats held by the mayoral coalition, I match the partisanship of each city councilor to the mayoral electoral coalition. The distribution of share of coalition seats is depicted in figure \ref{fig:hist_coalition}. Note that although most city councils are controlled by the mayor, in over 40 percent of municipalities the mayoral coalition is a minority government.
 
-\begin{figure}
+\begin{figure}[h]
     \centering
     \includegraphics[width=0.6\linewidth]{chapters/chapter_1/plots/hist_coalition.pdf}
-    \caption{Distribution of share of legislative seats allied with the mayor during the electoral campaign for the elecoral period of 2002-2016.}
+    \caption{Distribution of share of legislative seats allied with the mayor during the electoral campaign for the eletcoral period of 2002-2016.}
     \label{fig:hist_coalition}
 \end{figure}
 
@@ -185,7 +194,7 @@ Following \citet{banks_2000_buying}, I impose the following two assumptions:
 \end{align*}
 $A1$ implies that absent any bribes by $A$, $y$ will defeat $x$. Therefore $A$ must bribe at least one voter. $A2$ implies that $A$ must bribe at least a majority of voters, otherwise $B$ will have sufficient resources to bribe $(n+1)/2$ voters and win. $A2$ also implies that for all $a \in U^l(\mathbf{v}, W_B)$, it must be that $t(a) \geq 2W_B/(n + 1)$, otherwise $B$ can bribe a majority from $C(a)$ itself and win the vote.
 
-These assumptions allow us to restrict our analysis to unbeatable monotonic leveling schedules, which we denote as $U_m^l$.\footnote{For any $a \in \real$ let $k(a) = \lvert C(a) \rvert$. Suppose that $a\in U^l(\mathbf{v}, W_B)$ is such that $v_i \geq v_j$ and $j \in C(a)$ but $i \notin C(a)$. Then, under $A2$, there exists $a' \in U^l(\mathbf{v}, W_B)$ with $S(a') \leq S(a)$, $k(a') = k(a)$ and $i \in C(a')$ but $j \notin C(a')$ by simply swapping $i$ for $j$: $a'_i = t(a) - v_i$, $a'_j = 0$ and $a'_m = a_m$ for all $m \notin i, j$.Note that since $v_i \geq v_j$, we have that $t(a) - v_i \leq  t(a) - v_j$, i.e. $a'_i \leq a_j$. Also, because of $A2$ $a'_j \leq a_j$, since it guarantees $a_j$ is non-negative. Generalizing, and recalling that $v_1 \geq ... \geq v_n$, we see that for all $a \in U^l(\mathbf{v}, W_b)$ there exists a bribe schedule $a' \in U^l(\mathbf{v}, W_b)$ such that $S(a') \leq S(a)$ and $C(a') = \{1, ..., k(a)\}$. Therefore, we can without loss of generality restrict attention to schedules $a$ by $A$ which bribe the first $k(a)$ voters. Call these monotonic leveling schedules and let $U_m^l \subseteq U(\mathbf{v}, W_B)$.} We can simplify the total expenditure on patronage by the government, $S(a)$, as
+These assumptions allow us to restrict our analysis to unbeatable monotonic leveling schedules, which we denote as $U_m^l$.\footnote{For any $a \in \real$ let $k(a) = \lvert C(a) \rvert$. Suppose that $a\in U^l(\mathbf{v}, W_B)$ is such that $v_i \geq v_j$ and $j \in C(a)$ but $i \notin C(a)$. Then, under $A2$, there exists $a' \in U^l(\mathbf{v}, W_B)$ with $S(a') \leq S(a)$, $k(a') = k(a)$ and $i \in C(a')$ but $j \notin C(a')$ by simply swapping $i$ for $j$: $a'_i = t(a) - v_i$, $a'_j = 0$ and $a'_m = a_m$ for all $m \notin i, j$. Note that since $v_i \geq v_j$, we have that $t(a) - v_i \leq  t(a) - v_j$, i.e. $a'_i \leq a_j$. Also, because of $A2$ $a'_j \leq a_j$, since it guarantees $a_j$ is non-negative. Generalizing, and recalling that $v_1 \geq ... \geq v_n$, we see that for all $a \in U^l(\mathbf{v}, W_b)$ there exists a bribe schedule $a' \in U^l(\mathbf{v}, W_b)$ such that $S(a') \leq S(a)$ and $C(a') = \{1, ..., k(a)\}$. Therefore, we can without loss of generality restrict attention to schedules $a$ by $A$ which bribe the first $k(a)$ voters. Call these monotonic leveling schedules and let $U_m^l \subseteq U(\mathbf{v}, W_B)$.} We can simplify the total expenditure on patronage by the government, $S(a)$, as
 
 \begin{equation*}
     S(a) = \sum_{i \in C(a)}a_i = k(a) \cdot t(a) - \sum_{i \leq k(a)}v_i
@@ -251,27 +260,23 @@ We can also further characterize the change in minimum winning expenditures in e
     & \equiv T(k, W_B) - v_{k + 1}
 \end{align}
 
-Using equation \ref{eqn:optimal_k} and substituting in equation \ref{eqn:deltAk} we have the following.
+% Using equation \ref{eqn:optimal_k} and substituting in equation \ref{eqn:deltAk} we have the following.
 
-\begin{proposition}
-    (a) $k^*(\mathbf{v}, W_B) = (n + 1)/2$ if and only if $v_{(n + 3)/2} \leq -W_B(n - 1)/4$; (b) $k^*(\mathbf{v}, W_B) = n$ if and only if $v_n > -2W_B/(n + 1)$.
-\end{proposition}
+% \begin{proposition}
+%     (a) $k^*(\mathbf{v}, W_B) = (n + 1)/2$ if and only if $v_{(n + 3)/2} \leq -W_B(n - 1)/4$; (b) $k^*(\mathbf{v}, W_B) = n$ if and only if $v_n > -2W_B/(n + 1)$.
+% \end{proposition}
 
-Banks also identifies how the optimal coalition $k^*$ respond to marginal changes in voter prefence intensity. Given an arbitrary amount $W_B$ and preference profile $\mathbf{v}'$, let $k' = k^*(\mathbf{v'}, W_B)$. If $k' = (n + 1)/2$, then we know that $k' \leq k^*(\mathbf{v}, W_B)$ for all $\mathbf{v}$, so suppose $k' > (n + 1)/2$.
+% Banks also identifies how the optimal coalition $k^*$ respond to marginal changes in voter prefence intensity. Given an arbitrary amount $W_B$ and preference profile $\mathbf{v}'$, let $k' = k^*(\mathbf{v'}, W_B)$. If $k' = (n + 1)/2$, then we know that $k' \leq k^*(\mathbf{v}, W_B)$ for all $\mathbf{v}$, so suppose $k' > (n + 1)/2$.
 
-From equation \ref{eqn:optimal_k} we infer that $\Delta(k' - 1, \mathbf{v}', W_B) < 0$, which from equations \ref{eqn:deltAk} and \ref{eqn:def_deltAk} is equivalent to $v_k' > T(k' - 1, W_B)$. Now suppose that the preference profile changes from $\mathbf{v}'$ to $\mathbf{v}$, and $v_{k'}$ is such that $v_{k'} \geq v'_k$. Then, $v_{k'} > T(k' - 1, W_B)$, and hence $\Delta(k' - 1, \mathbf{v}, W_B) < 0$. But then from equation \ref{eqn:optimal_k} it must be the case that $k^*(\mathbf{v}, W_B) \geq k'$. Therefore, the following holds:
+% From equation \ref{eqn:optimal_k} we infer that $\Delta(k' - 1, \mathbf{v}', W_B) < 0$, which from equations \ref{eqn:deltAk} and \ref{eqn:def_deltAk} is equivalent to $v_k' > T(k' - 1, W_B)$. Now suppose that the preference profile changes from $\mathbf{v}'$ to $\mathbf{v}$, and $v_{k'}$ is such that $v_{k'} \geq v'_k$. Then, $v_{k'} > T(k' - 1, W_B)$, and hence $\Delta(k' - 1, \mathbf{v}, W_B) < 0$. Therefore, from equation \ref{eqn:optimal_k} it must be the case that $k^*(\mathbf{v}, W_B) \geq k'$. The following proposition thus holds:
 
-\begin{proposition}
-    For all $W_B$, if $\mathbf{v}$ and $\mathbf{v}'$ are such that $v_{k'} \geq v'_{k'}$, where $k' = k^*(\mathbf{v}', W_B)$, then $k^*(\mathbf{v}, W_B) \geq k^*(\mathbf{v}', W_B)$
-\end{proposition}
+% \begin{proposition}
+%     For all $W_B$, if $\mathbf{v}$ and $\mathbf{v}'$ are such that $v_{k'} \geq v'_{k'}$, where $k' = k^*(\mathbf{v}', W_B)$, then $k^*(\mathbf{v}, W_B) \geq k^*(\mathbf{v}', W_B)$
+% \end{proposition}
 
-In words, if the preference intensity of the marginal bribed voter weakly increases, then the optimal coalition size also weakly increases. Substantively, the number of voters bribed by $A$ weakly increases as the voter who receives the largest bribe finds $A$'s preferred alternative, $x$, more attractive. Similarly
+% Substantively, if the preference intensity of the marginal bribed voter weakly increases, then the optimal coalition size also weakly increases. Substantively, the number of voters bribed by $A$ weakly increases as the voter who receives the largest bribe finds $A$'s preferred alternative, $x$, more attractive.
 
-\begin{proposition}
-    For all $W_B$, if $\mathbf{v}$ and $\mathbf{v}'$ are such that $v_{k' + 1} \leq v'_{k' + 1}$, where $k' = k^*(\mathbf{v}', W_B)$, then $k^*(\mathbf{v}, W_B) \leq k^*(\mathbf{v}', W_B)$
-\end{proposition}
-
-The ``convexity" of $E$ guarantees that local information is sufficient to generate comparative statistics regarding changes in preferences $\mathbf{v}' \rightarrow \mathbf{v}$. We can characterize the change in total expenditures as a result of a shift in voter preferences. Given two preferences $\mathbf{v}$ and $\mathbf{v}'$, write $\mathbf{v}$ and $\mathbf{v}'$ if $v_i \geq v'_i$ for all $i \in N$. From equation \ref{eqn:total_expenditure} we have
+With this theoretical framework, we can characterize change in total expenditures as a result of a shift in voter preferences. Given two preferences $\mathbf{v}$ and $\mathbf{v}'$, write $\mathbf{v}$ and $\mathbf{v}'$ if $v_i \geq v'_i$ for all $i \in N$. From equation \ref{eqn:total_expenditure} we have
 
 \begin{align*}
     E(k, \mathbf{v}, W_B) - E(k, \mathbf{v}', W_B) & = \\
