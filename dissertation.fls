@@ -60,3 +60,401 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/caption/subcaption.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/caption/subcaption.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/graphics/lscape.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/graphics/lscape.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/booktabs/booktabs.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/booktabs/booktabs.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/tools/dcolumn.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/tools/dcolumn.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/url/url.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/url/url.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/colortbl/colortbl.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/colortbl/colortbl.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/preprint/authblk.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/preprint/authblk.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/appendix/appendix.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/appendix/appendix.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/titlesec/titletoc.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/titlesec/titletoc.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/multirow/multirow.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/multirow/multirow.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/titling/titling.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/titling/titling.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hyperref.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hyperref.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/auxhook.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/auxhook.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/pd1enc.def
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/pd1enc.def
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hpdftex.def
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hpdftex.def
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/kbordermatrix.sty
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/kbordermatrix.sty
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.aux
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.aux
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/chapter_education.aux
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/chapter_education.aux
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/chapter_corruption.aux
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/chapter_corruption.aux
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/chapter_patronage.aux
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/chapter_patronage.aux
+OUTPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.aux
+INPUT /usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.out
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.out
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.out
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.out
+OUTPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.out
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.out
+OUTPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.out
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT /usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.toc
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.toc
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+OUTPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.toc
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+OUTPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/chapter_education.aux
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/chapter_education.tex
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/chapter_education.tex
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/descriptive_enrollment.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/descriptive_enrollment.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/descriptive_enrollment.pdf
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/descriptive_staff_breakdown.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/descriptive_staff_breakdown.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/descriptive_staff_breakdown.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/saeb_map.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/saeb_map.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/saeb_map.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/descriptive_staff_turnover.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/descriptive_staff_turnover.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/descriptive_staff_turnover.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/hist_turnover_index.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/hist_turnover_index.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/hist_turnover_index.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/hist_coalition.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/hist_coalition.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/hist_coalition.pdf
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/results/turnover_result.tex
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/results/turnover_result.tex
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/plot_coalition_coef_mun.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/plot_coalition_coef_mun.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/plot_coalition_coef_mun.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/plot_interactions_logit.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/plot_interactions_logit.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/plot_interactions_logit.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/plot_coalition_coef_mun_second.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/plot_coalition_coef_mun_second.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/plot_coalition_coef_mun_second.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/results/student_learning.tex
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/results/student_learning.tex
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/model_turnover_learning.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/model_turnover_learning.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/model_turnover_learning.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/reelection_marginal_effect_plots.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/reelection_marginal_effect_plots.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/reelection_marginal_effect_plots.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/covariate_balance.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/covariate_balance.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/covariate_balance.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/accountability_fit.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/accountability_fit.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/accountability_fit.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/visual_rdd_legislative_seat_flip.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/visual_rdd_legislative_seat_flip.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/plots/visual_rdd_legislative_seat_flip.pdf
+OUTPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/chapter_corruption.aux
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/chapter_corruption.tex
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/chapter_corruption.tex
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/tables/desc.tex
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/tables/desc.tex
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/sampleDistribwwb.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/sampleDistribwwb.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/sampleDistribwwb.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/tables/mainModsW.tex
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/tables/mainModsW.tex
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/mainPl.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/mainPl.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/mainPl.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEoverTime.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEoverTime.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEoverTime.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEpolitical_term1Client.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEpolitical_term1Client.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEpolitical_term1Client.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures_theory/eq_baseline.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures_theory/eq_baseline.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures_theory/eq_baseline.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures_theory/eq_with_k.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures_theory/eq_with_k.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures_theory/eq_with_k.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures_theory/eq_with_c.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures_theory/eq_with_c.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures_theory/eq_with_c.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/tables/structural.tex
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/tables/structural.tex
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/distribStructural.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/distribStructural.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/distribStructural.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/counterfactuals1.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/counterfactuals1.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/counterfactuals1.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/counterfactuals_effectiveness.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/counterfactuals_effectiveness.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/counterfactuals_effectiveness.pdf
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/corruptionCorrelation.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/corruptionCorrelation.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/corruptionCorrelation.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/corruptionOverTime.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/corruptionOverTime.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/corruptionOverTime.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/distribNIrregularities.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/distribNIrregularities.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/distribNIrregularities.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/tables/avis.tex
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/tables/avis.tex
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/tables/managementIndex.tex
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/tables/managementIndex.tex
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/managementCorruption.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/managementCorruption.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/managementCorruption.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/dependentVariables.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/dependentVariables.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/dependentVariables.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/pl_bureaucrat_low.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/pl_bureaucrat_low.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/pl_bureaucrat_low.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/pl_frontline_high.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/pl_frontline_high.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/pl_frontline_high.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/pl_frontline_low.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/pl_frontline_low.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/pl_frontline_low.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/plSubset.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/plSubset.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/plSubset.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/plSubsetTenured.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/plSubsetTenured.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/plSubsetTenured.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/plSubsetUntenured.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/plSubsetUntenured.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/plSubsetUntenured.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/mainPlHires.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/mainPlHires.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/mainPlHires.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEoverTimeHires.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEoverTimeHires.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEoverTimeHires.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/tables/covariateBalance.tex
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/tables/covariateBalance.tex
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/plDv.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/plDv.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/plDv.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/mgmtRobust.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/mgmtRobust.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/mgmtRobust.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/plSubsetMun.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/plSubsetMun.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/plSubsetMun.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/tables/multinomEdit.tex
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/tables/multinomEdit.tex
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEpoliticalSerious_term1Client.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEpoliticalSerious_term1Client.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEpoliticalSerious_term1Client.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEpoliticalAllPerAMount_term1Client.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEpoliticalAllPerAMount_term1Client.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEpoliticalAllPerAMount_term1Client.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEpoliticalSeriousPerAmount_term1Client.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEpoliticalSeriousPerAmount_term1Client.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEpoliticalSeriousPerAmount_term1Client.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEpolitical_term2Client.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEpolitical_term2Client.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEpolitical_term2Client.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEpoliticalSerious_term2Client.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEpoliticalSerious_term2Client.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEpoliticalSerious_term2Client.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEpoliticalAllPerAMount_term2Client.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEpoliticalAllPerAMount_term2Client.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEpoliticalAllPerAMount_term2Client.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEpoliticalSeriousPerAmount_term2Client.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEpoliticalSeriousPerAmount_term2Client.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEpoliticalSeriousPerAmount_term2Client.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/validationStructuralSize.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/validationStructuralSize.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/validationStructuralSize.pdf
+OUTPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/chapter_patronage.aux
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/chapter_patronage.tex
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/chapter_patronage.tex
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_partisan_by_year.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_partisan_by_year.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_partisan_by_year.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_partisan_by_region.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_partisan_by_region.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_partisan_by_region.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_partisan_spell.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_partisan_spell.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_partisan_spell.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_median_wage.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_median_wage.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_median_wage.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_work_experience_mean.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_work_experience_mean.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_work_experience_mean.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_edu_mean.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_edu_mean.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_edu_mean.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_age_mean.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_age_mean.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_age_mean.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/maps/pooled.png
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/maps/pooled.png
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/maps/pooled.png
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_partisanship_by_cbo_group.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_partisanship_by_cbo_group.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_partisanship_by_cbo_group.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_partisanship_by_contract_type.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_partisanship_by_contract_type.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_partisanship_by_contract_type.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/turnover/plot_wage.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/turnover/plot_wage.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/turnover/plot_wage.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/turnover/plot_work_experience.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/turnover/plot_work_experience.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/turnover/plot_work_experience.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_contribution.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_contribution.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_contribution.pdf
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.bbl
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.bbl
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.aux
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/chapter_education.aux
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/chapter_education.aux
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/chapter_corruption.aux
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/chapter_corruption.aux
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/chapter_patronage.aux
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/chapter_patronage.aux
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.out
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.out
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
