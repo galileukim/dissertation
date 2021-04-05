@@ -6,50 +6,51 @@ A level-1 auxiliary file: chapters/chapter_1/chapter_education.aux
 A level-1 auxiliary file: chapters/chapter_2/chapter_corruption.aux
 A level-1 auxiliary file: chapters/chapter_3/chapter_patronage.aux
 Database file #1: dissertation.bib
+Warning--I didn't find a database entry for "stokes_brokers_2013"
 Warning--I didn't find a database entry for "grindle_jobs_2012"
 Warning--I didn't find a database entry for "evans1999bureaucracy"
 Warning--I didn't find a database entry for "brollo2017victor"
 Warning--I didn't find a database entry for "arretche2015trajetorias"
 Warning--there's a number but no volume in militao_educacao_2014
-You've used 112 entries,
+You've used 111 entries,
             2874 wiz_defined-function locations,
-            1238 strings with 23398 characters,
-and the built_in function-call counts, 455765 in all, are:
-= -- 74697
-> -- 5152
+            1236 strings with 23251 characters,
+and the built_in function-call counts, 448866 in all, are:
+= -- 73539
+> -- 5069
 < -- 3
-+ -- 34901
-- -- 1842
-* -- 38631
-:= -- 91599
-add.period$ -- 451
-call.type$ -- 112
-change.case$ -- 1459
++ -- 34330
+- -- 1814
+* -- 38018
+:= -- 90267
+add.period$ -- 447
+call.type$ -- 111
+change.case$ -- 1446
 chr.to.int$ -- 110
-cite$ -- 113
-duplicate$ -- 1762
-empty$ -- 3781
-format.name$ -- 1950
-if$ -- 81896
-int.to.chr$ -- 7
+cite$ -- 112
+duplicate$ -- 1746
+empty$ -- 3751
+format.name$ -- 1919
+if$ -- 80647
+int.to.chr$ -- 6
 int.to.str$ -- 0
-missing$ -- 130
-newline$ -- 478
-num.names$ -- 1294
-pop$ -- 477
+missing$ -- 128
+newline$ -- 473
+num.names$ -- 1283
+pop$ -- 471
 preamble$ -- 1
-purify$ -- 1680
+purify$ -- 1665
 quote$ -- 0
-skip$ -- 1510
+skip$ -- 1499
 stack$ -- 0
-substring$ -- 105267
-swap$ -- 277
-text.length$ -- 1571
+substring$ -- 103605
+swap$ -- 274
+text.length$ -- 1557
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 406
+type$ -- 404
 warning$ -- 1
-while$ -- 2656
+while$ -- 2635
 width$ -- 0
-write$ -- 1551
-(There were 5 warnings)
+write$ -- 1535
+(There were 6 warnings)
