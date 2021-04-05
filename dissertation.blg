@@ -11,45 +11,45 @@ Warning--I didn't find a database entry for "evans1999bureaucracy"
 Warning--I didn't find a database entry for "brollo2017victor"
 Warning--I didn't find a database entry for "arretche2015trajetorias"
 Warning--there's a number but no volume in militao_educacao_2014
-You've used 111 entries,
+You've used 112 entries,
             2874 wiz_defined-function locations,
-            1236 strings with 23261 characters,
-and the built_in function-call counts, 453696 in all, are:
-= -- 74370
-> -- 5136
+            1238 strings with 23398 characters,
+and the built_in function-call counts, 455765 in all, are:
+= -- 74697
+> -- 5152
 < -- 3
-+ -- 34762
-- -- 1835
-* -- 38475
-:= -- 91148
-add.period$ -- 447
-call.type$ -- 111
-change.case$ -- 1446
-chr.to.int$ -- 109
-cite$ -- 112
-duplicate$ -- 1748
-empty$ -- 3755
-format.name$ -- 1941
-if$ -- 81532
++ -- 34901
+- -- 1842
+* -- 38631
+:= -- 91599
+add.period$ -- 451
+call.type$ -- 112
+change.case$ -- 1459
+chr.to.int$ -- 110
+cite$ -- 113
+duplicate$ -- 1762
+empty$ -- 3781
+format.name$ -- 1950
+if$ -- 81896
 int.to.chr$ -- 7
 int.to.str$ -- 0
-missing$ -- 129
-newline$ -- 474
-num.names$ -- 1284
-pop$ -- 471
+missing$ -- 130
+newline$ -- 478
+num.names$ -- 1294
+pop$ -- 477
 preamble$ -- 1
-purify$ -- 1665
+purify$ -- 1680
 quote$ -- 0
-skip$ -- 1497
+skip$ -- 1510
 stack$ -- 0
-substring$ -- 104828
-swap$ -- 276
-text.length$ -- 1557
+substring$ -- 105267
+swap$ -- 277
+text.length$ -- 1571
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 402
+type$ -- 406
 warning$ -- 1
-while$ -- 2635
+while$ -- 2656
 width$ -- 0
-write$ -- 1539
+write$ -- 1551
 (There were 5 warnings)

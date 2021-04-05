@@ -60,8 +60,8 @@
 \contentsline {subsection}{\numberline {3.3.2}Partisan affiliation}{144}{subsection.3.3.2}% 
 \contentsline {subsection}{\numberline {3.3.3}Joining Public Sector Employment to Partisanship Data}{146}{subsection.3.3.3}% 
 \contentsline {subsection}{\numberline {3.3.4}Who benefits from patronage?}{148}{subsection.3.3.4}% 
-\contentsline {subsection}{\numberline {3.3.5}Islands of Patronage}{152}{subsection.3.3.5}% 
-\contentsline {section}{\numberline {3.4}Campaign Finance and Wealthy Patrons}{156}{section.3.4}% 
-\contentsline {section}{\numberline {3.5}Conclusion}{158}{section.3.5}% 
-\contentsline {chapter}{Bibliography}{167}{chapter*.90}% 
+\contentsline {subsection}{\numberline {3.3.5}Islands of Patronage}{153}{subsection.3.3.5}% 
+\contentsline {section}{\numberline {3.4}Campaign Finance and Wealthy Patrons}{157}{section.3.4}% 
+\contentsline {section}{\numberline {3.5}Conclusion}{159}{section.3.5}% 
+\contentsline {chapter}{Bibliography}{168}{chapter*.91}% 
 \contentsfinish 
