@@ -2,10 +2,12 @@ This is BibTeX, Version 0.99d (TeX Live 2019)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: dissertation.aux
 The style file: apsr.bst
+A level-1 auxiliary file: chapters/chapter_0/acknowledgment.aux
 A level-1 auxiliary file: chapters/chapter_0/intro.aux
 A level-1 auxiliary file: chapters/chapter_1/chapter_education.aux
 A level-1 auxiliary file: chapters/chapter_2/chapter_corruption.aux
 A level-1 auxiliary file: chapters/chapter_3/chapter_patronage.aux
+A level-1 auxiliary file: chapters/chapter_n/conclusion.aux
 Database file #1: dissertation.bib
 Warning--I didn't find a database entry for "stokes_brokers_2013"
 Warning--I didn't find a database entry for "grindle_jobs_2012"
@@ -15,7 +17,7 @@ Warning--I didn't find a database entry for "arretche2015trajetorias"
 Warning--there's a number but no volume in militao_educacao_2014
 You've used 111 entries,
             2874 wiz_defined-function locations,
-            1237 strings with 23279 characters,
+            1239 strings with 23349 characters,
 and the built_in function-call counts, 448866 in all, are:
 = -- 73539
 > -- 5069
