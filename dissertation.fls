@@ -130,6 +130,8 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/sectsty/sectsty.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/sectsty/sectsty.sty
 INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.aux
 INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.aux
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_0/intro.aux
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_0/intro.aux
 INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/chapter_education.aux
 INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/chapter_education.aux
 INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/chapter_corruption.aux
@@ -163,6 +165,10 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+OUTPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_0/intro.aux
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_0/intro.tex
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_0/intro.tex
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
@@ -198,7 +204,6 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb0.
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.toc
 INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.toc
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
@@ -464,6 +469,8 @@ INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/c
 INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.bbl
 INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.bbl
 INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.aux
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_0/intro.aux
+INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_0/intro.aux
 INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/chapter_education.aux
 INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_1/chapter_education.aux
 INPUT /Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/chapter_corruption.aux
