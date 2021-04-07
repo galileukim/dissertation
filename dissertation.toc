@@ -65,6 +65,5 @@
 \contentsline {section}{\numberline {3.4}Campaign Finance and Wealthy Patrons}{160}{section.3.4}% 
 \contentsline {section}{\numberline {3.5}Conclusion}{162}{section.3.5}% 
 \contentsline {chapter}{Conclusion}{164}{chapter*.95}% 
-\contentsline {section}{\numberline {3.6}Conclusion}{165}{section.3.6}% 
-\contentsline {chapter}{Bibliography}{175}{chapter*.96}% 
+\contentsline {chapter}{Bibliography}{175}{chapter*.97}% 
 \contentsfinish 
