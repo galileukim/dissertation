@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  8 APR 2021 07:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  26 APR 2021 12:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1237,14 +1237,7 @@ Chapter 3.
 ]
 \openout2 = `chapters/chapter_3/chapter_patronage.aux'.
 
- (/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/chapter_patronage.tex
-
-Package natbib Warning: Citation `evans1999bureaucracy' on page 138 undefined on input line 7.
-
-
-Package natbib Warning: Citation `brollo2017victor' on page 138 undefined on input line 9.
-
-[138
+ (/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/chapter_patronage.tex [138
 
 ] [139] [140]
 
@@ -1426,7 +1419,7 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/nanumtype1/nanummjmac.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb0.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb2.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbe.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc0.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc5.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd5.pfb>
-Output written on "/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.pdf" (185 pages, 3861940 bytes).
+Output written on "/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.pdf" (185 pages, 3861992 bytes).
 PDF statistics:
  2680 PDF objects out of 2984 (max. 8388607)
  2287 compressed objects within 23 object streams
