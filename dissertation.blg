@@ -10,12 +10,11 @@ A level-1 auxiliary file: chapters/chapter_3/chapter_patronage.aux
 A level-1 auxiliary file: chapters/chapter_n/conclusion.aux
 Database file #1: dissertation.bib
 Warning--I didn't find a database entry for "grindle_jobs_2012"
-Warning--I didn't find a database entry for "arretche2015trajetorias"
 Warning--I didn't find a database entry for "brollo2017victor"
 Warning--there's a number but no volume in militao_educacao_2014
 You've used 107 entries,
             2874 wiz_defined-function locations,
-            1220 strings with 22763 characters,
+            1219 strings with 22740 characters,
 and the built_in function-call counts, 430268 in all, are:
 = -- 70469
 > -- 4859
@@ -54,4 +53,4 @@ warning$ -- 1
 while$ -- 2541
 width$ -- 0
 write$ -- 1477
-(There were 4 warnings)
+(There were 3 warnings)
