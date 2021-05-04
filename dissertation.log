@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  27 APR 2021 22:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  4 MAY 2021 17:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -778,17 +778,13 @@ Overfull \hbox (11.82182pt too wide) in paragraph at lines 16--17
 
 [45
 
-] [46] [47] [48]
-
-Package natbib Warning: Citation `grindle_jobs_2012' on page 49 undefined on input line 36.
-
-[49] [50] [51] (/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/tables/desc.tex) [52]
+] [46] [47] [48] [49] [50] [51] (/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/tables/desc.tex) [52]
 Overfull \hbox (1.15448pt too wide) in paragraph at lines 71--72
 []\OT1/cmr/m/n/12 Our man-age-ment in-dex uses data from the \OT1/cmr/m/it/12 Pesquisa de In-forma^^Xc~oes B^^Sasicas
  []
 
 [53]
-<chapters/chapter_2/figures/sampleDistribwwb.pdf, id=1184, 216.81pt x 216.81pt>
+<chapters/chapter_2/figures/sampleDistribwwb.pdf, id=1186, 216.81pt x 216.81pt>
 File: chapters/chapter_2/figures/sampleDistribwwb.pdf Graphic file (type pdf)
 <use chapters/chapter_2/figures/sampleDistribwwb.pdf>
 Package pdftex.def Info: chapters/chapter_2/figures/sampleDistribwwb.pdf  used on input line 77.
@@ -828,7 +824,7 @@ Overfull \hbox (7.95107pt too wide) in paragraph at lines 131--132
 LaTeX Warning: Float too large for page by 0.11105pt on input line 156.
 
 [64]
-<chapters/chapter_2/figures/mainPl.pdf, id=1309, 433.62pt x 433.62pt>
+<chapters/chapter_2/figures/mainPl.pdf, id=1311, 433.62pt x 433.62pt>
 File: chapters/chapter_2/figures/mainPl.pdf Graphic file (type pdf)
 <use chapters/chapter_2/figures/mainPl.pdf>
 Package pdftex.def Info: chapters/chapter_2/figures/mainPl.pdf  used on input line 161.
@@ -842,7 +838,7 @@ Overfull \hbox (36.13394pt too wide) in paragraph at lines 161--162
 
 
  </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/mainPl.pdf>]
-<chapters/chapter_2/figures/AMEoverTime.pdf, id=1323, 433.62pt x 578.16pt>
+<chapters/chapter_2/figures/AMEoverTime.pdf, id=1325, 433.62pt x 578.16pt>
 File: chapters/chapter_2/figures/AMEoverTime.pdf Graphic file (type pdf)
 <use chapters/chapter_2/figures/AMEoverTime.pdf>
 Package pdftex.def Info: chapters/chapter_2/figures/AMEoverTime.pdf  used on input line 170.
@@ -856,7 +852,7 @@ Overfull \hbox (36.13394pt too wide) in paragraph at lines 170--171
 Overfull \vbox (46.52861pt too high) has occurred while \output is active []
 
  [67 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEoverTime.pdf>]
-<chapters/chapter_2/figures/AMEpolitical_term1Client.pdf, id=1339, 433.62pt x 361.35pt>
+<chapters/chapter_2/figures/AMEpolitical_term1Client.pdf, id=1341, 433.62pt x 361.35pt>
 File: chapters/chapter_2/figures/AMEpolitical_term1Client.pdf Graphic file (type pdf)
 <use chapters/chapter_2/figures/AMEpolitical_term1Client.pdf>
 Package pdftex.def Info: chapters/chapter_2/figures/AMEpolitical_term1Client.pdf  used on input line 177.
@@ -867,19 +863,19 @@ Overfull \hbox (36.13394pt too wide) in paragraph at lines 177--178
  []
 
 [68 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEpolitical_term1Client.pdf>] [69] [70] [71] [72] [73] [74] [75]
-<chapters/chapter_2/figures_theory/eq_baseline.pdf, id=1409, 249.9203pt x 61.0706pt>
+<chapters/chapter_2/figures_theory/eq_baseline.pdf, id=1411, 249.9203pt x 61.0706pt>
 File: chapters/chapter_2/figures_theory/eq_baseline.pdf Graphic file (type pdf)
 <use chapters/chapter_2/figures_theory/eq_baseline.pdf>
 Package pdftex.def Info: chapters/chapter_2/figures_theory/eq_baseline.pdf  used on input line 255.
 (pdftex.def)             Requested size: 249.91968pt x 61.07043pt.
  [76 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures_theory/eq_baseline.pdf>]
-<chapters/chapter_2/figures_theory/eq_with_k.pdf, id=1425, 247.21077pt x 249.46327pt>
+<chapters/chapter_2/figures_theory/eq_with_k.pdf, id=1427, 247.21077pt x 249.46327pt>
 File: chapters/chapter_2/figures_theory/eq_with_k.pdf Graphic file (type pdf)
 <use chapters/chapter_2/figures_theory/eq_with_k.pdf>
 Package pdftex.def Info: chapters/chapter_2/figures_theory/eq_with_k.pdf  used on input line 275.
 (pdftex.def)             Requested size: 247.21016pt x 249.46265pt.
  [77 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures_theory/eq_with_k.pdf>]
-<chapters/chapter_2/figures_theory/eq_with_c.pdf, id=1436, 421.56882pt x 228.49185pt>
+<chapters/chapter_2/figures_theory/eq_with_c.pdf, id=1438, 421.56882pt x 228.49185pt>
 File: chapters/chapter_2/figures_theory/eq_with_c.pdf Graphic file (type pdf)
 <use chapters/chapter_2/figures_theory/eq_with_c.pdf>
 Package pdftex.def Info: chapters/chapter_2/figures_theory/eq_with_c.pdf  used on input line 288.
@@ -898,7 +894,7 @@ Overfull \hbox (30.34682pt too wide) detected at line 349
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<chapters/chapter_2/figures/distribStructural.pdf, id=1492, 433.62pt x 144.54pt>
+<chapters/chapter_2/figures/distribStructural.pdf, id=1494, 433.62pt x 144.54pt>
 File: chapters/chapter_2/figures/distribStructural.pdf Graphic file (type pdf)
 <use chapters/chapter_2/figures/distribStructural.pdf>
 Package pdftex.def Info: chapters/chapter_2/figures/distribStructural.pdf  used on input line 375.
@@ -912,7 +908,7 @@ Overfull \hbox (36.13394pt too wide) in paragraph at lines 375--376
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [85] [86 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/distribStructural.pdf>] [87] [88]
-<chapters/chapter_2/figures/counterfactuals1.pdf, id=1524, 433.62pt x 216.81pt>
+<chapters/chapter_2/figures/counterfactuals1.pdf, id=1526, 433.62pt x 216.81pt>
 File: chapters/chapter_2/figures/counterfactuals1.pdf Graphic file (type pdf)
 <use chapters/chapter_2/figures/counterfactuals1.pdf>
 Package pdftex.def Info: chapters/chapter_2/figures/counterfactuals1.pdf  used on input line 399.
@@ -923,7 +919,7 @@ Overfull \hbox (36.13394pt too wide) in paragraph at lines 399--400
  []
 
 [89 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/counterfactuals1.pdf>]
-<chapters/chapter_2/figures/counterfactuals_effectiveness.pdf, id=1536, 433.62pt x 216.81pt>
+<chapters/chapter_2/figures/counterfactuals_effectiveness.pdf, id=1538, 433.62pt x 216.81pt>
 File: chapters/chapter_2/figures/counterfactuals_effectiveness.pdf Graphic file (type pdf)
 <use chapters/chapter_2/figures/counterfactuals_effectiveness.pdf>
 Package pdftex.def Info: chapters/chapter_2/figures/counterfactuals_effectiveness.pdf  used on input line 410.
@@ -941,7 +937,7 @@ Overfull \hbox (10.21075pt too wide) in paragraph at lines 494--495
  []
 
 [97] [98] [99] [100]
-<chapters/chapter_2/figures/corruptionCorrelation.pdf, id=1610, 216.81pt x 216.81pt>
+<chapters/chapter_2/figures/corruptionCorrelation.pdf, id=1612, 216.81pt x 216.81pt>
 File: chapters/chapter_2/figures/corruptionCorrelation.pdf Graphic file (type pdf)
 <use chapters/chapter_2/figures/corruptionCorrelation.pdf>
 Package pdftex.def Info: chapters/chapter_2/figures/corruptionCorrelation.pdf  used on input line 566.
@@ -951,7 +947,7 @@ Overfull \hbox (22.03964pt too wide) in paragraph at lines 566--567
  [][] 
  []
 
-<chapters/chapter_2/figures/corruptionOverTime.pdf, id=1611, 216.81pt x 216.81pt>
+<chapters/chapter_2/figures/corruptionOverTime.pdf, id=1613, 216.81pt x 216.81pt>
 File: chapters/chapter_2/figures/corruptionOverTime.pdf Graphic file (type pdf)
 <use chapters/chapter_2/figures/corruptionOverTime.pdf>
 Package pdftex.def Info: chapters/chapter_2/figures/corruptionOverTime.pdf  used on input line 572.
@@ -961,7 +957,7 @@ Overfull \hbox (22.03964pt too wide) in paragraph at lines 572--573
  [][] 
  []
 
-<chapters/chapter_2/figures/distribNIrregularities.pdf, id=1612, 433.62pt x 180.675pt>
+<chapters/chapter_2/figures/distribNIrregularities.pdf, id=1614, 433.62pt x 180.675pt>
 File: chapters/chapter_2/figures/distribNIrregularities.pdf Graphic file (type pdf)
 <use chapters/chapter_2/figures/distribNIrregularities.pdf>
 Package pdftex.def Info: chapters/chapter_2/figures/distribNIrregularities.pdf  used on input line 582.
@@ -979,7 +975,7 @@ Overfull \vbox (33.8967pt too high) has occurred while \output is active []
  [104] (/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/tables/managementIndex.tex) [105
 
 ] [106]
-<chapters/chapter_2/figures/managementCorruption.pdf, id=1680, 433.62pt x 433.62pt>
+<chapters/chapter_2/figures/managementCorruption.pdf, id=1682, 433.62pt x 433.62pt>
 File: chapters/chapter_2/figures/managementCorruption.pdf Graphic file (type pdf)
 <use chapters/chapter_2/figures/managementCorruption.pdf>
 Package pdftex.def Info: chapters/chapter_2/figures/managementCorruption.pdf  used on input line 622.
@@ -990,7 +986,7 @@ Overfull \hbox (36.13394pt too wide) in paragraph at lines 622--623
  []
 
 [107]
-<chapters/chapter_2/figures/dependentVariables.pdf, id=1685, 433.62pt x 216.81pt>
+<chapters/chapter_2/figures/dependentVariables.pdf, id=1687, 433.62pt x 216.81pt>
 File: chapters/chapter_2/figures/dependentVariables.pdf Graphic file (type pdf)
 <use chapters/chapter_2/figures/dependentVariables.pdf>
 Package pdftex.def Info: chapters/chapter_2/figures/dependentVariables.pdf  used on input line 632.
@@ -1001,7 +997,7 @@ Overfull \hbox (36.13394pt too wide) in paragraph at lines 632--633
  []
 
 [108 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/managementCorruption.pdf>]
-<chapters/chapter_2/figures/pl_bureaucrat_low.pdf, id=1698, 433.62pt x 325.215pt>
+<chapters/chapter_2/figures/pl_bureaucrat_low.pdf, id=1700, 433.62pt x 325.215pt>
 File: chapters/chapter_2/figures/pl_bureaucrat_low.pdf Graphic file (type pdf)
 <use chapters/chapter_2/figures/pl_bureaucrat_low.pdf>
 Package pdftex.def Info: chapters/chapter_2/figures/pl_bureaucrat_low.pdf  used on input line 645.
@@ -1012,7 +1008,7 @@ Overfull \hbox (36.13394pt too wide) in paragraph at lines 645--646
  []
 
 [109 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/dependentVariables.pdf>]
-<chapters/chapter_2/figures/pl_frontline_high.pdf, id=1715, 433.62pt x 325.215pt>
+<chapters/chapter_2/figures/pl_frontline_high.pdf, id=1717, 433.62pt x 325.215pt>
 File: chapters/chapter_2/figures/pl_frontline_high.pdf Graphic file (type pdf)
 <use chapters/chapter_2/figures/pl_frontline_high.pdf>
 Package pdftex.def Info: chapters/chapter_2/figures/pl_frontline_high.pdf  used on input line 652.
@@ -1023,7 +1019,7 @@ Overfull \hbox (36.13394pt too wide) in paragraph at lines 652--653
  []
 
 [110 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/pl_bureaucrat_low.pdf>]
-<chapters/chapter_2/figures/pl_frontline_low.pdf, id=1728, 433.62pt x 325.215pt>
+<chapters/chapter_2/figures/pl_frontline_low.pdf, id=1730, 433.62pt x 325.215pt>
 File: chapters/chapter_2/figures/pl_frontline_low.pdf Graphic file (type pdf)
 <use chapters/chapter_2/figures/pl_frontline_low.pdf>
 Package pdftex.def Info: chapters/chapter_2/figures/pl_frontline_low.pdf  used on input line 659.
@@ -1034,7 +1030,7 @@ Overfull \hbox (36.13394pt too wide) in paragraph at lines 659--660
  []
 
 [111 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/pl_frontline_high.pdf>]
-<chapters/chapter_2/figures/plSubset.pdf, id=1742, 433.62pt x 325.215pt>
+<chapters/chapter_2/figures/plSubset.pdf, id=1745, 433.62pt x 325.215pt>
 File: chapters/chapter_2/figures/plSubset.pdf Graphic file (type pdf)
 <use chapters/chapter_2/figures/plSubset.pdf>
 Package pdftex.def Info: chapters/chapter_2/figures/plSubset.pdf  used on input line 669.
@@ -1045,7 +1041,7 @@ Overfull \hbox (36.13394pt too wide) in paragraph at lines 669--670
  []
 
 [112 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/pl_frontline_low.pdf>] [113 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/plSubset.pdf>]
-<chapters/chapter_2/figures/plSubsetTenured.pdf, id=1766, 433.62pt x 325.215pt>
+<chapters/chapter_2/figures/plSubsetTenured.pdf, id=1768, 433.62pt x 325.215pt>
 File: chapters/chapter_2/figures/plSubsetTenured.pdf Graphic file (type pdf)
 <use chapters/chapter_2/figures/plSubsetTenured.pdf>
 Package pdftex.def Info: chapters/chapter_2/figures/plSubsetTenured.pdf  used on input line 683.
@@ -1055,7 +1051,7 @@ Overfull \hbox (36.13394pt too wide) in paragraph at lines 683--684
  [][] 
  []
 
-<chapters/chapter_2/figures/plSubsetUntenured.pdf, id=1769, 433.62pt x 325.215pt>
+<chapters/chapter_2/figures/plSubsetUntenured.pdf, id=1771, 433.62pt x 325.215pt>
 File: chapters/chapter_2/figures/plSubsetUntenured.pdf Graphic file (type pdf)
 <use chapters/chapter_2/figures/plSubsetUntenured.pdf>
 Package pdftex.def Info: chapters/chapter_2/figures/plSubsetUntenured.pdf  used on input line 690.
@@ -1066,7 +1062,7 @@ Overfull \hbox (36.13394pt too wide) in paragraph at lines 690--691
  []
 
 [114 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/plSubsetTenured.pdf>]
-<chapters/chapter_2/figures/mainPlHires.pdf, id=1783, 433.62pt x 433.62pt>
+<chapters/chapter_2/figures/mainPlHires.pdf, id=1785, 433.62pt x 433.62pt>
 File: chapters/chapter_2/figures/mainPlHires.pdf Graphic file (type pdf)
 <use chapters/chapter_2/figures/mainPlHires.pdf>
 Package pdftex.def Info: chapters/chapter_2/figures/mainPlHires.pdf  used on input line 699.
@@ -1077,7 +1073,7 @@ Overfull \hbox (36.13394pt too wide) in paragraph at lines 699--700
  []
 
 [115 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/plSubsetUntenured.pdf>]
-<chapters/chapter_2/figures/AMEoverTimeHires.pdf, id=1797, 433.62pt x 578.16pt>
+<chapters/chapter_2/figures/AMEoverTimeHires.pdf, id=1799, 433.62pt x 578.16pt>
 File: chapters/chapter_2/figures/AMEoverTimeHires.pdf Graphic file (type pdf)
 <use chapters/chapter_2/figures/AMEoverTimeHires.pdf>
 Package pdftex.def Info: chapters/chapter_2/figures/AMEoverTimeHires.pdf  used on input line 706.
@@ -1098,7 +1094,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--720
  []
 
 [118]
-<chapters/chapter_2/figures/plDv.pdf, id=1828, 433.62pt x 325.215pt>
+<chapters/chapter_2/figures/plDv.pdf, id=1830, 433.62pt x 325.215pt>
 File: chapters/chapter_2/figures/plDv.pdf Graphic file (type pdf)
 <use chapters/chapter_2/figures/plDv.pdf>
 Package pdftex.def Info: chapters/chapter_2/figures/plDv.pdf  used on input line 737.
@@ -1109,7 +1105,7 @@ Overfull \hbox (36.13394pt too wide) in paragraph at lines 737--738
  []
 
 [119 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/plDv.pdf>]
-<chapters/chapter_2/figures/mgmtRobust.pdf, id=1842, 433.62pt x 433.62pt>
+<chapters/chapter_2/figures/mgmtRobust.pdf, id=1844, 433.62pt x 433.62pt>
 File: chapters/chapter_2/figures/mgmtRobust.pdf Graphic file (type pdf)
 <use chapters/chapter_2/figures/mgmtRobust.pdf>
 Package pdftex.def Info: chapters/chapter_2/figures/mgmtRobust.pdf  used on input line 749.
@@ -1120,7 +1116,7 @@ Overfull \hbox (36.13394pt too wide) in paragraph at lines 749--750
  []
 
 [120]
-<chapters/chapter_2/figures/plSubsetMun.pdf, id=1851, 433.62pt x 433.62pt>
+<chapters/chapter_2/figures/plSubsetMun.pdf, id=1853, 433.62pt x 433.62pt>
 File: chapters/chapter_2/figures/plSubsetMun.pdf Graphic file (type pdf)
 <use chapters/chapter_2/figures/plSubsetMun.pdf>
 Package pdftex.def Info: chapters/chapter_2/figures/plSubsetMun.pdf  used on input line 761.
@@ -1139,7 +1135,7 @@ Overfull \hbox (19.0609pt too wide) in paragraph at lines 3--783
 Overfull \vbox (198.04115pt too high) has occurred while \output is active []
 
  [125]
-<chapters/chapter_2/figures/AMEpoliticalSerious_term1Client.pdf, id=1894, 433.62pt x 361.35pt>
+<chapters/chapter_2/figures/AMEpoliticalSerious_term1Client.pdf, id=1896, 433.62pt x 361.35pt>
 File: chapters/chapter_2/figures/AMEpoliticalSerious_term1Client.pdf Graphic file (type pdf)
 <use chapters/chapter_2/figures/AMEpoliticalSerious_term1Client.pdf>
 Package pdftex.def Info: chapters/chapter_2/figures/AMEpoliticalSerious_term1Client.pdf  used on input line 797.
@@ -1150,7 +1146,7 @@ Overfull \hbox (36.13394pt too wide) in paragraph at lines 797--798
  []
 
 [126]
-<chapters/chapter_2/figures/AMEpoliticalAllPerAMount_term1Client.pdf, id=1901, 433.62pt x 361.35pt>
+<chapters/chapter_2/figures/AMEpoliticalAllPerAMount_term1Client.pdf, id=1903, 433.62pt x 361.35pt>
 File: chapters/chapter_2/figures/AMEpoliticalAllPerAMount_term1Client.pdf Graphic file (type pdf)
 <use chapters/chapter_2/figures/AMEpoliticalAllPerAMount_term1Client.pdf>
 Package pdftex.def Info: chapters/chapter_2/figures/AMEpoliticalAllPerAMount_term1Client.pdf  used on input line 804.
@@ -1161,7 +1157,7 @@ Overfull \hbox (36.13394pt too wide) in paragraph at lines 804--805
  []
 
 [127 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEpoliticalSerious_term1Client.pdf>]
-<chapters/chapter_2/figures/AMEpoliticalSeriousPerAmount_term1Client.pdf, id=1916, 433.62pt x 361.35pt>
+<chapters/chapter_2/figures/AMEpoliticalSeriousPerAmount_term1Client.pdf, id=1918, 433.62pt x 361.35pt>
 File: chapters/chapter_2/figures/AMEpoliticalSeriousPerAmount_term1Client.pdf Graphic file (type pdf)
 <use chapters/chapter_2/figures/AMEpoliticalSeriousPerAmount_term1Client.pdf>
 Package pdftex.def Info: chapters/chapter_2/figures/AMEpoliticalSeriousPerAmount_term1Client.pdf  used on input line 811.
@@ -1172,7 +1168,7 @@ Overfull \hbox (36.13394pt too wide) in paragraph at lines 811--812
  []
 
 [128 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEpoliticalAllPerAMount_term1Client.pdf>]
-<chapters/chapter_2/figures/AMEpolitical_term2Client.pdf, id=1930, 433.62pt x 361.35pt>
+<chapters/chapter_2/figures/AMEpolitical_term2Client.pdf, id=1932, 433.62pt x 361.35pt>
 File: chapters/chapter_2/figures/AMEpolitical_term2Client.pdf Graphic file (type pdf)
 <use chapters/chapter_2/figures/AMEpolitical_term2Client.pdf>
 Package pdftex.def Info: chapters/chapter_2/figures/AMEpolitical_term2Client.pdf  used on input line 820.
@@ -1183,7 +1179,7 @@ Overfull \hbox (36.13394pt too wide) in paragraph at lines 820--821
  []
 
 [129 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEpoliticalSeriousPerAmount_term1Client.pdf>]
-<chapters/chapter_2/figures/AMEpoliticalSerious_term2Client.pdf, id=1945, 433.62pt x 361.35pt>
+<chapters/chapter_2/figures/AMEpoliticalSerious_term2Client.pdf, id=1947, 433.62pt x 361.35pt>
 File: chapters/chapter_2/figures/AMEpoliticalSerious_term2Client.pdf Graphic file (type pdf)
 <use chapters/chapter_2/figures/AMEpoliticalSerious_term2Client.pdf>
 Package pdftex.def Info: chapters/chapter_2/figures/AMEpoliticalSerious_term2Client.pdf  used on input line 827.
@@ -1194,7 +1190,7 @@ Overfull \hbox (36.13394pt too wide) in paragraph at lines 827--828
  []
 
 [130 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEpolitical_term2Client.pdf>]
-<chapters/chapter_2/figures/AMEpoliticalAllPerAMount_term2Client.pdf, id=1960, 433.62pt x 361.35pt>
+<chapters/chapter_2/figures/AMEpoliticalAllPerAMount_term2Client.pdf, id=1962, 433.62pt x 361.35pt>
 File: chapters/chapter_2/figures/AMEpoliticalAllPerAMount_term2Client.pdf Graphic file (type pdf)
 <use chapters/chapter_2/figures/AMEpoliticalAllPerAMount_term2Client.pdf>
 Package pdftex.def Info: chapters/chapter_2/figures/AMEpoliticalAllPerAMount_term2Client.pdf  used on input line 834.
@@ -1205,7 +1201,7 @@ Overfull \hbox (36.13394pt too wide) in paragraph at lines 834--835
  []
 
 [131 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEpoliticalSerious_term2Client.pdf>]
-<chapters/chapter_2/figures/AMEpoliticalSeriousPerAmount_term2Client.pdf, id=1974, 433.62pt x 361.35pt>
+<chapters/chapter_2/figures/AMEpoliticalSeriousPerAmount_term2Client.pdf, id=1976, 433.62pt x 361.35pt>
 File: chapters/chapter_2/figures/AMEpoliticalSeriousPerAmount_term2Client.pdf Graphic file (type pdf)
 <use chapters/chapter_2/figures/AMEpoliticalSeriousPerAmount_term2Client.pdf>
 Package pdftex.def Info: chapters/chapter_2/figures/AMEpoliticalSeriousPerAmount_term2Client.pdf  used on input line 841.
@@ -1226,7 +1222,7 @@ Overfull \hbox (3.37883pt too wide) in paragraph at lines 851--852
  []
 
 [133 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_2/figures/AMEpoliticalSeriousPerAmount_term2Client.pdf>]
-<chapters/chapter_2/figures/validationStructuralSize.pdf, id=2006, 216.81pt x 216.81pt>
+<chapters/chapter_2/figures/validationStructuralSize.pdf, id=2008, 216.81pt x 216.81pt>
 File: chapters/chapter_2/figures/validationStructuralSize.pdf Graphic file (type pdf)
 <use chapters/chapter_2/figures/validationStructuralSize.pdf>
 Package pdftex.def Info: chapters/chapter_2/figures/validationStructuralSize.pdf  used on input line 857.
@@ -1249,86 +1245,86 @@ Package natbib Warning: Citation `brollo2017victor' on page 142 undefined on inp
 Package natbib Warning: Citation `brollo2017victor' on page 142 undefined on input line 40.
 
 [142] [143] [144] [145]
-<chapters/chapter_3/figures/partisanship/plot_partisan_by_year.pdf, id=2179, 505.89pt x 505.89pt>
+<chapters/chapter_3/figures/partisanship/plot_partisan_by_year.pdf, id=2181, 505.89pt x 505.89pt>
 File: chapters/chapter_3/figures/partisanship/plot_partisan_by_year.pdf Graphic file (type pdf)
 <use chapters/chapter_3/figures/partisanship/plot_partisan_by_year.pdf>
 Package pdftex.def Info: chapters/chapter_3/figures/partisanship/plot_partisan_by_year.pdf  used on input line 75.
 (pdftex.def)             Requested size: 170.71892pt x 170.71892pt.
-<chapters/chapter_3/figures/partisanship/plot_partisan_by_region.pdf, id=2180, 505.89pt x 505.89pt>
+<chapters/chapter_3/figures/partisanship/plot_partisan_by_region.pdf, id=2182, 505.89pt x 505.89pt>
 File: chapters/chapter_3/figures/partisanship/plot_partisan_by_region.pdf Graphic file (type pdf)
 <use chapters/chapter_3/figures/partisanship/plot_partisan_by_region.pdf>
 Package pdftex.def Info: chapters/chapter_3/figures/partisanship/plot_partisan_by_region.pdf  used on input line 76.
 (pdftex.def)             Requested size: 170.71892pt x 170.71892pt.
  [146 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_partisan_by_year.pdf> </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_partisan_by_region.pdf>]
-<chapters/chapter_3/figures/partisanship/plot_partisan_spell.pdf, id=2203, 505.89pt x 505.89pt>
+<chapters/chapter_3/figures/partisanship/plot_partisan_spell.pdf, id=2205, 505.89pt x 505.89pt>
 File: chapters/chapter_3/figures/partisanship/plot_partisan_spell.pdf Graphic file (type pdf)
 <use chapters/chapter_3/figures/partisanship/plot_partisan_spell.pdf>
 Package pdftex.def Info: chapters/chapter_3/figures/partisanship/plot_partisan_spell.pdf  used on input line 89.
 (pdftex.def)             Requested size: 284.53154pt x 227.62523pt.
  [147] [148 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_partisan_spell.pdf>] [149]
-<chapters/chapter_3/figures/turnover/plot_hired.pdf, id=2243, 504.88625pt x 504.88625pt>
+<chapters/chapter_3/figures/turnover/plot_hired.pdf, id=2245, 504.88625pt x 504.88625pt>
 File: chapters/chapter_3/figures/turnover/plot_hired.pdf Graphic file (type pdf)
 <use chapters/chapter_3/figures/turnover/plot_hired.pdf>
 Package pdftex.def Info: chapters/chapter_3/figures/turnover/plot_hired.pdf  used on input line 110.
 (pdftex.def)             Requested size: 170.71916pt x 227.62042pt.
-<chapters/chapter_3/figures/turnover/plot_fired.pdf, id=2244, 504.88625pt x 504.88625pt>
+<chapters/chapter_3/figures/turnover/plot_fired.pdf, id=2246, 504.88625pt x 504.88625pt>
 File: chapters/chapter_3/figures/turnover/plot_fired.pdf Graphic file (type pdf)
 <use chapters/chapter_3/figures/turnover/plot_fired.pdf>
 Package pdftex.def Info: chapters/chapter_3/figures/turnover/plot_fired.pdf  used on input line 111.
 (pdftex.def)             Requested size: 170.71916pt x 227.62042pt.
  [150] [151 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/turnover/plot_hired.pdf> </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/turnover/plot_fired.pdf>]
-<chapters/chapter_3/figures/partisanship/plot_median_wage.pdf, id=2280, 505.89pt x 505.89pt>
+<chapters/chapter_3/figures/partisanship/plot_median_wage.pdf, id=2282, 505.89pt x 505.89pt>
 File: chapters/chapter_3/figures/partisanship/plot_median_wage.pdf Graphic file (type pdf)
 <use chapters/chapter_3/figures/partisanship/plot_median_wage.pdf>
 Package pdftex.def Info: chapters/chapter_3/figures/partisanship/plot_median_wage.pdf  used on input line 124.
 (pdftex.def)             Requested size: 284.53154pt x 227.62523pt.
  [152]
-<chapters/chapter_3/figures/partisanship/plot_work_experience_mean.pdf, id=2287, 505.89pt x 505.89pt>
+<chapters/chapter_3/figures/partisanship/plot_work_experience_mean.pdf, id=2289, 505.89pt x 505.89pt>
 File: chapters/chapter_3/figures/partisanship/plot_work_experience_mean.pdf Graphic file (type pdf)
 <use chapters/chapter_3/figures/partisanship/plot_work_experience_mean.pdf>
 Package pdftex.def Info: chapters/chapter_3/figures/partisanship/plot_work_experience_mean.pdf  used on input line 133.
 (pdftex.def)             Requested size: 284.53154pt x 227.62523pt.
  [153 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_median_wage.pdf>]
-<chapters/chapter_3/figures/partisanship/plot_edu_mean.pdf, id=2300, 505.89pt x 505.89pt>
+<chapters/chapter_3/figures/partisanship/plot_edu_mean.pdf, id=2302, 505.89pt x 505.89pt>
 File: chapters/chapter_3/figures/partisanship/plot_edu_mean.pdf Graphic file (type pdf)
 <use chapters/chapter_3/figures/partisanship/plot_edu_mean.pdf>
 Package pdftex.def Info: chapters/chapter_3/figures/partisanship/plot_edu_mean.pdf  used on input line 142.
 (pdftex.def)             Requested size: 170.71892pt x 170.71892pt.
-<chapters/chapter_3/figures/partisanship/plot_age_mean.pdf, id=2301, 505.89pt x 505.89pt>
+<chapters/chapter_3/figures/partisanship/plot_age_mean.pdf, id=2303, 505.89pt x 505.89pt>
 File: chapters/chapter_3/figures/partisanship/plot_age_mean.pdf Graphic file (type pdf)
 <use chapters/chapter_3/figures/partisanship/plot_age_mean.pdf>
 Package pdftex.def Info: chapters/chapter_3/figures/partisanship/plot_age_mean.pdf  used on input line 143.
 (pdftex.def)             Requested size: 170.71892pt x 170.71892pt.
  [154 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_work_experience_mean.pdf>]
-<chapters/chapter_3/figures/maps/pooled.png, id=2314, 361.35pt x 361.35pt>
+<chapters/chapter_3/figures/maps/pooled.png, id=2316, 361.35pt x 361.35pt>
 File: chapters/chapter_3/figures/maps/pooled.png Graphic file (type png)
 <use chapters/chapter_3/figures/maps/pooled.png>
 Package pdftex.def Info: chapters/chapter_3/figures/maps/pooled.png  used on input line 157.
 (pdftex.def)             Requested size: 256.07509pt x 256.07509pt.
  [155 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_edu_mean.pdf> </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_age_mean.pdf>] [156 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/maps/pooled.png (PNG copy)>]
-<chapters/chapter_3/figures/partisanship/plot_partisanship_by_cbo_group.pdf, id=2339, 505.89pt x 505.89pt>
+<chapters/chapter_3/figures/partisanship/plot_partisanship_by_cbo_group.pdf, id=2341, 505.89pt x 505.89pt>
 File: chapters/chapter_3/figures/partisanship/plot_partisanship_by_cbo_group.pdf Graphic file (type pdf)
 <use chapters/chapter_3/figures/partisanship/plot_partisanship_by_cbo_group.pdf>
 Package pdftex.def Info: chapters/chapter_3/figures/partisanship/plot_partisanship_by_cbo_group.pdf  used on input line 168.
 (pdftex.def)             Requested size: 170.71892pt x 170.71892pt.
-<chapters/chapter_3/figures/partisanship/plot_partisanship_by_contract_type.pdf, id=2340, 505.89pt x 505.89pt>
+<chapters/chapter_3/figures/partisanship/plot_partisanship_by_contract_type.pdf, id=2342, 505.89pt x 505.89pt>
 File: chapters/chapter_3/figures/partisanship/plot_partisanship_by_contract_type.pdf Graphic file (type pdf)
 <use chapters/chapter_3/figures/partisanship/plot_partisanship_by_contract_type.pdf>
 Package pdftex.def Info: chapters/chapter_3/figures/partisanship/plot_partisanship_by_contract_type.pdf  used on input line 169.
 (pdftex.def)             Requested size: 170.71892pt x 170.71892pt.
  [157 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_partisanship_by_cbo_group.pdf> </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_partisanship_by_contract_type.pdf>]
-<chapters/chapter_3/figures/turnover/plot_wage.pdf, id=2363, 504.88625pt x 504.88625pt>
+<chapters/chapter_3/figures/turnover/plot_wage.pdf, id=2365, 504.88625pt x 504.88625pt>
 File: chapters/chapter_3/figures/turnover/plot_wage.pdf Graphic file (type pdf)
 <use chapters/chapter_3/figures/turnover/plot_wage.pdf>
 Package pdftex.def Info: chapters/chapter_3/figures/turnover/plot_wage.pdf  used on input line 182.
 (pdftex.def)             Requested size: 170.71916pt x 170.71916pt.
-<chapters/chapter_3/figures/turnover/plot_work_experience.pdf, id=2364, 504.88625pt x 504.88625pt>
+<chapters/chapter_3/figures/turnover/plot_work_experience.pdf, id=2366, 504.88625pt x 504.88625pt>
 File: chapters/chapter_3/figures/turnover/plot_work_experience.pdf Graphic file (type pdf)
 <use chapters/chapter_3/figures/turnover/plot_work_experience.pdf>
 Package pdftex.def Info: chapters/chapter_3/figures/turnover/plot_work_experience.pdf  used on input line 183.
 (pdftex.def)             Requested size: 170.71916pt x 170.71916pt.
  [158 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/turnover/plot_wage.pdf> </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/turnover/plot_work_experience.pdf>] [159]
-<chapters/chapter_3/figures/partisanship/plot_contribution.pdf, id=2393, 505.89pt x 505.89pt>
+<chapters/chapter_3/figures/partisanship/plot_contribution.pdf, id=2395, 505.89pt x 505.89pt>
 File: chapters/chapter_3/figures/partisanship/plot_contribution.pdf Graphic file (type pdf)
 <use chapters/chapter_3/figures/partisanship/plot_contribution.pdf>
 Package pdftex.def Info: chapters/chapter_3/figures/partisanship/plot_contribution.pdf  used on input line 199.
@@ -1415,8 +1411,8 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist,
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/nanumtype1/nanummjmac.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb0.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb2.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbe.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc0.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc5.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd5.pfb>
 Output written on "/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.pdf" (184 pages, 3860345 bytes).
 PDF statistics:
- 2676 PDF objects out of 2984 (max. 8388607)
- 2284 compressed objects within 23 object streams
+ 2678 PDF objects out of 2984 (max. 8388607)
+ 2286 compressed objects within 23 object streams
  522 named destinations out of 1000 (max. 500000)
  855 words of extra memory for PDF output out of 10000 (max. 10000000)
 
