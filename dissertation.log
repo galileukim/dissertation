@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  4 MAY 2021 17:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  6 MAY 2021 11:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1241,90 +1241,87 @@ Chapter 3.
 
 Package natbib Warning: Citation `brollo2017victor' on page 142 undefined on input line 40.
 
-
-Package natbib Warning: Citation `brollo2017victor' on page 142 undefined on input line 40.
-
 [142] [143] [144] [145]
-<chapters/chapter_3/figures/partisanship/plot_partisan_by_year.pdf, id=2181, 505.89pt x 505.89pt>
+<chapters/chapter_3/figures/partisanship/plot_partisan_by_year.pdf, id=2183, 505.89pt x 505.89pt>
 File: chapters/chapter_3/figures/partisanship/plot_partisan_by_year.pdf Graphic file (type pdf)
 <use chapters/chapter_3/figures/partisanship/plot_partisan_by_year.pdf>
 Package pdftex.def Info: chapters/chapter_3/figures/partisanship/plot_partisan_by_year.pdf  used on input line 75.
 (pdftex.def)             Requested size: 170.71892pt x 170.71892pt.
-<chapters/chapter_3/figures/partisanship/plot_partisan_by_region.pdf, id=2182, 505.89pt x 505.89pt>
+<chapters/chapter_3/figures/partisanship/plot_partisan_by_region.pdf, id=2184, 505.89pt x 505.89pt>
 File: chapters/chapter_3/figures/partisanship/plot_partisan_by_region.pdf Graphic file (type pdf)
 <use chapters/chapter_3/figures/partisanship/plot_partisan_by_region.pdf>
 Package pdftex.def Info: chapters/chapter_3/figures/partisanship/plot_partisan_by_region.pdf  used on input line 76.
 (pdftex.def)             Requested size: 170.71892pt x 170.71892pt.
- [146 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_partisan_by_year.pdf> </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_partisan_by_region.pdf>]
-<chapters/chapter_3/figures/partisanship/plot_partisan_spell.pdf, id=2205, 505.89pt x 505.89pt>
+ [146] [147 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_partisan_by_year.pdf> </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_partisan_by_region.pdf>]
+<chapters/chapter_3/figures/partisanship/plot_partisan_spell.pdf, id=2213, 505.89pt x 505.89pt>
 File: chapters/chapter_3/figures/partisanship/plot_partisan_spell.pdf Graphic file (type pdf)
 <use chapters/chapter_3/figures/partisanship/plot_partisan_spell.pdf>
 Package pdftex.def Info: chapters/chapter_3/figures/partisanship/plot_partisan_spell.pdf  used on input line 89.
 (pdftex.def)             Requested size: 284.53154pt x 227.62523pt.
- [147] [148 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_partisan_spell.pdf>] [149]
-<chapters/chapter_3/figures/turnover/plot_hired.pdf, id=2245, 504.88625pt x 504.88625pt>
+ [148 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_partisan_spell.pdf>] [149] [150]
+<chapters/chapter_3/figures/turnover/plot_hired.pdf, id=2254, 504.88625pt x 504.88625pt>
 File: chapters/chapter_3/figures/turnover/plot_hired.pdf Graphic file (type pdf)
 <use chapters/chapter_3/figures/turnover/plot_hired.pdf>
 Package pdftex.def Info: chapters/chapter_3/figures/turnover/plot_hired.pdf  used on input line 110.
 (pdftex.def)             Requested size: 170.71916pt x 227.62042pt.
-<chapters/chapter_3/figures/turnover/plot_fired.pdf, id=2246, 504.88625pt x 504.88625pt>
+<chapters/chapter_3/figures/turnover/plot_fired.pdf, id=2255, 504.88625pt x 504.88625pt>
 File: chapters/chapter_3/figures/turnover/plot_fired.pdf Graphic file (type pdf)
 <use chapters/chapter_3/figures/turnover/plot_fired.pdf>
 Package pdftex.def Info: chapters/chapter_3/figures/turnover/plot_fired.pdf  used on input line 111.
 (pdftex.def)             Requested size: 170.71916pt x 227.62042pt.
- [150] [151 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/turnover/plot_hired.pdf> </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/turnover/plot_fired.pdf>]
-<chapters/chapter_3/figures/partisanship/plot_median_wage.pdf, id=2282, 505.89pt x 505.89pt>
+ [151 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/turnover/plot_hired.pdf> </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/turnover/plot_fired.pdf>]
+<chapters/chapter_3/figures/partisanship/plot_median_wage.pdf, id=2284, 505.89pt x 505.89pt>
 File: chapters/chapter_3/figures/partisanship/plot_median_wage.pdf Graphic file (type pdf)
 <use chapters/chapter_3/figures/partisanship/plot_median_wage.pdf>
 Package pdftex.def Info: chapters/chapter_3/figures/partisanship/plot_median_wage.pdf  used on input line 124.
 (pdftex.def)             Requested size: 284.53154pt x 227.62523pt.
  [152]
-<chapters/chapter_3/figures/partisanship/plot_work_experience_mean.pdf, id=2289, 505.89pt x 505.89pt>
+<chapters/chapter_3/figures/partisanship/plot_work_experience_mean.pdf, id=2291, 505.89pt x 505.89pt>
 File: chapters/chapter_3/figures/partisanship/plot_work_experience_mean.pdf Graphic file (type pdf)
 <use chapters/chapter_3/figures/partisanship/plot_work_experience_mean.pdf>
 Package pdftex.def Info: chapters/chapter_3/figures/partisanship/plot_work_experience_mean.pdf  used on input line 133.
 (pdftex.def)             Requested size: 284.53154pt x 227.62523pt.
  [153 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_median_wage.pdf>]
-<chapters/chapter_3/figures/partisanship/plot_edu_mean.pdf, id=2302, 505.89pt x 505.89pt>
+<chapters/chapter_3/figures/partisanship/plot_edu_mean.pdf, id=2304, 505.89pt x 505.89pt>
 File: chapters/chapter_3/figures/partisanship/plot_edu_mean.pdf Graphic file (type pdf)
 <use chapters/chapter_3/figures/partisanship/plot_edu_mean.pdf>
 Package pdftex.def Info: chapters/chapter_3/figures/partisanship/plot_edu_mean.pdf  used on input line 142.
 (pdftex.def)             Requested size: 170.71892pt x 170.71892pt.
-<chapters/chapter_3/figures/partisanship/plot_age_mean.pdf, id=2303, 505.89pt x 505.89pt>
+<chapters/chapter_3/figures/partisanship/plot_age_mean.pdf, id=2305, 505.89pt x 505.89pt>
 File: chapters/chapter_3/figures/partisanship/plot_age_mean.pdf Graphic file (type pdf)
 <use chapters/chapter_3/figures/partisanship/plot_age_mean.pdf>
 Package pdftex.def Info: chapters/chapter_3/figures/partisanship/plot_age_mean.pdf  used on input line 143.
 (pdftex.def)             Requested size: 170.71892pt x 170.71892pt.
  [154 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_work_experience_mean.pdf>]
-<chapters/chapter_3/figures/maps/pooled.png, id=2316, 361.35pt x 361.35pt>
+<chapters/chapter_3/figures/maps/pooled.png, id=2318, 361.35pt x 361.35pt>
 File: chapters/chapter_3/figures/maps/pooled.png Graphic file (type png)
 <use chapters/chapter_3/figures/maps/pooled.png>
 Package pdftex.def Info: chapters/chapter_3/figures/maps/pooled.png  used on input line 157.
 (pdftex.def)             Requested size: 256.07509pt x 256.07509pt.
  [155 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_edu_mean.pdf> </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_age_mean.pdf>] [156 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/maps/pooled.png (PNG copy)>]
-<chapters/chapter_3/figures/partisanship/plot_partisanship_by_cbo_group.pdf, id=2341, 505.89pt x 505.89pt>
+<chapters/chapter_3/figures/partisanship/plot_partisanship_by_cbo_group.pdf, id=2343, 505.89pt x 505.89pt>
 File: chapters/chapter_3/figures/partisanship/plot_partisanship_by_cbo_group.pdf Graphic file (type pdf)
 <use chapters/chapter_3/figures/partisanship/plot_partisanship_by_cbo_group.pdf>
 Package pdftex.def Info: chapters/chapter_3/figures/partisanship/plot_partisanship_by_cbo_group.pdf  used on input line 168.
 (pdftex.def)             Requested size: 170.71892pt x 170.71892pt.
-<chapters/chapter_3/figures/partisanship/plot_partisanship_by_contract_type.pdf, id=2342, 505.89pt x 505.89pt>
+<chapters/chapter_3/figures/partisanship/plot_partisanship_by_contract_type.pdf, id=2344, 505.89pt x 505.89pt>
 File: chapters/chapter_3/figures/partisanship/plot_partisanship_by_contract_type.pdf Graphic file (type pdf)
 <use chapters/chapter_3/figures/partisanship/plot_partisanship_by_contract_type.pdf>
 Package pdftex.def Info: chapters/chapter_3/figures/partisanship/plot_partisanship_by_contract_type.pdf  used on input line 169.
 (pdftex.def)             Requested size: 170.71892pt x 170.71892pt.
  [157 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_partisanship_by_cbo_group.pdf> </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/partisanship/plot_partisanship_by_contract_type.pdf>]
-<chapters/chapter_3/figures/turnover/plot_wage.pdf, id=2365, 504.88625pt x 504.88625pt>
+<chapters/chapter_3/figures/turnover/plot_wage.pdf, id=2367, 504.88625pt x 504.88625pt>
 File: chapters/chapter_3/figures/turnover/plot_wage.pdf Graphic file (type pdf)
 <use chapters/chapter_3/figures/turnover/plot_wage.pdf>
 Package pdftex.def Info: chapters/chapter_3/figures/turnover/plot_wage.pdf  used on input line 182.
 (pdftex.def)             Requested size: 170.71916pt x 170.71916pt.
-<chapters/chapter_3/figures/turnover/plot_work_experience.pdf, id=2366, 504.88625pt x 504.88625pt>
+<chapters/chapter_3/figures/turnover/plot_work_experience.pdf, id=2368, 504.88625pt x 504.88625pt>
 File: chapters/chapter_3/figures/turnover/plot_work_experience.pdf Graphic file (type pdf)
 <use chapters/chapter_3/figures/turnover/plot_work_experience.pdf>
 Package pdftex.def Info: chapters/chapter_3/figures/turnover/plot_work_experience.pdf  used on input line 183.
 (pdftex.def)             Requested size: 170.71916pt x 170.71916pt.
  [158 </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/turnover/plot_wage.pdf> </Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/chapters/chapter_3/figures/turnover/plot_work_experience.pdf>] [159]
-<chapters/chapter_3/figures/partisanship/plot_contribution.pdf, id=2395, 505.89pt x 505.89pt>
+<chapters/chapter_3/figures/partisanship/plot_contribution.pdf, id=2397, 505.89pt x 505.89pt>
 File: chapters/chapter_3/figures/partisanship/plot_contribution.pdf Graphic file (type pdf)
 <use chapters/chapter_3/figures/partisanship/plot_contribution.pdf>
 Package pdftex.def Info: chapters/chapter_3/figures/partisanship/plot_contribution.pdf  used on input line 199.
@@ -1409,10 +1406,10 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/nanumtype1/nanummjmac.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb0.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb2.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbe.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc0.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc5.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd5.pfb>
-Output written on "/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.pdf" (184 pages, 3860345 bytes).
+Output written on "/Volumes/GoogleDrive/My Drive/princeton/dissertation/papers/dissertation/dissertation.pdf" (184 pages, 3860591 bytes).
 PDF statistics:
- 2678 PDF objects out of 2984 (max. 8388607)
- 2286 compressed objects within 23 object streams
+ 2680 PDF objects out of 2984 (max. 8388607)
+ 2288 compressed objects within 23 object streams
  522 named destinations out of 1000 (max. 500000)
  855 words of extra memory for PDF output out of 10000 (max. 10000000)
 
